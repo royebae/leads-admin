@@ -3,10 +3,19 @@
  * GET /api/leads?segment=nunca-agendo&search=blanca&page=1&limit=50
  * Protected by token: ?token=... or header x-admin-token
  */
-import { readFileSync } from 'fs'
-import { join } from 'path'
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
 
-const LEADS_FILE = join(process.cwd(), 'public', 'leads-data.json')
+let leadsData
+try {
+  leadsData = require('./leads-data.json')
+} catch {
+  leadsData = {
+    metadata: { status: 'no-data', message: 'Escaneando Dentalink. Los datos aparecerán automáticamente cuando termine el escaneo.' },
+    leads: [],
+    segment_summary: {},
+  }
+}
 
 export default function handler(req, res) {
   if (req.method === 'OPTIONS') {
@@ -27,18 +36,7 @@ export default function handler(req, res) {
   }
 
   try {
-    let raw
-    try {
-      raw = readFileSync(LEADS_FILE, 'utf-8')
-    } catch {
-      return res.status(200).json({
-        metadata: { status: 'no-data', message: 'Escaneando Dentalink...' },
-        leads: [],
-        segment_summary: {},
-      })
-    }
-
-    const data = JSON.parse(raw)
+    const data = leadsData
     const { segment, search, page = '1', limit = '50' } = req.query
     let leads = data.leads || []
 
@@ -47,8 +45,8 @@ export default function handler(req, res) {
       const q = search.toLowerCase().trim()
       leads = leads.filter(l =>
         l.nombre.toLowerCase().includes(q) ||
-        l.email.toLowerCase().includes(q) ||
-        l.phone.includes(q)
+        (l.email && l.email.toLowerCase().includes(q)) ||
+        (l.phone && l.phone.includes(q))
       )
     }
 
