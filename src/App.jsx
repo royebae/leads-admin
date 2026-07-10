@@ -172,6 +172,47 @@ export default function App() {
               {l.segment_label}
             </div>
           </div>
+
+          <div style={{ marginTop: '1rem', background: '#1a1a1a', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+            <h3 style={{ margin: '0 0 1rem', fontSize: '1rem', color: 'rgba(255,255,255,0.7)' }}>🦷 Tratamientos</h3>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
+              <div>
+                <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Principal</div>
+                <div style={{ fontSize: '0.95rem', color: '#d4a854', fontWeight: 600 }}>{l.tratamiento_principal || 'Sin plan registrado'}</div>
+              </div>
+              <div>
+                <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Planes</div>
+                <div style={{ fontSize: '0.9rem' }}>{l.tratamientos_count || 0} · abiertos {l.tratamientos_abiertos || 0} · cerrados {l.tratamientos_cerrados || 0}</div>
+              </div>
+              <div>
+                <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Presupuesto</div>
+                <div style={{ fontSize: '0.9rem' }}>${Number(l.presupuesto_total || 0).toLocaleString('es-MX')}</div>
+              </div>
+              <div>
+                <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Abonado / Deuda</div>
+                <div style={{ fontSize: '0.9rem' }}>${Number(l.abonado_total || 0).toLocaleString('es-MX')} / <span style={{ color: (l.deuda_total || 0) > 0 ? '#f87171' : 'rgba(255,255,255,0.7)' }}>${Number(l.deuda_total || 0).toLocaleString('es-MX')}</span></div>
+              </div>
+              <div>
+                <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Último tratamiento</div>
+                <div style={{ fontSize: '0.9rem' }}>{l.ultimo_tratamiento_fecha || '—'}</div>
+              </div>
+              <div>
+                <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Dentista</div>
+                <div style={{ fontSize: '0.9rem' }}>{l.ultimo_dentista || '—'}</div>
+              </div>
+            </div>
+            {Array.isArray(l.tratamientos) && l.tratamientos.length > 0 && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                {l.tratamientos.map((t) => (
+                  <span key={t} style={{
+                    padding: '0.2rem 0.55rem', borderRadius: '999px', fontSize: '0.72rem',
+                    background: 'rgba(212,168,84,0.12)', color: '#d4a854', border: '1px solid rgba(212,168,84,0.25)',
+                  }}>{t}</span>
+                ))}
+              </div>
+            )}
+          </div>
+
           {l.citas?.length > 0 && (
             <div style={{ marginTop: '1rem', background: '#1a1a1a', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.1)' }}>
               <h3 style={{ margin: '0 0 1rem', fontSize: '1rem', color: 'rgba(255,255,255,0.7)' }}>Historial de citas ({l.citas.length})</h3>
@@ -265,7 +306,7 @@ export default function App() {
             type="text"
             value={search}
             onChange={e => { setSearch(e.target.value); setPage(1) }}
-            placeholder="Buscar nombre, email, teléfono..."
+            placeholder="Buscar nombre, email, teléfono, tratamiento..."
             style={{
               flex: 1, background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.1)',
               borderRadius: '10px', padding: '0.6rem 1rem', color: '#fff',
@@ -304,9 +345,10 @@ export default function App() {
                   <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.4)', fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     <th style={{ textAlign: 'left', padding: '0.75rem 1rem', fontWeight: 500 }}>Paciente</th>
                     <th style={{ textAlign: 'left', padding: '0.75rem 1rem', fontWeight: 500 }}>Contacto</th>
+                    <th style={{ textAlign: 'left', padding: '0.75rem 1rem', fontWeight: 500 }}>Tratamiento</th>
                     <th style={{ textAlign: 'left', padding: '0.75rem 1rem', fontWeight: 500 }}>Segmento</th>
+                    <th style={{ textAlign: 'right', padding: '0.75rem 1rem', fontWeight: 500 }}>Presupuesto</th>
                     <th style={{ textAlign: 'center', padding: '0.75rem 1rem', fontWeight: 500 }}>Citas</th>
-                    <th style={{ textAlign: 'left', padding: '0.75rem 1rem', fontWeight: 500, display: 'none', md: 'table-cell' }}>Última cita</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -326,6 +368,14 @@ export default function App() {
                         {l.email && <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', maxWidth: '180px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.email}</div>}
                       </td>
                       <td style={{ padding: '0.75rem 1rem' }}>
+                        <div style={{ color: '#d4a854', fontSize: '0.8rem', fontWeight: 500, maxWidth: '180px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                          {l.tratamiento_principal || '—'}
+                        </div>
+                        {Array.isArray(l.tratamientos) && l.tratamientos.length > 1 && (
+                          <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.7rem' }}>+{l.tratamientos.length - 1} más</div>
+                        )}
+                      </td>
+                      <td style={{ padding: '0.75rem 1rem' }}>
                         <span style={{
                           display: 'inline-block', padding: '0.15rem 0.5rem', borderRadius: '999px',
                           fontSize: '0.7rem', fontWeight: 500,
@@ -333,10 +383,10 @@ export default function App() {
                           border: `1px solid ${l.segment_color}40`,
                         }}>{l.segment_label}</span>
                       </td>
-                      <td style={{ padding: '0.75rem 1rem', textAlign: 'center', color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem' }}>{l.total_citas}</td>
-                      <td style={{ padding: '0.75rem 1rem', color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>
-                        {l.ultima_cita_fecha || '—'}
+                      <td style={{ padding: '0.75rem 1rem', textAlign: 'right', color: 'rgba(255,255,255,0.7)', fontSize: '0.8rem' }}>
+                        {l.presupuesto_total ? `$${Number(l.presupuesto_total).toLocaleString('es-MX')}` : '—'}
                       </td>
+                      <td style={{ padding: '0.75rem 1rem', textAlign: 'center', color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem' }}>{l.total_citas}</td>
                     </tr>
                   ))}
                 </tbody>

@@ -1,7 +1,6 @@
 /**
  * API endpoint for Lead Retargeting Dashboard
- * Leva los datos desde api/leads-data.js (bundled por Vercel)
- * GET /api/leads?segment=nunca-agendo&search=blanca&page=1&limit=50
+ * GET /api/leads?segment=nunca-agendo&search=ortodoncia&page=1&limit=50
  */
 import leadsData from '../src/data/leads.js'
 
@@ -32,9 +31,11 @@ export default function handler(req, res) {
     if (search) {
       const q = search.toLowerCase().trim()
       leads = leads.filter(l =>
-        l.nombre.toLowerCase().includes(q) ||
+        (l.nombre && l.nombre.toLowerCase().includes(q)) ||
         (l.email && l.email.toLowerCase().includes(q)) ||
-        (l.phone && l.phone.includes(q))
+        (l.phone && l.phone.includes(q)) ||
+        (l.tratamiento_principal && l.tratamiento_principal.toLowerCase().includes(q)) ||
+        (Array.isArray(l.tratamientos) && l.tratamientos.some(t => String(t).toLowerCase().includes(q)))
       )
     }
 
@@ -58,6 +59,7 @@ export default function handler(req, res) {
         has_more: pageNum < totalPages,
       },
       segment_summary: data.segment_summary || {},
+      treatment_summary: data.treatment_summary || {},
       leads: paginated,
     })
   } catch (err) {
