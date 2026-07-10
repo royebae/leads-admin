@@ -1,0 +1,213 @@
+{
+  "runs": [
+    {
+      "synced_at": "2026-07-10T23:55:23.627Z",
+      "dry_run": false,
+      "location_id": "RUqSenZyzBWnHTnzt0fq",
+      "count": 5,
+      "ok": 5,
+      "failed": 0,
+      "results": [
+        {
+          "rank": 1,
+          "dentalink_id": 395,
+          "nombre": "BRYAN RICARDO ORTEGA CADENA",
+          "segment": "nunca-agendo",
+          "treatment": "PROTESIS BUCAL",
+          "score": 125,
+          "status": "created",
+          "elevatorId": "qGuE7Dx51rOAvaQ0wCNG",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 2,
+          "dentalink_id": 1602,
+          "nombre": "SLENDY ZAPATA",
+          "segment": "nunca-agendo",
+          "treatment": "REMOCION DE CARILLAS",
+          "score": 119,
+          "status": "created",
+          "elevatorId": "aJhtdG3XZLdq8DNPxiKq",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-estetica"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 3,
+          "dentalink_id": 1338,
+          "nombre": "MONIKA GOLDEN",
+          "segment": "nunca-agendo",
+          "treatment": "ORTODONCIA",
+          "score": 117,
+          "status": "created",
+          "elevatorId": "IBnVc1zOksEccXrykf9r",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 4,
+          "dentalink_id": 317,
+          "nombre": "MARITZA GOMEZ",
+          "segment": "inactivo-90d",
+          "treatment": "REHABILITACION SOBRE IMPLANTE",
+          "score": 115,
+          "status": "created",
+          "elevatorId": "Xk14LQEJChhfzO1TYpdG",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "tx-implantes"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 5,
+          "dentalink_id": 2013,
+          "nombre": "Karla Ariza",
+          "segment": "nunca-agendo",
+          "treatment": "REHABILITACION DE CORONAS S/I",
+          "score": 113,
+          "status": "updated",
+          "elevatorId": "mRR1x4h2eF5EiDmwHISr",
+          "tags": [
+            "implante_dental",
+            "bonergis",
+            "lead_mkt",
+            "form-web-llamadas",
+            "answered",
+            "contact hangup",
+            "not answered",
+            "voicemail reached",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-rehabilitacion"
+          ],
+          "ok": true
+        }
+      ]
+    },
+    {
+      "synced_at": "2026-07-10T23:55:12.869Z",
+      "dry_run": true,
+      "location_id": "RUqSenZyzBWnHTnzt0fq",
+      "count": 5,
+      "ok": 5,
+      "failed": 0,
+      "results": [
+        {
+          "rank": 1,
+          "dentalink_id": 395,
+          "nombre": "BRYAN RICARDO ORTEGA CADENA",
+          "segment": "nunca-agendo",
+          "treatment": "PROTESIS BUCAL",
+          "score": 125,
+          "status": "would-create",
+          "elevatorId": null,
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 2,
+          "dentalink_id": 1602,
+          "nombre": "SLENDY ZAPATA",
+          "segment": "nunca-agendo",
+          "treatment": "REMOCION DE CARILLAS",
+          "score": 119,
+          "status": "would-create",
+          "elevatorId": null,
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-estetica"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 3,
+          "dentalink_id": 1338,
+          "nombre": "MONIKA GOLDEN",
+          "segment": "nunca-agendo",
+          "treatment": "ORTODONCIA",
+          "score": 117,
+          "status": "would-create",
+          "elevatorId": null,
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 4,
+          "dentalink_id": 317,
+          "nombre": "MARITZA GOMEZ",
+          "segment": "inactivo-90d",
+          "treatment": "REHABILITACION SOBRE IMPLANTE",
+          "score": 115,
+          "status": "would-create",
+          "elevatorId": null,
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "tx-implantes"
+          ],
+          "ok": true
+        },
+        {
+          "rank": 5,
+          "dentalink_id": 2013,
+          "nombre": "Karla Ariza",
+          "segment": "nunca-agendo",
+          "treatment": "REHABILITACION DE CORONAS S/I",
+          "score": 113,
+          "status": "would-update",
+          "elevatorId": "mRR1x4h2eF5EiDmwHISr",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "prioridad-alta",
+            "reactivable-nunca-agendo",
+            "tx-rehabilitacion"
+          ],
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

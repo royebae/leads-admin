@@ -1,6 +1,6 @@
 /**
  * API endpoint for Lead Retargeting Dashboard
- * GET /api/leads?segment=nunca-agendo&search=ortodoncia&page=1&limit=50
+ * GET /api/leads?segment=nunca-agendo&priority=alta&search=ortodoncia&page=1&limit=50
  */
 import leadsData from '../src/data/leads.js'
 
@@ -24,10 +24,11 @@ export default function handler(req, res) {
 
   try {
     const data = leadsData
-    const { segment, search, page = '1', limit = '50' } = req.query
+    const { segment, search, page = '1', limit = '50', priority } = req.query
     let leads = data.leads || []
 
     if (segment && segment !== 'todos') leads = leads.filter(l => l.segment === segment)
+    if (priority && priority !== 'todos') leads = leads.filter(l => l.priority_band === priority)
     if (search) {
       const q = search.toLowerCase().trim()
       leads = leads.filter(l =>
@@ -39,7 +40,11 @@ export default function handler(req, res) {
       )
     }
 
-    leads.sort((a, b) => (b.segment_priority || 0) - (a.segment_priority || 0))
+    leads.sort((a, b) => {
+      const scoreDiff = (b.reactivation_score || 0) - (a.reactivation_score || 0)
+      if (scoreDiff !== 0) return scoreDiff
+      return (b.segment_priority || 0) - (a.segment_priority || 0)
+    })
 
     const pageNum = Math.max(1, parseInt(page, 10) || 1)
     const limitNum = Math.min(200, Math.max(1, parseInt(limit, 10) || 50))
@@ -60,6 +65,8 @@ export default function handler(req, res) {
       },
       segment_summary: data.segment_summary || {},
       treatment_summary: data.treatment_summary || {},
+      priority_summary: data.priority_summary || {},
+      top_reactivables: (data.top_reactivables || []).slice(0, 20),
       leads: paginated,
     })
   } catch (err) {
