@@ -3,7 +3,7 @@
  * Leva los datos desde api/leads-data.js (bundled por Vercel)
  * GET /api/leads?segment=nunca-agendo&search=blanca&page=1&limit=50
  */
-import leadsData from './leads-data.js'
+import leadsData from '../src/data/leads.js'
 
 export default function handler(req, res) {
   if (req.method === 'OPTIONS') {
