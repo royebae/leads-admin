@@ -1,14 +1,9 @@
 /**
  * API endpoint for Lead Retargeting Dashboard
+ * Leva los datos desde api/leads-data.js (bundled por Vercel)
  * GET /api/leads?segment=nunca-agendo&search=blanca&page=1&limit=50
- * Protected by token: ?token=... or header x-admin-token
  */
-import { readFileSync } from 'fs'
-import { join } from 'path'
-import { fileURLToPath } from 'url'
-
-const __dirname = join(fileURLToPath(import.meta.url), '..')
-const LEADS_FILE = join(__dirname, 'leads-data.json')
+import leadsData from './leads-data.js'
 
 export default function handler(req, res) {
   if (req.method === 'OPTIONS') {
@@ -29,19 +24,7 @@ export default function handler(req, res) {
   }
 
   try {
-    let raw
-    try {
-      raw = readFileSync(LEADS_FILE, 'utf-8')
-    } catch (readErr) {
-      console.error('[LEADS] File not found at:', LEADS_FILE)
-      return res.status(200).json({
-        metadata: { status: 'no-data', message: 'Escaneando Dentalink...', path: LEADS_FILE, error: readErr?.message },
-        leads: [],
-        segment_summary: {},
-      })
-    }
-
-    const data = JSON.parse(raw)
+    const data = leadsData
     const { segment, search, page = '1', limit = '50' } = req.query
     let leads = data.leads || []
 
