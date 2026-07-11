@@ -104,3 +104,23 @@ ELEVATOR_API_KEY=... ELEVATOR_LOCATION_ID=... \
 
 - Fase 7 del sistema de reactivación / atribución comercial.
 - Depende de Fase 3 (elevator match) ya en curso.
+
+
+## Descarga semanal automática (Excel exacto)
+
+```bash
+# 1) Crear secretos locales (no git)
+cp .env.dentalink-web.example .env.dentalink-web
+# editar URL + usuario + password del portal
+
+# 2) Probar
+set -a; source .env.dentalink-web; set +a
+node scripts/download-dentalink-excel-reports.mjs --discover
+node scripts/download-dentalink-excel-reports.mjs --headed
+
+# 3) Job semanal
+bash scripts/weekly-dentalink-excel-job.sh
+```
+
+Cron Hermes: **Dentalink Excel pagos semanal** (domingos 7:00 CR / 13:00 UTC).
+No envía ads ni mensajes; solo descarga + importa + arma eventos dry-run.

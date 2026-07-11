@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+data/imports/pagos/*
+public/pagos-checkpoint.json
+.env.dentalink-web
+data/imports/.browser-state/
+data/imports/runs/
