@@ -1,0 +1,6173 @@
+{
+  "metadata": {
+    "built_at": "2026-07-11T01:02:47.886Z",
+    "dry_run": true,
+    "dispatch_attempted": false,
+    "total_events": 176,
+    "ready_with_click_id": 24,
+    "manual_review": 152,
+    "note": "NO se envió nada a Meta/Google/TikTok. Solo payloads locales."
+  },
+  "events": [
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4422",
+      "payment_id": 4422,
+      "dentalink_patient_id": 1421,
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "occurred_at": "2025-11-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "d9aedaecbcba9bf143b537d579820a9124ccee7e2bd22defac5545383288dcff",
+        "ph": "3f5c93937f8956894d1670c0c45e6de48b8134b63a09cf0979404c0dc47295a4",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1500,
+        "cash_collected": 1500,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS ORDOÑEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4213",
+      "payment_id": 4213,
+      "dentalink_patient_id": 1421,
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "occurred_at": "2025-10-24",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "d9aedaecbcba9bf143b537d579820a9124ccee7e2bd22defac5545383288dcff",
+        "ph": "3f5c93937f8956894d1670c0c45e6de48b8134b63a09cf0979404c0dc47295a4",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 8000,
+        "cash_collected": 8000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS ORDOÑEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4071",
+      "payment_id": 4071,
+      "dentalink_patient_id": 1421,
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "occurred_at": "2025-10-10",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "d9aedaecbcba9bf143b537d579820a9124ccee7e2bd22defac5545383288dcff",
+        "ph": "3f5c93937f8956894d1670c0c45e6de48b8134b63a09cf0979404c0dc47295a4",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 60442,
+        "cash_collected": 60442,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS ORDOÑEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3971",
+      "payment_id": 3971,
+      "dentalink_patient_id": 1421,
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "occurred_at": "2025-09-30",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "d9aedaecbcba9bf143b537d579820a9124ccee7e2bd22defac5545383288dcff",
+        "ph": "3f5c93937f8956894d1670c0c45e6de48b8134b63a09cf0979404c0dc47295a4",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 19800,
+        "cash_collected": 19800,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS ORDOÑEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3936",
+      "payment_id": 3936,
+      "dentalink_patient_id": 1421,
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "occurred_at": "2025-09-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "d9aedaecbcba9bf143b537d579820a9124ccee7e2bd22defac5545383288dcff",
+        "ph": "3f5c93937f8956894d1670c0c45e6de48b8134b63a09cf0979404c0dc47295a4",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1000,
+        "cash_collected": 1000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS ORDOÑEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3935",
+      "payment_id": 3935,
+      "dentalink_patient_id": 1421,
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "occurred_at": "2025-09-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "d9aedaecbcba9bf143b537d579820a9124ccee7e2bd22defac5545383288dcff",
+        "ph": "3f5c93937f8956894d1670c0c45e6de48b8134b63a09cf0979404c0dc47295a4",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 403455.75,
+        "cash_collected": 403455.75,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS ORDOÑEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3382",
+      "payment_id": 3382,
+      "dentalink_patient_id": 1421,
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "occurred_at": "2025-08-04",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "d9aedaecbcba9bf143b537d579820a9124ccee7e2bd22defac5545383288dcff",
+        "ph": "3f5c93937f8956894d1670c0c45e6de48b8134b63a09cf0979404c0dc47295a4",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1400,
+        "cash_collected": 1400,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS ORDOÑEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6923",
+      "payment_id": 6923,
+      "dentalink_patient_id": 2695,
+      "elevator_id": "iBcdCA8etzFPyZnlLELg",
+      "occurred_at": "2026-06-30",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "49a2cf4c23ebfbb188a84313503fb8e176693fb5bbe4eca9187a5e6a1bca3961",
+        "ph": "bdecea388184e1904d12957a80671701084a4b8854acc076d16aaa8d36cdd218",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 105726,
+        "cash_collected": 105726,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "NICHOLAS ROMERO ARTEAGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6752",
+      "payment_id": 6752,
+      "dentalink_patient_id": 2695,
+      "elevator_id": "iBcdCA8etzFPyZnlLELg",
+      "occurred_at": "2026-06-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "49a2cf4c23ebfbb188a84313503fb8e176693fb5bbe4eca9187a5e6a1bca3961",
+        "ph": "bdecea388184e1904d12957a80671701084a4b8854acc076d16aaa8d36cdd218",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 147327.4,
+        "cash_collected": 147327.4,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "NICHOLAS ROMERO ARTEAGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6712",
+      "payment_id": 6712,
+      "dentalink_patient_id": 2695,
+      "elevator_id": "iBcdCA8etzFPyZnlLELg",
+      "occurred_at": "2026-06-12",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "49a2cf4c23ebfbb188a84313503fb8e176693fb5bbe4eca9187a5e6a1bca3961",
+        "ph": "bdecea388184e1904d12957a80671701084a4b8854acc076d16aaa8d36cdd218",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2851.75,
+        "cash_collected": 2851.75,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "NICHOLAS ROMERO ARTEAGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6689",
+      "payment_id": 6689,
+      "dentalink_patient_id": 2695,
+      "elevator_id": "iBcdCA8etzFPyZnlLELg",
+      "occurred_at": "2026-06-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "49a2cf4c23ebfbb188a84313503fb8e176693fb5bbe4eca9187a5e6a1bca3961",
+        "ph": "bdecea388184e1904d12957a80671701084a4b8854acc076d16aaa8d36cdd218",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 147327.4,
+        "cash_collected": 147327.4,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "NICHOLAS ROMERO ARTEAGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6687",
+      "payment_id": 6687,
+      "dentalink_patient_id": 2695,
+      "elevator_id": "iBcdCA8etzFPyZnlLELg",
+      "occurred_at": "2026-06-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "49a2cf4c23ebfbb188a84313503fb8e176693fb5bbe4eca9187a5e6a1bca3961",
+        "ph": "bdecea388184e1904d12957a80671701084a4b8854acc076d16aaa8d36cdd218",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1500,
+        "cash_collected": 1500,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "NICHOLAS ROMERO ARTEAGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6686",
+      "payment_id": 6686,
+      "dentalink_patient_id": 2695,
+      "elevator_id": "iBcdCA8etzFPyZnlLELg",
+      "occurred_at": "2026-06-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "49a2cf4c23ebfbb188a84313503fb8e176693fb5bbe4eca9187a5e6a1bca3961",
+        "ph": "bdecea388184e1904d12957a80671701084a4b8854acc076d16aaa8d36cdd218",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 16519.75,
+        "cash_collected": 16519.75,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "NICHOLAS ROMERO ARTEAGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6674",
+      "payment_id": 6674,
+      "dentalink_patient_id": 2695,
+      "elevator_id": "iBcdCA8etzFPyZnlLELg",
+      "occurred_at": "2026-06-08",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "49a2cf4c23ebfbb188a84313503fb8e176693fb5bbe4eca9187a5e6a1bca3961",
+        "ph": "bdecea388184e1904d12957a80671701084a4b8854acc076d16aaa8d36cdd218",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 500,
+        "cash_collected": 500,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "NICHOLAS ROMERO ARTEAGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6523",
+      "payment_id": 6523,
+      "dentalink_patient_id": 2562,
+      "elevator_id": "W0AqisV72hADqBl4qJNh",
+      "occurred_at": "2026-05-29",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "b9dab7066a64ad7c04d8432c05d6a19a4249b5ad92efdf0ffa592133a7573914",
+        "ph": "e771cdf0d66cdc7e7de78102e737b706ae6bf638c729a3990c4b541ac4540127",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 231498,
+        "cash_collected": 231498,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JUAN SEBASTIAN VEGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6340",
+      "payment_id": 6340,
+      "dentalink_patient_id": 2562,
+      "elevator_id": "W0AqisV72hADqBl4qJNh",
+      "occurred_at": "2026-05-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "b9dab7066a64ad7c04d8432c05d6a19a4249b5ad92efdf0ffa592133a7573914",
+        "ph": "e771cdf0d66cdc7e7de78102e737b706ae6bf638c729a3990c4b541ac4540127",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 110790,
+        "cash_collected": 110790,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JUAN SEBASTIAN VEGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6314",
+      "payment_id": 6314,
+      "dentalink_patient_id": 2562,
+      "elevator_id": "W0AqisV72hADqBl4qJNh",
+      "occurred_at": "2026-05-12",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "b9dab7066a64ad7c04d8432c05d6a19a4249b5ad92efdf0ffa592133a7573914",
+        "ph": "e771cdf0d66cdc7e7de78102e737b706ae6bf638c729a3990c4b541ac4540127",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JUAN SEBASTIAN VEGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6252",
+      "payment_id": 6252,
+      "dentalink_patient_id": 2562,
+      "elevator_id": "W0AqisV72hADqBl4qJNh",
+      "occurred_at": "2026-05-08",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "b9dab7066a64ad7c04d8432c05d6a19a4249b5ad92efdf0ffa592133a7573914",
+        "ph": "e771cdf0d66cdc7e7de78102e737b706ae6bf638c729a3990c4b541ac4540127",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JUAN SEBASTIAN VEGA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6941",
+      "payment_id": 6941,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-07-02",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 16809.8,
+        "cash_collected": 16809.8,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6917",
+      "payment_id": 6917,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-06-29",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2145,
+        "cash_collected": 2145,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6511",
+      "payment_id": 6511,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-05-28",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 8500,
+        "cash_collected": 8500,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6453",
+      "payment_id": 6453,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-05-23",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 165838.96,
+        "cash_collected": 165838.96,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6396",
+      "payment_id": 6396,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-05-19",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 41459.74,
+        "cash_collected": 41459.74,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6357",
+      "payment_id": 6357,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-05-15",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 88842.3,
+        "cash_collected": 88842.3,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6356",
+      "payment_id": 6356,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-05-15",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2850,
+        "cash_collected": 2850,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6352",
+      "payment_id": 6352,
+      "dentalink_patient_id": 2588,
+      "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+      "occurred_at": "2026-05-14",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "27b97b424f6eaa5801ff5d65f0cd9aa26c1e96532254f51cde666898f77f421b",
+        "ph": "9103fc844da7abbab9faf0794ba5c42de8e1446e61aaf31d299d0ddfae5eb808",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "EAIaIQobChMIyfnLhIW6lAMVoXV_AB2fQgtkEAAYASAAEgJWF_D_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VENY GARCIA MARTINEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6350",
+      "payment_id": 6350,
+      "dentalink_patient_id": 2465,
+      "elevator_id": "wQfakhpofCtxuxjfg3Na",
+      "occurred_at": "2026-05-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "3f5fb84c3f16c2fa6bb6d18fa83d3d2f0d444e377e2b84b489a5b65449d52d98",
+        "ph": "dbb18007b331b59de4ff37dc8144f07db48f4736bc34bca188665c6fbc02d8b3",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 9827.65,
+        "cash_collected": 9827.65,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "SURY FIGUEREO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5983",
+      "payment_id": 5983,
+      "dentalink_patient_id": 2465,
+      "elevator_id": "wQfakhpofCtxuxjfg3Na",
+      "occurred_at": "2026-04-15",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "3f5fb84c3f16c2fa6bb6d18fa83d3d2f0d444e377e2b84b489a5b65449d52d98",
+        "ph": "dbb18007b331b59de4ff37dc8144f07db48f4736bc34bca188665c6fbc02d8b3",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 34500,
+        "cash_collected": 34500,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "SURY FIGUEREO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5982",
+      "payment_id": 5982,
+      "dentalink_patient_id": 2465,
+      "elevator_id": "wQfakhpofCtxuxjfg3Na",
+      "occurred_at": "2026-04-15",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "3f5fb84c3f16c2fa6bb6d18fa83d3d2f0d444e377e2b84b489a5b65449d52d98",
+        "ph": "dbb18007b331b59de4ff37dc8144f07db48f4736bc34bca188665c6fbc02d8b3",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 30000,
+        "cash_collected": 30000,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "SURY FIGUEREO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5957",
+      "payment_id": 5957,
+      "dentalink_patient_id": 2465,
+      "elevator_id": "wQfakhpofCtxuxjfg3Na",
+      "occurred_at": "2026-04-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "3f5fb84c3f16c2fa6bb6d18fa83d3d2f0d444e377e2b84b489a5b65449d52d98",
+        "ph": "dbb18007b331b59de4ff37dc8144f07db48f4736bc34bca188665c6fbc02d8b3",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 138400,
+        "cash_collected": 138400,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "SURY FIGUEREO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5946",
+      "payment_id": 5946,
+      "dentalink_patient_id": 2465,
+      "elevator_id": "wQfakhpofCtxuxjfg3Na",
+      "occurred_at": "2026-04-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "3f5fb84c3f16c2fa6bb6d18fa83d3d2f0d444e377e2b84b489a5b65449d52d98",
+        "ph": "dbb18007b331b59de4ff37dc8144f07db48f4736bc34bca188665c6fbc02d8b3",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "SURY FIGUEREO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6566",
+      "payment_id": 6566,
+      "dentalink_patient_id": 2578,
+      "elevator_id": "nCo5QPaSJPj6iKjgfcrk",
+      "occurred_at": "2026-06-01",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "2d04f59016b70c726bb7c81e154924078a7bd0dd2cd81d092015f5da2eee7983",
+        "ph": "a5498d92bfe71357cc0f2b6207cb5c56d9e12ad28f64e741f1786cd4ec5ecb12",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "CjwKCAjw2rrQBhBuEiwAarLWHZYd9IfYt_O63XHWY9Eqn7kx6JfkRr5-GesA6hglN2n-6-JfepgMTBoC12kQAvD_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 6935,
+        "cash_collected": 6935,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA GEBHARDT"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6565",
+      "payment_id": 6565,
+      "dentalink_patient_id": 2578,
+      "elevator_id": "nCo5QPaSJPj6iKjgfcrk",
+      "occurred_at": "2026-06-01",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "2d04f59016b70c726bb7c81e154924078a7bd0dd2cd81d092015f5da2eee7983",
+        "ph": "a5498d92bfe71357cc0f2b6207cb5c56d9e12ad28f64e741f1786cd4ec5ecb12",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "CjwKCAjw2rrQBhBuEiwAarLWHZYd9IfYt_O63XHWY9Eqn7kx6JfkRr5-GesA6hglN2n-6-JfepgMTBoC12kQAvD_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5000,
+        "cash_collected": 5000,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA GEBHARDT"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6537",
+      "payment_id": 6537,
+      "dentalink_patient_id": 2578,
+      "elevator_id": "nCo5QPaSJPj6iKjgfcrk",
+      "occurred_at": "2026-05-30",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "2d04f59016b70c726bb7c81e154924078a7bd0dd2cd81d092015f5da2eee7983",
+        "ph": "a5498d92bfe71357cc0f2b6207cb5c56d9e12ad28f64e741f1786cd4ec5ecb12",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "CjwKCAjw2rrQBhBuEiwAarLWHZYd9IfYt_O63XHWY9Eqn7kx6JfkRr5-GesA6hglN2n-6-JfepgMTBoC12kQAvD_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 101206.32,
+        "cash_collected": 101206.32,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA GEBHARDT"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6470",
+      "payment_id": 6470,
+      "dentalink_patient_id": 2578,
+      "elevator_id": "nCo5QPaSJPj6iKjgfcrk",
+      "occurred_at": "2026-05-25",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "2d04f59016b70c726bb7c81e154924078a7bd0dd2cd81d092015f5da2eee7983",
+        "ph": "a5498d92bfe71357cc0f2b6207cb5c56d9e12ad28f64e741f1786cd4ec5ecb12",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "CjwKCAjw2rrQBhBuEiwAarLWHZYd9IfYt_O63XHWY9Eqn7kx6JfkRr5-GesA6hglN2n-6-JfepgMTBoC12kQAvD_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 35000,
+        "cash_collected": 35000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA GEBHARDT"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6425",
+      "payment_id": 6425,
+      "dentalink_patient_id": 2578,
+      "elevator_id": "nCo5QPaSJPj6iKjgfcrk",
+      "occurred_at": "2026-05-21",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "2d04f59016b70c726bb7c81e154924078a7bd0dd2cd81d092015f5da2eee7983",
+        "ph": "a5498d92bfe71357cc0f2b6207cb5c56d9e12ad28f64e741f1786cd4ec5ecb12",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "CjwKCAjw2rrQBhBuEiwAarLWHZYd9IfYt_O63XHWY9Eqn7kx6JfkRr5-GesA6hglN2n-6-JfepgMTBoC12kQAvD_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 57236.28,
+        "cash_collected": 57236.28,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA GEBHARDT"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6317",
+      "payment_id": 6317,
+      "dentalink_patient_id": 2578,
+      "elevator_id": "nCo5QPaSJPj6iKjgfcrk",
+      "occurred_at": "2026-05-12",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "2d04f59016b70c726bb7c81e154924078a7bd0dd2cd81d092015f5da2eee7983",
+        "ph": "a5498d92bfe71357cc0f2b6207cb5c56d9e12ad28f64e741f1786cd4ec5ecb12",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "CjwKCAjw2rrQBhBuEiwAarLWHZYd9IfYt_O63XHWY9Eqn7kx6JfkRr5-GesA6hglN2n-6-JfepgMTBoC12kQAvD_BwE",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA GEBHARDT"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5862",
+      "payment_id": 5862,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2026-04-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5695,
+        "cash_collected": 5695,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5861",
+      "payment_id": 5861,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2026-04-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 545,
+        "cash_collected": 545,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4996",
+      "payment_id": 4996,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2026-01-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 545,
+        "cash_collected": 545,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3989",
+      "payment_id": 3989,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2025-10-01",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10702.5,
+        "cash_collected": 10702.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1642",
+      "payment_id": 1642,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2025-01-17",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 34982,
+        "cash_collected": 34982,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1506",
+      "payment_id": 1506,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-12-21",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7012,
+        "cash_collected": 7012,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1373",
+      "payment_id": 1373,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-12-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1800,
+        "cash_collected": 1800,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_978",
+      "payment_id": 978,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-10-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 34254,
+        "cash_collected": 34254,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_838",
+      "payment_id": 838,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-09-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 34254,
+        "cash_collected": 34254,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_612",
+      "payment_id": 612,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-08-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 200,
+        "cash_collected": 200,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_611",
+      "payment_id": 611,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-08-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 54110,
+        "cash_collected": 54110,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_199",
+      "payment_id": 199,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-05-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5400,
+        "cash_collected": 5400,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_184",
+      "payment_id": 184,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-05-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 3600,
+        "cash_collected": 3600,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_178",
+      "payment_id": 178,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-05-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 9882,
+        "cash_collected": 9882,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_135",
+      "payment_id": 135,
+      "dentalink_patient_id": 240,
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "occurred_at": "2024-04-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "73045327a77a0842ec2cb366fad42e392a16a7760b62bbff8f3cc59bccde6288",
+        "ph": "4f816d1072a471379b4192ce9a891d14962b1267bb60e73fcde9bfe9ceb52646",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1000,
+        "cash_collected": 1000,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "CARLOS SAMPERIO PEREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6955",
+      "payment_id": 6955,
+      "dentalink_patient_id": 2614,
+      "elevator_id": "BSVaW83VH5C2EG4zVJ92",
+      "occurred_at": "2026-07-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6a27ed1c747b1efa4fe57c82e8f1e7ab935b1091faba60ba8631c86050b141bc",
+        "ph": "818058086b118df543d93bc1eb9d9f047775688b75dbfac2e08009967d1799bd",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 94964,
+        "cash_collected": 94964,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "TONIA YONATZIN MORALES FIGUEROA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6918",
+      "payment_id": 6918,
+      "dentalink_patient_id": 2614,
+      "elevator_id": "BSVaW83VH5C2EG4zVJ92",
+      "occurred_at": "2026-06-29",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6a27ed1c747b1efa4fe57c82e8f1e7ab935b1091faba60ba8631c86050b141bc",
+        "ph": "818058086b118df543d93bc1eb9d9f047775688b75dbfac2e08009967d1799bd",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10022,
+        "cash_collected": 10022,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "TONIA YONATZIN MORALES FIGUEROA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6794",
+      "payment_id": 6794,
+      "dentalink_patient_id": 2614,
+      "elevator_id": "BSVaW83VH5C2EG4zVJ92",
+      "occurred_at": "2026-06-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6a27ed1c747b1efa4fe57c82e8f1e7ab935b1091faba60ba8631c86050b141bc",
+        "ph": "818058086b118df543d93bc1eb9d9f047775688b75dbfac2e08009967d1799bd",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 8500,
+        "cash_collected": 8500,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "TONIA YONATZIN MORALES FIGUEROA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6468",
+      "payment_id": 6468,
+      "dentalink_patient_id": 2614,
+      "elevator_id": "BSVaW83VH5C2EG4zVJ92",
+      "occurred_at": "2026-05-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6a27ed1c747b1efa4fe57c82e8f1e7ab935b1091faba60ba8631c86050b141bc",
+        "ph": "818058086b118df543d93bc1eb9d9f047775688b75dbfac2e08009967d1799bd",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 9890,
+        "cash_collected": 9890,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "TONIA YONATZIN MORALES FIGUEROA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6467",
+      "payment_id": 6467,
+      "dentalink_patient_id": 2614,
+      "elevator_id": "BSVaW83VH5C2EG4zVJ92",
+      "occurred_at": "2026-05-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6a27ed1c747b1efa4fe57c82e8f1e7ab935b1091faba60ba8631c86050b141bc",
+        "ph": "818058086b118df543d93bc1eb9d9f047775688b75dbfac2e08009967d1799bd",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 63837,
+        "cash_collected": 63837,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "TONIA YONATZIN MORALES FIGUEROA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6423",
+      "payment_id": 6423,
+      "dentalink_patient_id": 2614,
+      "elevator_id": "BSVaW83VH5C2EG4zVJ92",
+      "occurred_at": "2026-05-21",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6a27ed1c747b1efa4fe57c82e8f1e7ab935b1091faba60ba8631c86050b141bc",
+        "ph": "818058086b118df543d93bc1eb9d9f047775688b75dbfac2e08009967d1799bd",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 11500,
+        "cash_collected": 11500,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "TONIA YONATZIN MORALES FIGUEROA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5080",
+      "payment_id": 5080,
+      "dentalink_patient_id": 253,
+      "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+      "occurred_at": "2026-01-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a5be531838e153dd36a25add7663b1c41609dc052ae0659c4271a4a85ce3af4d",
+        "ph": "040ac9f235b770ddd5d24109d6923df8692ff18e434d362355cd24cf4a25774e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 88440,
+        "cash_collected": 88440,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ROMAR MELENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5039",
+      "payment_id": 5039,
+      "dentalink_patient_id": 253,
+      "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+      "occurred_at": "2026-01-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a5be531838e153dd36a25add7663b1c41609dc052ae0659c4271a4a85ce3af4d",
+        "ph": "040ac9f235b770ddd5d24109d6923df8692ff18e434d362355cd24cf4a25774e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7950,
+        "cash_collected": 7950,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ROMAR MELENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5028",
+      "payment_id": 5028,
+      "dentalink_patient_id": 253,
+      "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+      "occurred_at": "2026-01-12",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a5be531838e153dd36a25add7663b1c41609dc052ae0659c4271a4a85ce3af4d",
+        "ph": "040ac9f235b770ddd5d24109d6923df8692ff18e434d362355cd24cf4a25774e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7950,
+        "cash_collected": 7950,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ROMAR MELENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5027",
+      "payment_id": 5027,
+      "dentalink_patient_id": 253,
+      "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+      "occurred_at": "2026-01-12",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a5be531838e153dd36a25add7663b1c41609dc052ae0659c4271a4a85ce3af4d",
+        "ph": "040ac9f235b770ddd5d24109d6923df8692ff18e434d362355cd24cf4a25774e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 35376,
+        "cash_collected": 35376,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ROMAR MELENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4986",
+      "payment_id": 4986,
+      "dentalink_patient_id": 253,
+      "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+      "occurred_at": "2026-01-08",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a5be531838e153dd36a25add7663b1c41609dc052ae0659c4271a4a85ce3af4d",
+        "ph": "040ac9f235b770ddd5d24109d6923df8692ff18e434d362355cd24cf4a25774e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 53064,
+        "cash_collected": 53064,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ROMAR MELENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3520",
+      "payment_id": 3520,
+      "dentalink_patient_id": 253,
+      "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+      "occurred_at": "2025-08-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a5be531838e153dd36a25add7663b1c41609dc052ae0659c4271a4a85ce3af4d",
+        "ph": "040ac9f235b770ddd5d24109d6923df8692ff18e434d362355cd24cf4a25774e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ROMAR MELENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_188",
+      "payment_id": 188,
+      "dentalink_patient_id": 253,
+      "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+      "occurred_at": "2024-05-10",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a5be531838e153dd36a25add7663b1c41609dc052ae0659c4271a4a85ce3af4d",
+        "ph": "040ac9f235b770ddd5d24109d6923df8692ff18e434d362355cd24cf4a25774e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1213,
+        "cash_collected": 1213,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ROMAR MELENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5997",
+      "payment_id": 5997,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2026-04-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7650,
+        "cash_collected": 7650,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5892",
+      "payment_id": 5892,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2026-04-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 11541,
+        "cash_collected": 11541,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5656",
+      "payment_id": 5656,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2026-03-12",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 3231,
+        "cash_collected": 3231,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_5456",
+      "payment_id": 5456,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2026-02-21",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1200,
+        "cash_collected": 1200,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3715",
+      "payment_id": 3715,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-09-04",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1480,
+        "cash_collected": 1480,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3548",
+      "payment_id": 3548,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-08-21",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10516,
+        "cash_collected": 10516,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3518",
+      "payment_id": 3518,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-08-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10000,
+        "cash_collected": 10000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3245",
+      "payment_id": 3245,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-07-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 13143.75,
+        "cash_collected": 13143.75,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3107",
+      "payment_id": 3107,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-07-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 8001,
+        "cash_collected": 8001,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3066",
+      "payment_id": 3066,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-07-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2550,
+        "cash_collected": 2550,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1940",
+      "payment_id": 1940,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-02-27",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 3887.5,
+        "cash_collected": 3887.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1603",
+      "payment_id": 1603,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2025-01-11",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 8575,
+        "cash_collected": 8575,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1248",
+      "payment_id": 1248,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2024-11-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 13858,
+        "cash_collected": 13858,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1222",
+      "payment_id": 1222,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2024-11-11",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10000,
+        "cash_collected": 10000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1051",
+      "payment_id": 1051,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2024-10-15",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7880,
+        "cash_collected": 7880,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_543",
+      "payment_id": 543,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2024-07-23",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5400,
+        "cash_collected": 5400,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_454",
+      "payment_id": 454,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2024-07-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 8075,
+        "cash_collected": 8075,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_426",
+      "payment_id": 426,
+      "dentalink_patient_id": 383,
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "occurred_at": "2024-07-02",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "fc35bdd15f40caf55f9be9371ca68e3260915aae09363672a6b0a6b41117b0eb",
+        "ph": "a854f25e352a783c42ba3135e06bf3e73064d6a822fa0ff6e21a703e515c9ef1",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1605,
+        "cash_collected": 1605,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ANGELICA GOMEZ MEZA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3470",
+      "payment_id": 3470,
+      "dentalink_patient_id": 1316,
+      "elevator_id": "YonASw5YLx5lBG0cKGiw",
+      "occurred_at": "2025-08-12",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a76096f92999293671828a942abf51b5f321cb7ca0e7e4d45fc51ab62b179bdb",
+        "ph": "ca208d09a0c3c2637c767b8303c36ed71d4d81caf0f2c2ae8a81a9ebf16b4487",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 50512,
+        "cash_collected": 50512,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "LUIS ANGEL  LOPEZ VALDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3424",
+      "payment_id": 3424,
+      "dentalink_patient_id": 1316,
+      "elevator_id": "YonASw5YLx5lBG0cKGiw",
+      "occurred_at": "2025-08-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a76096f92999293671828a942abf51b5f321cb7ca0e7e4d45fc51ab62b179bdb",
+        "ph": "ca208d09a0c3c2637c767b8303c36ed71d4d81caf0f2c2ae8a81a9ebf16b4487",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 50000,
+        "cash_collected": 50000,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "LUIS ANGEL  LOPEZ VALDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3357",
+      "payment_id": 3357,
+      "dentalink_patient_id": 1316,
+      "elevator_id": "YonASw5YLx5lBG0cKGiw",
+      "occurred_at": "2025-08-01",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a76096f92999293671828a942abf51b5f321cb7ca0e7e4d45fc51ab62b179bdb",
+        "ph": "ca208d09a0c3c2637c767b8303c36ed71d4d81caf0f2c2ae8a81a9ebf16b4487",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 25128,
+        "cash_collected": 25128,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "LUIS ANGEL  LOPEZ VALDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3356",
+      "payment_id": 3356,
+      "dentalink_patient_id": 1316,
+      "elevator_id": "YonASw5YLx5lBG0cKGiw",
+      "occurred_at": "2025-08-01",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "a76096f92999293671828a942abf51b5f321cb7ca0e7e4d45fc51ab62b179bdb",
+        "ph": "ca208d09a0c3c2637c767b8303c36ed71d4d81caf0f2c2ae8a81a9ebf16b4487",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1400,
+        "cash_collected": 1400,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "LUIS ANGEL  LOPEZ VALDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_16",
+      "payment_id": 16,
+      "dentalink_patient_id": 126,
+      "elevator_id": "Ru9OpGrI4kAd9HiqDO18",
+      "occurred_at": "2024-03-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "057ae2bcc6044ea5ae18d11d6d0aabab744f755eedac9f7c4a68ce72c10b3e70",
+        "ph": "572582310c7bd4d5a664836fc4bfe3bc7b3524cb42dd9e80c269108462f87274",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 50000,
+        "cash_collected": 50000,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VANESSA ABREU"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_15",
+      "payment_id": 15,
+      "dentalink_patient_id": 126,
+      "elevator_id": "Ru9OpGrI4kAd9HiqDO18",
+      "occurred_at": "2024-03-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "057ae2bcc6044ea5ae18d11d6d0aabab744f755eedac9f7c4a68ce72c10b3e70",
+        "ph": "572582310c7bd4d5a664836fc4bfe3bc7b3524cb42dd9e80c269108462f87274",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1000,
+        "cash_collected": 1000,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VANESSA ABREU"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6",
+      "payment_id": 6,
+      "dentalink_patient_id": 126,
+      "elevator_id": "Ru9OpGrI4kAd9HiqDO18",
+      "occurred_at": "2024-03-11",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "057ae2bcc6044ea5ae18d11d6d0aabab744f755eedac9f7c4a68ce72c10b3e70",
+        "ph": "572582310c7bd4d5a664836fc4bfe3bc7b3524cb42dd9e80c269108462f87274",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 20000,
+        "cash_collected": 20000,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VANESSA ABREU"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2",
+      "payment_id": 2,
+      "dentalink_patient_id": 126,
+      "elevator_id": "Ru9OpGrI4kAd9HiqDO18",
+      "occurred_at": "2024-03-08",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "057ae2bcc6044ea5ae18d11d6d0aabab744f755eedac9f7c4a68ce72c10b3e70",
+        "ph": "572582310c7bd4d5a664836fc4bfe3bc7b3524cb42dd9e80c269108462f87274",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 50000,
+        "cash_collected": 50000,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VANESSA ABREU"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2160",
+      "payment_id": 2160,
+      "dentalink_patient_id": 161,
+      "elevator_id": "WgPcNk2dTyEKF0XozUK7",
+      "occurred_at": "2025-03-27",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6b0cbf62aa0c51480511bf1e719b50c987372a807efc01da7317702b7365b32d",
+        "ph": "acba98d87473c165ee22a4ed994198de0743c0d5210fa862017b577aa102509b",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 47414,
+        "cash_collected": 47414,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JENNIFER  DURAN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_52",
+      "payment_id": 52,
+      "dentalink_patient_id": 161,
+      "elevator_id": "WgPcNk2dTyEKF0XozUK7",
+      "occurred_at": "2024-03-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6b0cbf62aa0c51480511bf1e719b50c987372a807efc01da7317702b7365b32d",
+        "ph": "acba98d87473c165ee22a4ed994198de0743c0d5210fa862017b577aa102509b",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 25150,
+        "cash_collected": 25150,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JENNIFER  DURAN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_44",
+      "payment_id": 44,
+      "dentalink_patient_id": 161,
+      "elevator_id": "WgPcNk2dTyEKF0XozUK7",
+      "occurred_at": "2024-03-22",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6b0cbf62aa0c51480511bf1e719b50c987372a807efc01da7317702b7365b32d",
+        "ph": "acba98d87473c165ee22a4ed994198de0743c0d5210fa862017b577aa102509b",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 25150,
+        "cash_collected": 25150,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JENNIFER  DURAN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_43",
+      "payment_id": 43,
+      "dentalink_patient_id": 161,
+      "elevator_id": "WgPcNk2dTyEKF0XozUK7",
+      "occurred_at": "2024-03-22",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6b0cbf62aa0c51480511bf1e719b50c987372a807efc01da7317702b7365b32d",
+        "ph": "acba98d87473c165ee22a4ed994198de0743c0d5210fa862017b577aa102509b",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10700,
+        "cash_collected": 10700,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JENNIFER  DURAN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_39",
+      "payment_id": 39,
+      "dentalink_patient_id": 161,
+      "elevator_id": "WgPcNk2dTyEKF0XozUK7",
+      "occurred_at": "2024-03-21",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6b0cbf62aa0c51480511bf1e719b50c987372a807efc01da7317702b7365b32d",
+        "ph": "acba98d87473c165ee22a4ed994198de0743c0d5210fa862017b577aa102509b",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 500,
+        "cash_collected": 500,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JENNIFER  DURAN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6899",
+      "payment_id": 6899,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-27",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 12555,
+        "cash_collected": 12555,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6867",
+      "payment_id": 6867,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-24",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 12282.25,
+        "cash_collected": 12282.25,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6813",
+      "payment_id": 6813,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-19",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7992.25,
+        "cash_collected": 7992.25,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6812",
+      "payment_id": 6812,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-19",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10065,
+        "cash_collected": 10065,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6743",
+      "payment_id": 6743,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-15",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 23080,
+        "cash_collected": 23080,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6738",
+      "payment_id": 6738,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7175,
+        "cash_collected": 7175,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6737",
+      "payment_id": 6737,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 9890,
+        "cash_collected": 9890,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6736",
+      "payment_id": 6736,
+      "dentalink_patient_id": 1398,
+      "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+      "occurred_at": "2026-06-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6080bdd2d9be0db9d37fc58d5a6c32542f2a1c06b0549591f879b0cd70357b35",
+        "ph": "314142c5abf7b867d06005a54aa443530b240e459a02ac599895bd5b495f31a2",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "BLANCA BRISEÑO TEPEPA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6257",
+      "payment_id": 6257,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2026-05-08",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1500,
+        "cash_collected": 1500,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3194",
+      "payment_id": 3194,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2025-07-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 848,
+        "cash_collected": 848,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2547",
+      "payment_id": 2547,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2025-05-13",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 60,
+        "cash_collected": 60,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1975",
+      "payment_id": 1975,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2025-03-04",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 120,
+        "cash_collected": 120,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1413",
+      "payment_id": 1413,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2024-12-10",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 120,
+        "cash_collected": 120,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_949",
+      "payment_id": 949,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2024-09-30",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1250,
+        "cash_collected": 1250,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_833",
+      "payment_id": 833,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2024-09-09",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1360,
+        "cash_collected": 1360,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_554",
+      "payment_id": 554,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2024-07-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2500,
+        "cash_collected": 2500,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_421",
+      "payment_id": 421,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2024-07-01",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 120,
+        "cash_collected": 120,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_211",
+      "payment_id": 211,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2024-05-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 70915,
+        "cash_collected": 70915,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_203",
+      "payment_id": 203,
+      "dentalink_patient_id": 277,
+      "elevator_id": "CSySCT3gi2jfadTBKUnj",
+      "occurred_at": "2024-05-15",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "f8dacd5cf49763248f3432cd39105862a3e1bd178fe3392af0aa32f442bcad7c",
+        "ph": "f228834b889bb51a862d6d6cd81d64e46b21be79d39891c8e0c092f268a9066a",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 500,
+        "cash_collected": 500,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALEJANDRA  AVILA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6238",
+      "payment_id": 6238,
+      "dentalink_patient_id": 2437,
+      "elevator_id": "XrCNfFG007FWZ7VLD8tZ",
+      "occurred_at": "2026-05-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6fab47cfb74c5323d117c22915132d018c0ab981a841c4e4e2c456a83da568f8",
+        "ph": "f968923624c3579b356ff5dd3f668a058789c75453ea50b3a948eb7fed42b946",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 26433.5,
+        "cash_collected": 26433.5,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "AIDA CAMPUZANO MAGAÑA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6126",
+      "payment_id": 6126,
+      "dentalink_patient_id": 2437,
+      "elevator_id": "XrCNfFG007FWZ7VLD8tZ",
+      "occurred_at": "2026-04-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6fab47cfb74c5323d117c22915132d018c0ab981a841c4e4e2c456a83da568f8",
+        "ph": "f968923624c3579b356ff5dd3f668a058789c75453ea50b3a948eb7fed42b946",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 42118.5,
+        "cash_collected": 42118.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "AIDA CAMPUZANO MAGAÑA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6125",
+      "payment_id": 6125,
+      "dentalink_patient_id": 2437,
+      "elevator_id": "XrCNfFG007FWZ7VLD8tZ",
+      "occurred_at": "2026-04-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6fab47cfb74c5323d117c22915132d018c0ab981a841c4e4e2c456a83da568f8",
+        "ph": "f968923624c3579b356ff5dd3f668a058789c75453ea50b3a948eb7fed42b946",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2850,
+        "cash_collected": 2850,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "AIDA CAMPUZANO MAGAÑA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6017",
+      "payment_id": 6017,
+      "dentalink_patient_id": 2437,
+      "elevator_id": "XrCNfFG007FWZ7VLD8tZ",
+      "occurred_at": "2026-04-17",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "6fab47cfb74c5323d117c22915132d018c0ab981a841c4e4e2c456a83da568f8",
+        "ph": "f968923624c3579b356ff5dd3f668a058789c75453ea50b3a948eb7fed42b946",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "AIDA CAMPUZANO MAGAÑA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6986",
+      "payment_id": 6986,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-07-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 44700,
+        "cash_collected": 44700,
+        "payment_method": "Efectivo",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6837",
+      "payment_id": 6837,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-06-22",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1520,
+        "cash_collected": 1520,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6836",
+      "payment_id": 6836,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-06-22",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 3100,
+        "cash_collected": 3100,
+        "payment_method": "Efectivo",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6488",
+      "payment_id": 6488,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-05-26",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 6600,
+        "cash_collected": 6600,
+        "payment_method": "Efectivo",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6487",
+      "payment_id": 6487,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-05-26",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 11742.5,
+        "cash_collected": 11742.5,
+        "payment_method": "Efectivo",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6385",
+      "payment_id": 6385,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-05-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 327.5,
+        "cash_collected": 327.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6384",
+      "payment_id": 6384,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-05-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 3000,
+        "cash_collected": 3000,
+        "payment_method": "Efectivo",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6361",
+      "payment_id": 6361,
+      "dentalink_patient_id": 2593,
+      "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+      "occurred_at": "2026-05-15",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e3e9460e7e617ce50ca795e3de57e27649063a267bcb988863b8e8e829dbe36b",
+        "ph": "af28481375894bad88e0c15e649795224937d3fe9812740af6994afaf1fa22ba",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1200,
+        "cash_collected": 1200,
+        "payment_method": "Efectivo",
+        "branch": "Carlos Enrique Ariza Torcat",
+        "patient_name": "OMAR GOMEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4440",
+      "payment_id": 4440,
+      "dentalink_patient_id": 1550,
+      "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+      "occurred_at": "2025-11-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "74459cc4a0bb8548e700784332731b691808a2f021b40d49b51daca0f2e5f58e",
+        "ph": "25dba0db20b266c7228e43decab80e4f6336bdbda63a65275263e98c8e244359",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 12330,
+        "cash_collected": 12330,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA ALEJANDRA PALMA  ALVAREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3708",
+      "payment_id": 3708,
+      "dentalink_patient_id": 1550,
+      "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+      "occurred_at": "2025-09-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "74459cc4a0bb8548e700784332731b691808a2f021b40d49b51daca0f2e5f58e",
+        "ph": "25dba0db20b266c7228e43decab80e4f6336bdbda63a65275263e98c8e244359",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10380,
+        "cash_collected": 10380,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA ALEJANDRA PALMA  ALVAREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3663",
+      "payment_id": 3663,
+      "dentalink_patient_id": 1550,
+      "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+      "occurred_at": "2025-08-29",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "74459cc4a0bb8548e700784332731b691808a2f021b40d49b51daca0f2e5f58e",
+        "ph": "25dba0db20b266c7228e43decab80e4f6336bdbda63a65275263e98c8e244359",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 14280,
+        "cash_collected": 14280,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA ALEJANDRA PALMA  ALVAREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3321",
+      "payment_id": 3321,
+      "dentalink_patient_id": 1550,
+      "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+      "occurred_at": "2025-07-28",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "74459cc4a0bb8548e700784332731b691808a2f021b40d49b51daca0f2e5f58e",
+        "ph": "25dba0db20b266c7228e43decab80e4f6336bdbda63a65275263e98c8e244359",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 14777.5,
+        "cash_collected": 14777.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA ALEJANDRA PALMA  ALVAREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3190",
+      "payment_id": 3190,
+      "dentalink_patient_id": 1550,
+      "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+      "occurred_at": "2025-07-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "74459cc4a0bb8548e700784332731b691808a2f021b40d49b51daca0f2e5f58e",
+        "ph": "25dba0db20b266c7228e43decab80e4f6336bdbda63a65275263e98c8e244359",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1480,
+        "cash_collected": 1480,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA ALEJANDRA PALMA  ALVAREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3189",
+      "payment_id": 3189,
+      "dentalink_patient_id": 1550,
+      "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+      "occurred_at": "2025-07-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "74459cc4a0bb8548e700784332731b691808a2f021b40d49b51daca0f2e5f58e",
+        "ph": "25dba0db20b266c7228e43decab80e4f6336bdbda63a65275263e98c8e244359",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 14777.5,
+        "cash_collected": 14777.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA ALEJANDRA PALMA  ALVAREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3188",
+      "payment_id": 3188,
+      "dentalink_patient_id": 1550,
+      "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+      "occurred_at": "2025-07-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "74459cc4a0bb8548e700784332731b691808a2f021b40d49b51daca0f2e5f58e",
+        "ph": "25dba0db20b266c7228e43decab80e4f6336bdbda63a65275263e98c8e244359",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1600,
+        "cash_collected": 1600,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARTHA ALEJANDRA PALMA  ALVAREZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4793",
+      "payment_id": 4793,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-12-17",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1332,
+        "cash_collected": 1332,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_4094",
+      "payment_id": 4094,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-10-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 19191,
+        "cash_collected": 19191,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3776",
+      "payment_id": 3776,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-09-10",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 3231,
+        "cash_collected": 3231,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3519",
+      "payment_id": 3519,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-08-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 289,
+        "cash_collected": 289,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2418",
+      "payment_id": 2418,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-04-28",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1332,
+        "cash_collected": 1332,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2199",
+      "payment_id": 2199,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-03-31",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 12733,
+        "cash_collected": 12733,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2195",
+      "payment_id": 2195,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-03-31",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7783,
+        "cash_collected": 7783,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2194",
+      "payment_id": 2194,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-03-31",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 4950,
+        "cash_collected": 4950,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2193",
+      "payment_id": 2193,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2025-03-31",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1300,
+        "cash_collected": 1300,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_545",
+      "payment_id": 545,
+      "dentalink_patient_id": 458,
+      "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+      "occurred_at": "2024-07-23",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e6bae6686f2ad90bd9676621e03d462356894c37d70adcb4ffaab3afdac20ee5",
+        "ph": "d74b9cfbd336b56bad462fd9fe651ff6fd417ae4785dab1babb61e7ec2d2aef0",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1200,
+        "cash_collected": 1200,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "JOSH STEIN"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_3065",
+      "payment_id": 3065,
+      "dentalink_patient_id": 107,
+      "elevator_id": "UdSpt99v00P3TyYlfP2D",
+      "occurred_at": "2025-07-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "46f8638f5ce02cdfab8c7562b71280f5bfaea94b7776df21a2eb633c3136c28e",
+        "ph": "58b9d148e0113cae3f6b06a62d9f27d1d128f3702748869ded181062c5f543a8",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 7332,
+        "cash_collected": 7332,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VIVIANE DI DOMENICO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1622",
+      "payment_id": 1622,
+      "dentalink_patient_id": 107,
+      "elevator_id": "UdSpt99v00P3TyYlfP2D",
+      "occurred_at": "2025-01-14",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "46f8638f5ce02cdfab8c7562b71280f5bfaea94b7776df21a2eb633c3136c28e",
+        "ph": "58b9d148e0113cae3f6b06a62d9f27d1d128f3702748869ded181062c5f543a8",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2780,
+        "cash_collected": 2780,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VIVIANE DI DOMENICO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_907",
+      "payment_id": 907,
+      "dentalink_patient_id": 107,
+      "elevator_id": "UdSpt99v00P3TyYlfP2D",
+      "occurred_at": "2024-09-25",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "46f8638f5ce02cdfab8c7562b71280f5bfaea94b7776df21a2eb633c3136c28e",
+        "ph": "58b9d148e0113cae3f6b06a62d9f27d1d128f3702748869ded181062c5f543a8",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 34330,
+        "cash_collected": 34330,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VIVIANE DI DOMENICO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_895",
+      "payment_id": 895,
+      "dentalink_patient_id": 107,
+      "elevator_id": "UdSpt99v00P3TyYlfP2D",
+      "occurred_at": "2024-09-23",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "46f8638f5ce02cdfab8c7562b71280f5bfaea94b7776df21a2eb633c3136c28e",
+        "ph": "58b9d148e0113cae3f6b06a62d9f27d1d128f3702748869ded181062c5f543a8",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 900,
+        "cash_collected": 900,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VIVIANE DI DOMENICO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_500",
+      "payment_id": 500,
+      "dentalink_patient_id": 107,
+      "elevator_id": "UdSpt99v00P3TyYlfP2D",
+      "occurred_at": "2024-07-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "46f8638f5ce02cdfab8c7562b71280f5bfaea94b7776df21a2eb633c3136c28e",
+        "ph": "58b9d148e0113cae3f6b06a62d9f27d1d128f3702748869ded181062c5f543a8",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2900,
+        "cash_collected": 2900,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VIVIANE DI DOMENICO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_154",
+      "payment_id": 154,
+      "dentalink_patient_id": 107,
+      "elevator_id": "UdSpt99v00P3TyYlfP2D",
+      "occurred_at": "2024-05-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "46f8638f5ce02cdfab8c7562b71280f5bfaea94b7776df21a2eb633c3136c28e",
+        "ph": "58b9d148e0113cae3f6b06a62d9f27d1d128f3702748869ded181062c5f543a8",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2975,
+        "cash_collected": 2975,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VIVIANE DI DOMENICO"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6845",
+      "payment_id": 6845,
+      "dentalink_patient_id": 2484,
+      "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+      "occurred_at": "2026-06-23",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e7abdbe44d3483b12d922a72dfdd45bb5febe72290e4a72414385462b9d02233",
+        "ph": "868cf87ebd5796c2d50d4837360c10b108aa414138fbadc1bfb8707db40b30cf",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 4500,
+        "cash_collected": 4500,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARISELA MARTINEZ VALDIVIA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6782",
+      "payment_id": 6782,
+      "dentalink_patient_id": 2484,
+      "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+      "occurred_at": "2026-06-18",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e7abdbe44d3483b12d922a72dfdd45bb5febe72290e4a72414385462b9d02233",
+        "ph": "868cf87ebd5796c2d50d4837360c10b108aa414138fbadc1bfb8707db40b30cf",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 16061.5,
+        "cash_collected": 16061.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARISELA MARTINEZ VALDIVIA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6742",
+      "payment_id": 6742,
+      "dentalink_patient_id": 2484,
+      "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+      "occurred_at": "2026-06-15",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e7abdbe44d3483b12d922a72dfdd45bb5febe72290e4a72414385462b9d02233",
+        "ph": "868cf87ebd5796c2d50d4837360c10b108aa414138fbadc1bfb8707db40b30cf",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 16452,
+        "cash_collected": 16452,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARISELA MARTINEZ VALDIVIA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6701",
+      "payment_id": 6701,
+      "dentalink_patient_id": 2484,
+      "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+      "occurred_at": "2026-06-10",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e7abdbe44d3483b12d922a72dfdd45bb5febe72290e4a72414385462b9d02233",
+        "ph": "868cf87ebd5796c2d50d4837360c10b108aa414138fbadc1bfb8707db40b30cf",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5130,
+        "cash_collected": 5130,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARISELA MARTINEZ VALDIVIA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6618",
+      "payment_id": 6618,
+      "dentalink_patient_id": 2484,
+      "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+      "occurred_at": "2026-06-05",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e7abdbe44d3483b12d922a72dfdd45bb5febe72290e4a72414385462b9d02233",
+        "ph": "868cf87ebd5796c2d50d4837360c10b108aa414138fbadc1bfb8707db40b30cf",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5130,
+        "cash_collected": 5130,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARISELA MARTINEZ VALDIVIA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6576",
+      "payment_id": 6576,
+      "dentalink_patient_id": 2484,
+      "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+      "occurred_at": "2026-06-02",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "e7abdbe44d3483b12d922a72dfdd45bb5febe72290e4a72414385462b9d02233",
+        "ph": "868cf87ebd5796c2d50d4837360c10b108aa414138fbadc1bfb8707db40b30cf",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "MARISELA MARTINEZ VALDIVIA"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1553",
+      "payment_id": 1553,
+      "dentalink_patient_id": 193,
+      "elevator_id": "59vTQ2EShgatYEMUWy6V",
+      "occurred_at": "2025-01-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "4f0cc740de11438cc32447f9f7bd4e244f8b610f02aabcf6716886274f9c6749",
+        "ph": "799c88b0cb65095744bf98fca2954ce60ffdbe06a34bbe06b6f4318c83eb881e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 18000,
+        "cash_collected": 18000,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "PABLO GAMBOA MENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1368",
+      "payment_id": 1368,
+      "dentalink_patient_id": 193,
+      "elevator_id": "59vTQ2EShgatYEMUWy6V",
+      "occurred_at": "2024-12-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "4f0cc740de11438cc32447f9f7bd4e244f8b610f02aabcf6716886274f9c6749",
+        "ph": "799c88b0cb65095744bf98fca2954ce60ffdbe06a34bbe06b6f4318c83eb881e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 17642,
+        "cash_collected": 17642,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "PABLO GAMBOA MENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_1367",
+      "payment_id": 1367,
+      "dentalink_patient_id": 193,
+      "elevator_id": "59vTQ2EShgatYEMUWy6V",
+      "occurred_at": "2024-12-03",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "4f0cc740de11438cc32447f9f7bd4e244f8b610f02aabcf6716886274f9c6749",
+        "ph": "799c88b0cb65095744bf98fca2954ce60ffdbe06a34bbe06b6f4318c83eb881e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 1170,
+        "cash_collected": 1170,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "PABLO GAMBOA MENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_116",
+      "payment_id": 116,
+      "dentalink_patient_id": 193,
+      "elevator_id": "59vTQ2EShgatYEMUWy6V",
+      "occurred_at": "2024-04-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "4f0cc740de11438cc32447f9f7bd4e244f8b610f02aabcf6716886274f9c6749",
+        "ph": "799c88b0cb65095744bf98fca2954ce60ffdbe06a34bbe06b6f4318c83eb881e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2880,
+        "cash_collected": 2880,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "PABLO GAMBOA MENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_80",
+      "payment_id": 80,
+      "dentalink_patient_id": 193,
+      "elevator_id": "59vTQ2EShgatYEMUWy6V",
+      "occurred_at": "2024-04-04",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "4f0cc740de11438cc32447f9f7bd4e244f8b610f02aabcf6716886274f9c6749",
+        "ph": "799c88b0cb65095744bf98fca2954ce60ffdbe06a34bbe06b6f4318c83eb881e",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5000,
+        "cash_collected": 5000,
+        "payment_method": "Tarjeta de débito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "PABLO GAMBOA MENDEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6816",
+      "payment_id": 6816,
+      "dentalink_patient_id": 2669,
+      "elevator_id": "8rVgV4HxfbB6gXZRn4kz",
+      "occurred_at": "2026-06-20",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "9beed554359031600b8a2b1ca6adc68f4480b9850e40b0574fdbcb74029c61ff",
+        "ph": "d2c709e769059641de34a0aaca96bb25d23c47ba011760b33df792c085072467",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpy0tYQ8MFazmIMaw-5RGLLB",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 12900.5,
+        "cash_collected": 12900.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VASILY KASSAB"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6788",
+      "payment_id": 6788,
+      "dentalink_patient_id": 2669,
+      "elevator_id": "8rVgV4HxfbB6gXZRn4kz",
+      "occurred_at": "2026-06-18",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "9beed554359031600b8a2b1ca6adc68f4480b9850e40b0574fdbcb74029c61ff",
+        "ph": "d2c709e769059641de34a0aaca96bb25d23c47ba011760b33df792c085072467",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpy0tYQ8MFazmIMaw-5RGLLB",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 13259.5,
+        "cash_collected": 13259.5,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VASILY KASSAB"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6650",
+      "payment_id": 6650,
+      "dentalink_patient_id": 2669,
+      "elevator_id": "8rVgV4HxfbB6gXZRn4kz",
+      "occurred_at": "2026-06-06",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "9beed554359031600b8a2b1ca6adc68f4480b9850e40b0574fdbcb74029c61ff",
+        "ph": "d2c709e769059641de34a0aaca96bb25d23c47ba011760b33df792c085072467",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpy0tYQ8MFazmIMaw-5RGLLB",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2850,
+        "cash_collected": 2850,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VASILY KASSAB"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6590",
+      "payment_id": 6590,
+      "dentalink_patient_id": 2669,
+      "elevator_id": "8rVgV4HxfbB6gXZRn4kz",
+      "occurred_at": "2026-06-03",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "9beed554359031600b8a2b1ca6adc68f4480b9850e40b0574fdbcb74029c61ff",
+        "ph": "d2c709e769059641de34a0aaca96bb25d23c47ba011760b33df792c085072467",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpy0tYQ8MFazmIMaw-5RGLLB",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 11080,
+        "cash_collected": 11080,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VASILY KASSAB"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6583",
+      "payment_id": 6583,
+      "dentalink_patient_id": 2669,
+      "elevator_id": "8rVgV4HxfbB6gXZRn4kz",
+      "occurred_at": "2026-06-03",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "9beed554359031600b8a2b1ca6adc68f4480b9850e40b0574fdbcb74029c61ff",
+        "ph": "d2c709e769059641de34a0aaca96bb25d23c47ba011760b33df792c085072467",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpy0tYQ8MFazmIMaw-5RGLLB",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "VASILY KASSAB"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_7031",
+      "payment_id": 7031,
+      "dentalink_patient_id": 2663,
+      "elevator_id": "pxiK9JNFx9IToFGPBbjm",
+      "occurred_at": "2026-07-10",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "07b60d4e6ecb65731a34675d01fcce926d611bd46cf50864c6b1149ffe8c7f28",
+        "ph": "585d6412e45915a30c84ff0c84dfda57475f6aac74035fc05bbf34f8d38efafe",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpwj7jVR5fpTq6jc27iQBvOK",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 3790,
+        "cash_collected": 3790,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "FERNANDA TELLEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6967",
+      "payment_id": 6967,
+      "dentalink_patient_id": 2663,
+      "elevator_id": "pxiK9JNFx9IToFGPBbjm",
+      "occurred_at": "2026-07-03",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "07b60d4e6ecb65731a34675d01fcce926d611bd46cf50864c6b1149ffe8c7f28",
+        "ph": "585d6412e45915a30c84ff0c84dfda57475f6aac74035fc05bbf34f8d38efafe",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpwj7jVR5fpTq6jc27iQBvOK",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 15285,
+        "cash_collected": 15285,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "FERNANDA TELLEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6805",
+      "payment_id": 6805,
+      "dentalink_patient_id": 2663,
+      "elevator_id": "pxiK9JNFx9IToFGPBbjm",
+      "occurred_at": "2026-06-19",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "07b60d4e6ecb65731a34675d01fcce926d611bd46cf50864c6b1149ffe8c7f28",
+        "ph": "585d6412e45915a30c84ff0c84dfda57475f6aac74035fc05bbf34f8d38efafe",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpwj7jVR5fpTq6jc27iQBvOK",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 10810,
+        "cash_collected": 10810,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "FERNANDA TELLEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6608",
+      "payment_id": 6608,
+      "dentalink_patient_id": 2663,
+      "elevator_id": "pxiK9JNFx9IToFGPBbjm",
+      "occurred_at": "2026-06-04",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "07b60d4e6ecb65731a34675d01fcce926d611bd46cf50864c6b1149ffe8c7f28",
+        "ph": "585d6412e45915a30c84ff0c84dfda57475f6aac74035fc05bbf34f8d38efafe",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpwj7jVR5fpTq6jc27iQBvOK",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 9890,
+        "cash_collected": 9890,
+        "payment_method": "Tarjeta de crédito",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "FERNANDA TELLEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_6572",
+      "payment_id": 6572,
+      "dentalink_patient_id": 2663,
+      "elevator_id": "pxiK9JNFx9IToFGPBbjm",
+      "occurred_at": "2026-06-02",
+      "status": "ready",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "07b60d4e6ecb65731a34675d01fcce926d611bd46cf50864c6b1149ffe8c7f28",
+        "ph": "585d6412e45915a30c84ff0c84dfda57475f6aac74035fc05bbf34f8d38efafe",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": "0AAAAA9ZCjhpwj7jVR5fpTq6jc27iQBvOK",
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2000,
+        "cash_collected": 2000,
+        "payment_method": "Transferencia electrónica",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "FERNANDA TELLEZ"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2353",
+      "payment_id": 2353,
+      "dentalink_patient_id": 1127,
+      "elevator_id": "JFxuI7jz5iLvh8K5FhG2",
+      "occurred_at": "2025-04-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "99f9bbe359d411619a12271981eeb088641caa5c6d74d2d489179660c6249993",
+        "ph": "82774f342d384c4aa9b09b3479fb6fba607ee63c72f8dbe877ebf136f45b76ec",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 2745,
+        "cash_collected": 2745,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALFONSO GARCIA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2351",
+      "payment_id": 2351,
+      "dentalink_patient_id": 1127,
+      "elevator_id": "JFxuI7jz5iLvh8K5FhG2",
+      "occurred_at": "2025-04-16",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "99f9bbe359d411619a12271981eeb088641caa5c6d74d2d489179660c6249993",
+        "ph": "82774f342d384c4aa9b09b3479fb6fba607ee63c72f8dbe877ebf136f45b76ec",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 13935.2,
+        "cash_collected": 13935.2,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALFONSO GARCIA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2312",
+      "payment_id": 2312,
+      "dentalink_patient_id": 1127,
+      "elevator_id": "JFxuI7jz5iLvh8K5FhG2",
+      "occurred_at": "2025-04-11",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "99f9bbe359d411619a12271981eeb088641caa5c6d74d2d489179660c6249993",
+        "ph": "82774f342d384c4aa9b09b3479fb6fba607ee63c72f8dbe877ebf136f45b76ec",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 5608.8,
+        "cash_collected": 5608.8,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALFONSO GARCIA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2268",
+      "payment_id": 2268,
+      "dentalink_patient_id": 1127,
+      "elevator_id": "JFxuI7jz5iLvh8K5FhG2",
+      "occurred_at": "2025-04-07",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "99f9bbe359d411619a12271981eeb088641caa5c6d74d2d489179660c6249993",
+        "ph": "82774f342d384c4aa9b09b3479fb6fba607ee63c72f8dbe877ebf136f45b76ec",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 9000,
+        "cash_collected": 9000,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALFONSO GARCIA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    },
+    {
+      "event_name": "Compra",
+      "event_id": "payment_2143",
+      "payment_id": 2143,
+      "dentalink_patient_id": 1127,
+      "elevator_id": "JFxuI7jz5iLvh8K5FhG2",
+      "occurred_at": "2025-03-26",
+      "status": "manual_review_no_click_id",
+      "action_source": "physical_store",
+      "user_data": {
+        "em": "99f9bbe359d411619a12271981eeb088641caa5c6d74d2d489179660c6249993",
+        "ph": "82774f342d384c4aa9b09b3479fb6fba607ee63c72f8dbe877ebf136f45b76ec",
+        "fbclid": null,
+        "fbc": null,
+        "gclid": null,
+        "ttclid": null
+      },
+      "custom_data": {
+        "currency": "MXN",
+        "value": 8680,
+        "cash_collected": 8680,
+        "payment_method": "Efectivo",
+        "branch": "Drdiente S.A de C.V",
+        "patient_name": "ALFONSO GARCIA MORALES"
+      },
+      "attribution": {
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null
+      },
+      "dispatch": {
+        "allowed": false,
+        "reason": "dry-run"
+      }
+    }
+  ]
+}
