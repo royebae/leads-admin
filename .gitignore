@@ -27,3 +27,4 @@ public/pagos-checkpoint.json
 .env.dentalink-web
 data/imports/.browser-state/
 data/imports/runs/
+data/imports/pagos/*.json
