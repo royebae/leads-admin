@@ -4,7 +4,9 @@ const ADMIN_TOKEN = 'drdiente-admin-2026'
 const API_BASE = '/api/leads'
 
 const SEGMENTS = {
-  'nunca-agendo':      { label: 'Nunca agendó',        color: '#ef4444', icon: '🆕', priority: '🔴 ALTA' },
+  'anticipo-sin-cita': { label: 'Abono sin cita',       color: '#a855f7', icon: '💳', priority: '🔴 ALTA' },
+  'plan-sin-cita':     { label: 'Plan sin cita',        color: '#8b5cf6', icon: '📋', priority: '🔴 ALTA' },
+  'nunca-agendo':      { label: 'Nunca agendó (frío)',  color: '#ef4444', icon: '🆕', priority: '🔴 ALTA' },
   'solo-cancelaciones':{ label: 'Solo canceló',        color: '#f97316', icon: '❌', priority: '🟠 ALTA' },
   'ultima-no-asistio': { label: 'Última canceló / NSA', color: '#eab308', icon: '⚠️', priority: '🟡 MEDIA' },
   'inactivo-90d':      { label: 'Inactivo +90 días',   color: '#fb923c', icon: '⏰', priority: '🟠 MEDIA' },
@@ -16,7 +18,7 @@ const SEGMENTS = {
   'deshabilitado':     { label: 'Deshabilitado',        color: '#9ca3af', icon: '🔒', priority: '⚪ N/A' },
 }
 
-const PRIORITY_SEGMENTS = ['nunca-agendo', 'solo-cancelaciones', 'ultima-no-asistio', 'inactivo-90d', 'inactivo-60d']
+const PRIORITY_SEGMENTS = ['anticipo-sin-cita', 'plan-sin-cita', 'nunca-agendo', 'solo-cancelaciones', 'ultima-no-asistio', 'inactivo-90d', 'inactivo-60d']
 
 export default function App() {
   const [authenticated, setAuthenticated] = useState(false)

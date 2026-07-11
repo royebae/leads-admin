@@ -15,6 +15,8 @@ const SRC_PATH = join(ROOT, 'src', 'data', 'leads.js')
 
 const REACTIVABLE = new Set([
   'nunca-agendo',
+  'plan-sin-cita',
+  'anticipo-sin-cita',
   'solo-cancelaciones',
   'ultima-no-asistio',
   'inactivo-90d',
@@ -23,7 +25,9 @@ const REACTIVABLE = new Set([
 ])
 
 const SEGMENT_SCORE = {
-  'nunca-agendo': 40,
+  'anticipo-sin-cita': 42, // ya pagó, falta agenda
+  'plan-sin-cita': 40,     // tiene plan clínico sin cita
+  'nunca-agendo': 36,      // frío real
   'solo-cancelaciones': 38,
   'ultima-no-asistio': 35,
   'inactivo-30d': 28,

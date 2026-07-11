@@ -107,9 +107,10 @@ function classifyLead(patient, citas) {
   const lastCita = sortedCitas[0]
   const totalCitas = citas.length
 
-  // Sin citas nunca → PRIORIDAD MÁXIMA
+  // Sin citas: separar frío real vs plan/abono sin agenda
+  // Nota: tratamientos/abonos se enriquecen después; reclassify-leads.mjs ajusta con esa data.
   if (totalCitas === 0) {
-    return { segment: 'nunca-agendo', label: 'Nunca agendó', priority: 5, color: '#ef4444' }
+    return { segment: 'nunca-agendo', label: 'Nunca agendó (sin plan ni abono)', priority: 5, color: '#ef4444' }
   }
 
   // Todas las citas fueron canceladas o no asistió
