@@ -85,7 +85,7 @@ function normalizePhone(phone) {
 }
 
 function isJunk(name) {
-  return /prueba|test|borrar|demo|asdf|xxx|hubspot|paciente hubspot/i.test(String(name || ''))
+  return /prueba|test|borrar|demo|asdf|xxx|hubspot|paciente hubspot|^ejemplo\b|ejemplo ejemplo/i.test(String(name || ''))
 }
 
 function segmentTag(segment) {

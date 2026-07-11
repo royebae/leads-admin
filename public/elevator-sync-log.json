@@ -1,6 +1,1424 @@
 {
   "runs": [
     {
+      "synced_at": "2026-07-11T00:22:33.882Z",
+      "dry_run": false,
+      "refresh_synced": false,
+      "location_id": "RUqSenZyzBWnHTnzt0fq",
+      "count": 75,
+      "ok": 75,
+      "failed": 0,
+      "results": [
+        {
+          "dentalink_id": 1890,
+          "nombre": "EMILIANO PEREZ HERNANDEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "LwvZ497ysRcTCxx5Tce4",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1908,
+          "nombre": "MARIA FERNANDA IBARRA NUÑEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "updated",
+          "elevatorId": "eM2Xlg1HOeYB7c1Pi7Gf",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 210,
+          "nombre": "GABRIELA ANDREINA HERNANDEZ MESONEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 109,
+          "status": "created",
+          "elevatorId": "Y842i0GKw5EJO1nPdYnb",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 698,
+          "nombre": "JUAN ANDRES NAVEDA LYON",
+          "segment": "solo-cancelaciones",
+          "treatment_tag": "estetica",
+          "score": 109,
+          "status": "created",
+          "elevatorId": "5BjEaxSafb24b1jG2MmJ",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-solo-cancelaciones",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1641,
+          "nombre": "CRISTINA RUBIO",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 109,
+          "status": "created",
+          "elevatorId": "sw4YfOTpN7QRur4AR0ZA",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2484,
+          "nombre": "MARISELA MARTINEZ VALDIVIA",
+          "segment": "inactivo-30d",
+          "treatment_tag": "implantes",
+          "score": 108,
+          "status": "updated",
+          "elevatorId": "L0gtJmQMLkC5Xo9QlHoI",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2577,
+          "nombre": "JAZMIN LASTRA LORA",
+          "segment": "inactivo-30d",
+          "treatment_tag": "implantes",
+          "score": 108,
+          "status": "updated",
+          "elevatorId": "18UyndKVCXON5KkLShoH",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2585,
+          "nombre": "LUIZ DA SILVA TAVARES",
+          "segment": "inactivo-30d",
+          "treatment_tag": "implantes",
+          "score": 108,
+          "status": "updated",
+          "elevatorId": "8lWwgBsJZztLxbbt3K2E",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2596,
+          "nombre": "PAOLO BRUCATO",
+          "segment": "inactivo-30d",
+          "treatment_tag": "implantes",
+          "score": 108,
+          "status": "updated",
+          "elevatorId": "d2mFuAoiTKw1CYO3NZjD",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2669,
+          "nombre": "VASILY KASSAB",
+          "segment": "inactivo-30d",
+          "treatment_tag": "implantes",
+          "score": 108,
+          "status": "updated",
+          "elevatorId": "8rVgV4HxfbB6gXZRn4kz",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2682,
+          "nombre": "NATHALY HERNANDEZ MACIAS",
+          "segment": "inactivo-30d",
+          "treatment_tag": "implantes",
+          "score": 108,
+          "status": "updated",
+          "elevatorId": "6qXUqJKfJq6K307iY8IU",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 488,
+          "nombre": "MARIA JULIETA  ABADES JIMENEZ",
+          "segment": "solo-cancelaciones",
+          "treatment_tag": "ortodoncia",
+          "score": 107,
+          "status": "created",
+          "elevatorId": "AzuJC3VDi8577kJCMAC6",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-solo-cancelaciones",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 45,
+          "nombre": "ANA PAULA FERNANDEZ BERNAL",
+          "segment": "inactivo-90d",
+          "treatment_tag": "ortodoncia",
+          "score": 106,
+          "status": "created",
+          "elevatorId": "SX3dduaDkQnHgbdTryV3",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 126,
+          "nombre": "VANESSA ABREU",
+          "segment": "inactivo-90d",
+          "treatment_tag": "ortodoncia",
+          "score": 106,
+          "status": "created",
+          "elevatorId": "Ru9OpGrI4kAd9HiqDO18",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 170,
+          "nombre": "JANDIBETH MOSQUERA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "created",
+          "elevatorId": "kygM5tX2HdLENWBUZh7P",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 216,
+          "nombre": "SILVIA NAVARRO",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "created",
+          "elevatorId": "y7FUEMTN8nmQZ4020gqT",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 510,
+          "nombre": "LOURDES DEL CARMEN FRANYUTI CARLIN",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "protesis",
+          "score": 106,
+          "status": "updated",
+          "elevatorId": "DoSgsHn0nfs44P0qy8b1",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 656,
+          "nombre": "YURITZIA DANAE MARQUEZ MENDEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "created",
+          "elevatorId": "k6Xl2Ol0Y1ok1Rta8wfw",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1421,
+          "nombre": "CARLOS ORDOÑEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "created",
+          "elevatorId": "flgkbF5vwCLF6C1cXQ9q",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1944,
+          "nombre": "CRISTINA JESSICA DIAZ PEREZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "created",
+          "elevatorId": "PDqxXDT5cA9EviGNTd5S",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2485,
+          "nombre": "EMMANUEL JAIMES FABIAN",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "updated",
+          "elevatorId": "tKLWCXjilpp1yHMMbvee",
+          "tags": [
+            "lead_entrante_tochat",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2618,
+          "nombre": "ELSY ZAIRICK",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "updated",
+          "elevatorId": "ZKwgdOcUDMwiVUHnaiFQ",
+          "tags": [
+            "lead_entrante_tochat",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2663,
+          "nombre": "FERNANDA TELLEZ",
+          "segment": "inactivo-30d",
+          "treatment_tag": "estetica",
+          "score": 106,
+          "status": "updated",
+          "elevatorId": "pxiK9JNFx9IToFGPBbjm",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2631,
+          "nombre": "NADIA FERHAD MONTIEL",
+          "segment": "inactivo-30d",
+          "treatment_tag": "protesis",
+          "score": 105,
+          "status": "updated",
+          "elevatorId": "1o5Hju3NrHL9ahoI4LHs",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 193,
+          "nombre": "PABLO GAMBOA MENDEZ",
+          "segment": "inactivo-90d",
+          "treatment_tag": "ortodoncia",
+          "score": 104,
+          "status": "created",
+          "elevatorId": "59vTQ2EShgatYEMUWy6V",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 355,
+          "nombre": "OSCAR CRUZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 104,
+          "status": "created",
+          "elevatorId": "w4tjUOdUR82rNhQnoTzj",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1307,
+          "nombre": "NELSON  MORENO SAAVEDRA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 104,
+          "status": "created",
+          "elevatorId": "vPlliNNt3Z4X74GN2nok",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1324,
+          "nombre": "ORIUSKA FLORES",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 104,
+          "status": "created",
+          "elevatorId": "TSfTlDQLo3JMCp9h3T4O",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2329,
+          "nombre": "JHON JAIRO  BOCANEGRA GUEVARA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 104,
+          "status": "updated",
+          "elevatorId": "s2YiKmEx4HzEPcEcHX7N",
+          "tags": [
+            "[whatsapp] - lead capture",
+            "[device] - clinica drdiente atención",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2465,
+          "nombre": "SURY FIGUEREO",
+          "segment": "inactivo-60d",
+          "treatment_tag": "implantes",
+          "score": 104,
+          "status": "updated",
+          "elevatorId": "wQfakhpofCtxuxjfg3Na",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2487,
+          "nombre": "ELIEN RAMIREZ BARRIENTOS",
+          "segment": "inactivo-60d",
+          "treatment_tag": "implantes",
+          "score": 104,
+          "status": "updated",
+          "elevatorId": "IVYDMxsSUH6G2E2WQQ5g",
+          "tags": [
+            "lead_entrante_tochat",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2528,
+          "nombre": "(89) SUMIR SARTI ARORA 2",
+          "segment": "inactivo-60d",
+          "treatment_tag": "implantes",
+          "score": 104,
+          "status": "updated",
+          "elevatorId": "ArOoReqfgUkUwfBUsoHI",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2593,
+          "nombre": "OMAR GOMEZ",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "3ZPcyKF3KyylLYXTyzQY",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2601,
+          "nombre": "ANGELICA ZIEBE LUBCKE",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "kMJpTp2YpTUKSaHtj3ra",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2614,
+          "nombre": "TONIA YONATZIN MORALES FIGUEROA",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "BSVaW83VH5C2EG4zVJ92",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2626,
+          "nombre": "ERIC CHEN",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "nlLwoAcasxUNwJNY5gQI",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2632,
+          "nombre": "ERIKA NAYELI GONZALEZ MORENO",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "XolR4ZXF6KnOeJMBOlHw",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2659,
+          "nombre": "SANDRA MARTINEZ FLORES",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "sKPeQfqCrGUxaLG98XQP",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2683,
+          "nombre": "YUSNIER CASTELLANOS LUIS",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "JUteKjFnTTMXaHb3LP57",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2687,
+          "nombre": "MARIA ALICIA    GUIZAC DE LANG",
+          "segment": "inactivo-30d",
+          "treatment_tag": "ortodoncia",
+          "score": 103,
+          "status": "updated",
+          "elevatorId": "s64HeZHEzyWhjrVksus3",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 253,
+          "nombre": "ROMAR MELENDEZ",
+          "segment": "inactivo-90d",
+          "treatment_tag": "estetica",
+          "score": 102,
+          "status": "updated",
+          "elevatorId": "DR7zfo1SIZ4KROaBWogp",
+          "tags": [
+            "[whatsapp] - lead capture",
+            "[device] - clinica drdiente atención",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1297,
+          "nombre": "JULIO SALAZAR TORO",
+          "segment": "inactivo-90d",
+          "treatment_tag": "ortodoncia",
+          "score": 102,
+          "status": "created",
+          "elevatorId": "cg6gaTJ57xQqn0GeGqJU",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1398,
+          "nombre": "BLANCA BRISEÑO TEPEPA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "endodoncia",
+          "score": 102,
+          "status": "updated",
+          "elevatorId": "QWyaNcR8LCnRLJs12Xvf",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "endodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1550,
+          "nombre": "MARTHA ALEJANDRA PALMA  ALVAREZ",
+          "segment": "inactivo-90d",
+          "treatment_tag": "ortodoncia",
+          "score": 102,
+          "status": "updated",
+          "elevatorId": "Qu3jdsvYAAW14V0EnLnE",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2162,
+          "nombre": "EDNA ANDREA TORRES MARIN",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "endodoncia",
+          "score": 102,
+          "status": "updated",
+          "elevatorId": "tkSmA5FKQ3m2sdU1ufpR",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "endodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2716,
+          "nombre": "(2035)RICARDO LOUTAUNAU HERRERA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "endodoncia",
+          "score": 102,
+          "status": "updated",
+          "elevatorId": "75a7TgPzDjmE4I7UtU7y",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "endodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2437,
+          "nombre": "AIDA CAMPUZANO MAGAÑA",
+          "segment": "inactivo-60d",
+          "treatment_tag": "protesis",
+          "score": 101,
+          "status": "updated",
+          "elevatorId": "XrCNfFG007FWZ7VLD8tZ",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2456,
+          "nombre": "MARCO ANTONIO PEREZ SILVA",
+          "segment": "inactivo-60d",
+          "treatment_tag": "protesis",
+          "score": 101,
+          "status": "updated",
+          "elevatorId": "Eb2gu8Jj1cbWZrTVVYuQ",
+          "tags": [
+            "lead_entrante_tochat",
+            "otro_servicio",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2562,
+          "nombre": "JUAN SEBASTIAN VEGA",
+          "segment": "inactivo-60d",
+          "treatment_tag": "protesis",
+          "score": 101,
+          "status": "updated",
+          "elevatorId": "W0AqisV72hADqBl4qJNh",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 107,
+          "nombre": "VIVIANE DI DOMENICO",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 100,
+          "status": "created",
+          "elevatorId": "UdSpt99v00P3TyYlfP2D",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 402,
+          "nombre": "MARIO HERNANDEZ PEREIRA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 100,
+          "status": "created",
+          "elevatorId": "RxHLFDTTa94h9jRKkOD4",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 971,
+          "nombre": "PAULINA  GOMEZ DEL CAMPO",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 100,
+          "status": "created",
+          "elevatorId": "2CtbxAPBDTqN965xbSCt",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1770,
+          "nombre": "ARACELI CASO BARRERA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "cirugia",
+          "score": 100,
+          "status": "created",
+          "elevatorId": "sqT8YeGnBVP0rUscyZUs",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "reactivable-cirugia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1926,
+          "nombre": "CLAUDIA  ESQUIVEL",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "cirugia",
+          "score": 100,
+          "status": "created",
+          "elevatorId": "UB5TmwTWPBIz78TKvBDJ",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "reactivable-cirugia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2443,
+          "nombre": "SERGIO CHAVEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "estetica",
+          "score": 100,
+          "status": "created",
+          "elevatorId": "ckIOmKopQxnTRYQHmoMR",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 100,
+          "nombre": "CAROLINA MIRANDA OLVERA",
+          "segment": "inactivo-30d",
+          "treatment_tag": "estetica",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "ubvGaZ2bqmx4cZyJoEps",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2444,
+          "nombre": "Ejemplo Ejemplo",
+          "segment": "solo-cancelaciones",
+          "treatment_tag": "endodoncia",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "TSfTlDQLo3JMCp9h3T4O",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-solo-cancelaciones",
+            "endodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2457,
+          "nombre": "BEGOÑA MARTINEZ",
+          "segment": "inactivo-60d",
+          "treatment_tag": "ortodoncia",
+          "score": 99,
+          "status": "created",
+          "elevatorId": "8Ak5aX1CHAQTdiarx7QL",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2517,
+          "nombre": "EULALIA RUIZ ROQUE",
+          "segment": "inactivo-60d",
+          "treatment_tag": "ortodoncia",
+          "score": 99,
+          "status": "created",
+          "elevatorId": "NoQZ5ADj3PQQXKorU78h",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2526,
+          "nombre": "FABIANA OMAÑA GUTIERREZ",
+          "segment": "inactivo-60d",
+          "treatment_tag": "ortodoncia",
+          "score": 99,
+          "status": "created",
+          "elevatorId": "OVZApQYiwdma8xCmR3Qz",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2542,
+          "nombre": "SANTIAGO UGALDE",
+          "segment": "inactivo-60d",
+          "treatment_tag": "ortodoncia",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "OkRxHO9oa8EREimRwVjl",
+          "tags": [
+            "lead_entrante_tochat",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2544,
+          "nombre": "ISRAEL GUÍZAR CUELLAR",
+          "segment": "inactivo-60d",
+          "treatment_tag": "ortodoncia",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "q9NVRZ2sZVK8bzUWkdn6",
+          "tags": [
+            "lead_entrante_tochat",
+            "otro_servicio",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2552,
+          "nombre": "IVAN ADRIAN ESPINOSA TREJO",
+          "segment": "inactivo-60d",
+          "treatment_tag": "ortodoncia",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "DXmfgdtZqgACmmabZJ0X",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2553,
+          "nombre": "JUAN CARLOS SAID FIGUEROA CONTRERAS",
+          "segment": "inactivo-60d",
+          "treatment_tag": "ortodoncia",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "d8X1NDdfuugzbKLUhOpZ",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-60d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2578,
+          "nombre": "MARTHA GEBHARDT",
+          "segment": "inactivo-30d",
+          "treatment_tag": "estetica",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "nCo5QPaSJPj6iKjgfcrk",
+          "tags": [
+            "paciente-sin-lead",
+            "paciente-de-mkt",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2588,
+          "nombre": "VENY GARCIA MARTINEZ",
+          "segment": "inactivo-30d",
+          "treatment_tag": "estetica",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "GyI1uxHH5IRWijPZWi0U",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2679,
+          "nombre": "CARLOS VILLASEÑOR FERNANDEZ",
+          "segment": "inactivo-30d",
+          "treatment_tag": "estetica",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "IJQ1dAgYdfJykfioWaLG",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2695,
+          "nombre": "NICHOLAS ROMERO ARTEAGA",
+          "segment": "inactivo-30d",
+          "treatment_tag": "estetica",
+          "score": 99,
+          "status": "updated",
+          "elevatorId": "iBcdCA8etzFPyZnlLELg",
+          "tags": [
+            "paciente-de-mkt",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-30d",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 161,
+          "nombre": "JENNIFER  DURAN",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 98,
+          "status": "created",
+          "elevatorId": "WgPcNk2dTyEKF0XozUK7",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 171,
+          "nombre": "TANIA TOSCANO BARRERA",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 98,
+          "status": "created",
+          "elevatorId": "TiM8iA4ng8VMZ9YRyZIV",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 198,
+          "nombre": "JOHANNA  FRANZKE",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 98,
+          "status": "created",
+          "elevatorId": "2tUgwTGGh25JgSHbtqHY",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 275,
+          "nombre": "IRIS TORRES ALVAREZ",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 98,
+          "status": "created",
+          "elevatorId": "91dSVbz67gswgNknvDlZ",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 276,
+          "nombre": "ROSIRIS ROSENDO",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 98,
+          "status": "created",
+          "elevatorId": "uuGdwgV5oViNIVQKeKAh",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 277,
+          "nombre": "ALEJANDRA  AVILA MORALES",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 98,
+          "status": "updated",
+          "elevatorId": "CSySCT3gi2jfadTBKUnj",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 458,
+          "nombre": "JOSH STEIN",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 98,
+          "status": "updated",
+          "elevatorId": "b7TccUCdQwgRXMnCQdsx",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        }
+      ]
+    },
+    {
       "synced_at": "2026-07-11T00:17:43.295Z",
       "dry_run": false,
       "refresh_synced": false,
