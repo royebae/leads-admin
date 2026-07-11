@@ -160,6 +160,11 @@ else
 fi
 
 echo ""
+echo "2b) Enriching leads with API payment history..."
+node scripts/enrich-leads-payments.mjs 2>&1 || echo "enrich skip"
+node scripts/prioritize-leads.mjs 2>&1 || echo "prioritize skip"
+
+echo ""
 echo "3) Build conversion events DRY..."
 if [[ -f "$ROOT/.env.dentalink-web" ]]; then
   # try using stored elevator key
