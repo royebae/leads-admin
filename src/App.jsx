@@ -215,6 +215,33 @@ export default function App() {
             )}
           </div>
 
+          {l.pagos_count > 0 && (
+            <div style={{ marginTop: '1rem', background: '#1a1a1a', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+              <h3 style={{ margin: '0 0 1rem', fontSize: '1rem', color: 'rgba(255,255,255,0.7)' }}>💰 Pagos ({l.pagos_count})</h3>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
+                <div>
+                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Total pagado</div>
+                  <div style={{ fontSize: '1.1rem', color: '#4ade80', fontWeight: 700 }}>${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</div>
+                </div>
+                <div>
+                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Último pago</div>
+                  <div style={{ fontSize: '0.9rem' }}>{l.ultimo_pago_fecha || '—'}</div>
+                </div>
+                <div>
+                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>Medios</div>
+                  <div style={{ fontSize: '0.85rem', display: 'flex', flexWrap: 'wrap', gap: '0.3rem', marginTop: '0.25rem' }}>
+                    {Array.isArray(l.medios_pago) && l.medios_pago.map(m => (
+                      <span key={m} style={{
+                        padding: '0.15rem 0.5rem', borderRadius: '999px', fontSize: '0.7rem',
+                        background: 'rgba(74,222,128,0.1)', color: '#4ade80', border: '1px solid rgba(74,222,128,0.2)',
+                      }}>{m}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {l.citas?.length > 0 && (
             <div style={{ marginTop: '1rem', background: '#1a1a1a', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.1)' }}>
               <h3 style={{ margin: '0 0 1rem', fontSize: '1rem', color: 'rgba(255,255,255,0.7)' }}>Historial de citas ({l.citas.length})</h3>
@@ -256,6 +283,11 @@ export default function App() {
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
             <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)' }}>{reactivables} reactivables</span>
+            {data?.metadata?.pagos_api_total > 0 && (
+              <span style={{ fontSize: '0.75rem', color: '#4ade80', background: 'rgba(74,222,128,0.1)', padding: '0.15rem 0.5rem', borderRadius: '999px' }}>
+                ${Number(data.metadata.pagos_api_total).toLocaleString('es-MX')} en pagos
+              </span>
+            )}
             <button onClick={handleLogout} style={{
               background: 'transparent', border: 'none', color: 'rgba(255,255,255,0.4)',
               cursor: 'pointer', fontSize: '0.75rem', textDecoration: 'underline',
@@ -350,6 +382,7 @@ export default function App() {
                     <th style={{ textAlign: 'left', padding: '0.75rem 1rem', fontWeight: 500 }}>Tratamiento</th>
                     <th style={{ textAlign: 'left', padding: '0.75rem 1rem', fontWeight: 500 }}>Segmento</th>
                     <th style={{ textAlign: 'right', padding: '0.75rem 1rem', fontWeight: 500 }}>Presupuesto</th>
+                    <th style={{ textAlign: 'right', padding: '0.75rem 1rem', fontWeight: 500 }}>Pagado</th>
                     <th style={{ textAlign: 'center', padding: '0.75rem 1rem', fontWeight: 500 }}>Citas</th>
                   </tr>
                 </thead>
@@ -387,6 +420,14 @@ export default function App() {
                       </td>
                       <td style={{ padding: '0.75rem 1rem', textAlign: 'right', color: 'rgba(255,255,255,0.7)', fontSize: '0.8rem' }}>
                         {l.presupuesto_total ? `$${Number(l.presupuesto_total).toLocaleString('es-MX')}` : '—'}
+                      </td>
+                      <td style={{ padding: '0.75rem 1rem', textAlign: 'right', fontSize: '0.8rem' }}>
+                        {l.pagos_count > 0 ? (
+                          <>
+                            <div style={{ color: '#4ade80' }}>${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</div>
+                            <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.7rem' }}>{l.pagos_count} pagos · {l.ultimo_pago_fecha || '—'}</div>
+                          </>
+                        ) : <span style={{ color: 'rgba(255,255,255,0.25)' }}>—</span>}
                       </td>
                       <td style={{ padding: '0.75rem 1rem', textAlign: 'center', color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem' }}>{l.total_citas}</td>
                     </tr>
