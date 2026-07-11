@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T00:09:46.577Z",
+  "generated_at": "2026-07-11T05:13:42.827Z",
   "top": [
     {
       "rank": 1,
@@ -25,8 +25,8 @@
       "reactivation_score": 122,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, deuda, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "zIVh10AfmI22dF2CPiEX",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 2,
@@ -53,7 +53,7 @@
       "priority_band": "alta",
       "priority_reason": "anticipo-sin-cita, protesis, presupuesto-alto, tiene-telefono",
       "elevator_id": "qGuE7Dx51rOAvaQ0wCNG",
-      "elevator_sync_status": "created"
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 3,
@@ -80,8 +80,8 @@
       "reactivation_score": 115,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 4,
@@ -109,7 +109,7 @@
       "priority_band": "alta",
       "priority_reason": "inactivo-90d, implantes, presupuesto-alto, deuda, tiene-telefono",
       "elevator_id": "Xk14LQEJChhfzO1TYpdG",
-      "elevator_sync_status": "created"
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 5,
@@ -136,8 +136,8 @@
       "reactivation_score": 115,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 6,
@@ -162,8 +162,8 @@
       "reactivation_score": 115,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "u3UHRJ5L3eSsCM4jVC5p",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 7,
@@ -190,8 +190,8 @@
       "reactivation_score": 115,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "kud2dn0tfWDlOq6Ck7Hk",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 8,
@@ -216,8 +216,8 @@
       "reactivation_score": 115,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "mkGMFas9LV0OCpAghNjn",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 9,
@@ -241,8 +241,8 @@
       "reactivation_score": 115,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "kd1ujvvzqoCP9YFxUozC",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 10,
@@ -266,8 +266,8 @@
       "reactivation_score": 115,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "ETp9mk2UgEbf9KwvFqZq",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 11,
@@ -292,8 +292,8 @@
       "reactivation_score": 112,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, protesis, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "mRR1x4h2eF5EiDmwHISr",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 12,
@@ -318,8 +318,8 @@
       "reactivation_score": 112,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, protesis, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "JFxuI7jz5iLvh8K5FhG2",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 13,
@@ -342,8 +342,8 @@
       "reactivation_score": 112,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, protesis, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "oJG8SJuVtDG2d14ojPad",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 14,
@@ -364,8 +364,8 @@
       "reactivation_score": 112,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, protesis, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "UTNDIqgcgmpahH13y844",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 15,
@@ -387,7 +387,7 @@
       "priority_band": "alta",
       "priority_reason": "plan-sin-cita, estetica, presupuesto-alto, tiene-telefono",
       "elevator_id": "aJhtdG3XZLdq8DNPxiKq",
-      "elevator_sync_status": "created"
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 16,
@@ -409,8 +409,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "inactivo-90d, ortodoncia, presupuesto-alto, deuda, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "nbh4prZafUXgtqFbqBdc",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 17,
@@ -433,8 +433,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "MvkaMJFdnuuYxPELN4nT",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 18,
@@ -461,8 +461,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "lbEuE3kx6E1tmhbcLDPK",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 19,
@@ -486,8 +486,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "p7vCLEZ2CkpAli79lAuQ",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 20,
@@ -510,8 +510,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "YonASw5YLx5lBG0cKGiw",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 21,
@@ -535,8 +535,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "OMaKRF0XFVb0zACoZhSZ",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 22,
@@ -560,8 +560,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "ix6Mz8xsfQr7CC3wmwAl",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 23,
@@ -584,8 +584,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "faxxMLXZzi2trH8Gpw5C",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 24,
@@ -608,8 +608,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "LwvZ497ysRcTCxx5Tce4",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 25,
@@ -633,8 +633,8 @@
       "reactivation_score": 110,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "eM2Xlg1HOeYB7c1Pi7Gf",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 26,
@@ -659,8 +659,8 @@
       "reactivation_score": 109,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "Y842i0GKw5EJO1nPdYnb",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 27,
@@ -680,8 +680,8 @@
       "reactivation_score": 109,
       "priority_band": "alta",
       "priority_reason": "solo-cancelaciones, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "5BjEaxSafb24b1jG2MmJ",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 28,
@@ -702,7 +702,7 @@
       "priority_band": "alta",
       "priority_reason": "plan-sin-cita, ortodoncia, presupuesto-alto, tiene-telefono",
       "elevator_id": "IBnVc1zOksEccXrykf9r",
-      "elevator_sync_status": "created"
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 29,
@@ -726,8 +726,8 @@
       "reactivation_score": 109,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "sw4YfOTpN7QRur4AR0ZA",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 30,
@@ -753,8 +753,8 @@
       "reactivation_score": 108,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 31,
@@ -779,8 +779,8 @@
       "reactivation_score": 108,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "18UyndKVCXON5KkLShoH",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 32,
@@ -804,8 +804,8 @@
       "reactivation_score": 108,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "8lWwgBsJZztLxbbt3K2E",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 33,
@@ -831,8 +831,8 @@
       "reactivation_score": 108,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "d2mFuAoiTKw1CYO3NZjD",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 34,
@@ -856,8 +856,8 @@
       "reactivation_score": 108,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "8rVgV4HxfbB6gXZRn4kz",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 35,
@@ -882,8 +882,8 @@
       "reactivation_score": 108,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, implantes, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "6qXUqJKfJq6K307iY8IU",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 36,
@@ -905,8 +905,8 @@
       "reactivation_score": 107,
       "priority_band": "alta",
       "priority_reason": "solo-cancelaciones, ortodoncia, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "AzuJC3VDi8577kJCMAC6",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 37,
@@ -933,8 +933,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "inactivo-90d, ortodoncia, presupuesto-alto, deuda, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "SX3dduaDkQnHgbdTryV3",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 38,
@@ -956,8 +956,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "inactivo-90d, ortodoncia, presupuesto-alto, deuda, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "Ru9OpGrI4kAd9HiqDO18",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 39,
@@ -982,8 +982,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "kygM5tX2HdLENWBUZh7P",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 40,
@@ -1004,8 +1004,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "y7FUEMTN8nmQZ4020gqT",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 41,
@@ -1027,8 +1027,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, protesis, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "DoSgsHn0nfs44P0qy8b1",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 42,
@@ -1052,8 +1052,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "k6Xl2Ol0Y1ok1Rta8wfw",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 43,
@@ -1080,8 +1080,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 44,
@@ -1106,8 +1106,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "PDqxXDT5cA9EviGNTd5S",
+      "elevator_sync_status": "created"
     },
     {
       "rank": 45,
@@ -1131,8 +1131,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "tKLWCXjilpp1yHMMbvee",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 46,
@@ -1153,8 +1153,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "ultima-no-asistio, estetica, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "ZKwgdOcUDMwiVUHnaiFQ",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 47,
@@ -1178,8 +1178,8 @@
       "reactivation_score": 106,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, estetica, presupuesto-alto, deuda, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "pxiK9JNFx9IToFGPBbjm",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 48,
@@ -1224,8 +1224,8 @@
       "reactivation_score": 105,
       "priority_band": "alta",
       "priority_reason": "inactivo-30d, protesis, presupuesto-alto, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "1o5Hju3NrHL9ahoI4LHs",
+      "elevator_sync_status": "updated"
     },
     {
       "rank": 50,
@@ -1247,8 +1247,8 @@
       "reactivation_score": 104,
       "priority_band": "alta",
       "priority_reason": "inactivo-90d, ortodoncia, presupuesto-alto, deuda, tiene-telefono",
-      "elevator_id": null,
-      "elevator_sync_status": null
+      "elevator_id": "59vTQ2EShgatYEMUWy6V",
+      "elevator_sync_status": "created"
     }
   ]
 }

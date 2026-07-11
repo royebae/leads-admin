@@ -53,8 +53,8 @@ const enriched = [];
 for (const lead of leads) {
   const e = { ...lead };
   
-  // Try match by # Paciente from Dentalink
-  const pid = lead.id_paciente || lead.id_paciente_int || lead.id;
+  // Try match by # Paciente from Dentalink (via nombre_social which stores the real ID)
+  const pid = lead.id_paciente || lead.id_paciente_int || (lead.nombre_social ? Number(lead.nombre_social) : null);
   
   let pagos = null;
   let acciones = null;
@@ -66,25 +66,25 @@ for (const lead of leads) {
     if (a && a.length > 0) acciones = a;
   }
   
-  // Fallback: match by nombre + apellido
+  // Fallback: match by full name (leads don't have separate apellidos field)
   if (!pagos && !acciones) {
-    const name = (lead.nombre || '').toLowerCase().trim();
-    const apellido = (lead.apellidos || lead.apellido || '').toLowerCase().trim();
-    
-    if (name && apellido) {
-      // Search globales
+    const leadName = (lead.nombre || '').toLowerCase().trim();
+    if (leadName) {
+      // Search globales by full name (Nombre + Apellidos)
       const gp = pagosGlobales.filter(r => {
         const rn = (r['Nombre Paciente'] || '').toLowerCase().trim();
         const ra = (r['Apellidos Paciente'] || '').toLowerCase().trim();
-        return rn.includes(name) && ra.includes(apellido);
+        const fullName = (rn + ' ' + ra).toLowerCase().trim();
+        return fullName.includes(leadName) || leadName.includes(fullName);
       });
       if (gp.length > 0) pagos = gp;
       
-      // Search acciones
+      // Search acciones by full name
       const acc = pagosAcciones.filter(r => {
         const rn = (r['Nombre Paciente'] || '').toLowerCase().trim();
         const ra = (r['Apellidos Paciente'] || '').toLowerCase().trim();
-        return rn.includes(name) && ra.includes(apellido);
+        const fullName = (rn + ' ' + ra).toLowerCase().trim();
+        return fullName.includes(leadName) || leadName.includes(fullName);
       });
       if (acc.length > 0) acciones = acc;
     }
