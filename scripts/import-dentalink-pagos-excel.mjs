@@ -33,6 +33,7 @@ try {
 
 const args = process.argv.slice(2)
 const fileArg = args.find(a => a.startsWith('--file='))?.split('=')[1]
+const filesArg = args.find(a => a.startsWith('--files='))?.split('=')[1]
 
 function norm(s) {
   return String(s || '')
@@ -146,11 +147,13 @@ function parseFile(path) {
   return rowsOut
 }
 
-const files = fileArg
-  ? [fileArg.startsWith('/') ? fileArg : join(ROOT, fileArg)]
-  : readdirSync(IMPORT_DIR)
-      .filter(f => ['.xlsx', '.xls', '.csv'].includes(extname(f).toLowerCase()))
-      .map(f => join(IMPORT_DIR, f))
+const files = filesArg
+  ? filesArg.split(',').map(f => f.trim()).filter(Boolean).map(f => f.startsWith('/') ? f : join(ROOT, f))
+  : fileArg
+    ? [fileArg.startsWith('/') ? fileArg : join(ROOT, fileArg)]
+    : readdirSync(IMPORT_DIR)
+        .filter(f => ['.xlsx', '.xls', '.csv'].includes(extname(f).toLowerCase()))
+        .map(f => join(IMPORT_DIR, f))
 
 if (!files.length) {
   console.log(`No hay Excel en ${IMPORT_DIR}`)

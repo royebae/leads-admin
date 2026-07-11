@@ -1,0 +1,413 @@
+{
+  "generated_at": "2026-07-11T20:38:45.072024Z",
+  "summary": {
+    "total_leads": 2800,
+    "reactivable": 2178,
+    "with_elevator_id": 1305,
+    "with_opportunity": 496,
+    "reactivable_unsynced": 873,
+    "reactivable_synced_without_opportunity": 809
+  },
+  "top_unsynced_alta": [
+    {
+      "id": 526,
+      "nombre": "MAURICIO HORCASITAS",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525548887553",
+      "email": "mauricio.horcasitas@gmail.com"
+    },
+    {
+      "id": 628,
+      "nombre": "ERENDIRA  PATRICIA AYALA MONTA\u00d1O",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525591992645",
+      "email": "gabbie_garcia@hotmail.com"
+    },
+    {
+      "id": 633,
+      "nombre": "JUAN CARLOS MALPICA SALOMON",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+522281247250",
+      "email": "jcmalpica@hotmail.com"
+    },
+    {
+      "id": 642,
+      "nombre": "RONG ZHENG",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525574042343",
+      "email": "xunmirong@gmail.com"
+    },
+    {
+      "id": 716,
+      "nombre": "HERIBERTO FUENTES REYES",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525530094263",
+      "email": "heriberto.fuentesr@gmail.com"
+    },
+    {
+      "id": 723,
+      "nombre": "LEONARDO  RUBIO GOMEZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525537171501",
+      "email": "leorubgom@hotmail.com"
+    },
+    {
+      "id": 766,
+      "nombre": "DENALI LOZA",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525542747439",
+      "email": "denali.loza@gmail.com"
+    },
+    {
+      "id": 788,
+      "nombre": "ALESSANDRA PINTO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525591708071",
+      "email": "alessandracanon@gmail.com"
+    },
+    {
+      "id": 819,
+      "nombre": "SALOMON  GUEVARA",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525516995433",
+      "email": "salomon_guevara@hotmail.com"
+    },
+    {
+      "id": 837,
+      "nombre": "DANIEL ROMERO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525518128982",
+      "email": "dsimgrupo@gmail.com"
+    },
+    {
+      "id": 920,
+      "nombre": "SOFYHA ROSALES RAMIREZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525519352737",
+      "email": "sofyrr@gmail.com"
+    },
+    {
+      "id": 927,
+      "nombre": "SIMON ALEXANDER WALSH",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+447548104856",
+      "email": "signup@condormail.com"
+    },
+    {
+      "id": 977,
+      "nombre": "JANET JIMENEZ TORRES",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525613688078",
+      "email": "janetzitajimeneztorres38@gmail.com"
+    },
+    {
+      "id": 1012,
+      "nombre": "SVETLANA MAKHMUTOVO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525633564040",
+      "email": "svmakhmutova@gmail.com"
+    },
+    {
+      "id": 1022,
+      "nombre": "DANIELA MEYER MARTINEZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525548904115",
+      "email": "danielam738@gmail.com"
+    },
+    {
+      "id": 1030,
+      "nombre": "EVA  BAUR",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525625591252",
+      "email": "eva_baur@icloud.com"
+    },
+    {
+      "id": 1085,
+      "nombre": "CARLOS ALBERTO  SALINAS VAZQUEZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525577228866",
+      "email": "5577228866abc@gmail.com"
+    },
+    {
+      "id": 1125,
+      "nombre": "ALEX KETTERER",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+17027575321",
+      "email": "aketterer21@yahoo.com"
+    },
+    {
+      "id": 1130,
+      "nombre": "CARLOS ALBERTO ALCUDIA",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525551043569",
+      "email": "lic.alcudia@hotmail.com"
+    },
+    {
+      "id": 1131,
+      "nombre": "YELITZA CAROLINA CAMPOS CASTRO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+584147690015",
+      "email": "campos.yelitza@gmail.com"
+    },
+    {
+      "id": 1135,
+      "nombre": "MARIA LUISA ESQUIVEL DIEGO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+13213891765",
+      "email": "esquivel.luisa321@gmail.com"
+    },
+    {
+      "id": 1146,
+      "nombre": "JOSE TORCAT FERMIN",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+584147884205",
+      "email": "corcegaquijadaasesores@gmail.com"
+    },
+    {
+      "id": 1172,
+      "nombre": "ELDA DEL ROSARIO CERVANTES VALDES",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525539438581",
+      "email": "elda_cv@hotmail.com"
+    },
+    {
+      "id": 1185,
+      "nombre": "DELMIRA SANCHEZ LEAL",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+17865850312",
+      "email": "delmisanchez@gmail.com"
+    },
+    {
+      "id": 1201,
+      "nombre": "JUANA IRIDIA LOPEZ ZAMORA",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525535753379",
+      "email": "iridialopez@hotmail.com"
+    },
+    {
+      "id": 1207,
+      "nombre": "TEDDIE KING",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+13058905816",
+      "email": "teddieking1983@gmail.com"
+    },
+    {
+      "id": 1258,
+      "nombre": "JUAN DIEGO OLIVA HEINSEN",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525619878497",
+      "email": "juandi@capa.fi"
+    },
+    {
+      "id": 1277,
+      "nombre": "ELIHU DE LA FUENTE",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525555096276",
+      "email": "elihudelafuente@outlook.com"
+    },
+    {
+      "id": 1330,
+      "nombre": "SERGIO ALEJANDRO NAVARRETE GUTIERREZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525546067778",
+      "email": "paulinareynoso@yahoo.com.mx"
+    },
+    {
+      "id": 1332,
+      "nombre": "DIANA CONSTABLE",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525554064345",
+      "email": "constablediana3@gmail.com"
+    },
+    {
+      "id": 1342,
+      "nombre": "MIGUEL ANGEL SEGURA CASTRO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525513845785",
+      "email": "m-a-s-c@live.com.mx"
+    },
+    {
+      "id": 1391,
+      "nombre": "DELY GUEVARA  GARCIA",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525537092765",
+      "email": "dellyguevara07@gmail.com"
+    },
+    {
+      "id": 1416,
+      "nombre": "ROSA MARGARITA RIOS ALBARRAN",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525563181984",
+      "email": "fun049@outlook.com"
+    },
+    {
+      "id": 1459,
+      "nombre": "ALEJANDRO ITURMENDI",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+5491125950007",
+      "email": "itumendialejandro@gmail.com"
+    },
+    {
+      "id": 1476,
+      "nombre": "PAOLA DAVID ORTIGOSA TORRES",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525522399587",
+      "email": "paodavid@yahoo.com"
+    },
+    {
+      "id": 1490,
+      "nombre": "AMERICA ANAID AVALOS GALINDO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+526672080546",
+      "email": "america.avalos@gmail.com"
+    },
+    {
+      "id": 1494,
+      "nombre": "OLIVIA MORENO VASQUEZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525527205659",
+      "email": "consultor.omv@gmail.com"
+    },
+    {
+      "id": 1519,
+      "nombre": "MERCEDES TSCHESCHNER",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525522645828",
+      "email": "mer.tscheschner@gmail.com"
+    },
+    {
+      "id": 1533,
+      "nombre": "IVAN JOSAFAT  VARGAS",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525539661568",
+      "email": "josafat.vargas@gmail.com"
+    },
+    {
+      "id": 1543,
+      "nombre": "LUIS MANUEL SAN JUAN GONZALEZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525543527972",
+      "email": "diablitodf@gmail.com"
+    },
+    {
+      "id": 1614,
+      "nombre": "ESTEFANIA GURROLA",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+523338159120",
+      "email": "fanydiamondrealty@gmail.com"
+    },
+    {
+      "id": 1649,
+      "nombre": "HECTOR GUZMAN",
+      "segment": "ultima-no-asistio",
+      "score": 98,
+      "phone": "+525540006785",
+      "email": "personalhguzman@gmail.com"
+    },
+    {
+      "id": 1654,
+      "nombre": "MIGUEL ANGEL YA\u00d1EZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+523316027550",
+      "email": "migueym@hotmail.com"
+    },
+    {
+      "id": 1708,
+      "nombre": "MONICA EMMA LOPEZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525541932340",
+      "email": "monical47e@gmail.com"
+    },
+    {
+      "id": 1719,
+      "nombre": "SERGEY FISENKO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+12074508191",
+      "email": "sergeyfisenko@icloud.com"
+    },
+    {
+      "id": 1736,
+      "nombre": "LEOBARDO PELAEZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525554638947",
+      "email": "araks_20@hotmail.com"
+    },
+    {
+      "id": 1740,
+      "nombre": "DANIEL OROPEZA BOLA\u00d1OS",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525544813187",
+      "email": "dann.oropeza@gmail.com"
+    },
+    {
+      "id": 1773,
+      "nombre": "RAUL GONZALEZ PEREZ",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525554311958",
+      "email": "gopr70@gmail.com"
+    },
+    {
+      "id": 1803,
+      "nombre": "MARIA DE LOURDES GARCIA CASTRO",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525512954928",
+      "email": "lourdesgarciacastro@gmail.com"
+    },
+    {
+      "id": 1828,
+      "nombre": "OSCAR  VELAZQUEZ RIVERA",
+      "segment": "inactivo-90d",
+      "score": 98,
+      "phone": "+525554346591",
+      "email": "oscarof_oj@hotmail.com"
+    }
+  ]
+}
