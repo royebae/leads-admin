@@ -148,14 +148,7 @@ export function RevenueChart() {
 				<Button asChild className="text-muted-foreground" size="xs" variant="ghost">
 					<a href="#/reports">
 						View report
-						<IconPlaceholder
-                            aria-hidden="true"
-                            data-icon="inline-end"
-                            hugeicons="ArrowRight02Icon"
-                            lucide="ArrowRightIcon"
-                            phosphor="ArrowRightIcon"
-                            remixicon="RiArrowRightLine"
-                            tabler="IconArrowRight" />
+						<IconPlaceholder lucide="ArrowRight" className="ml-1" />
 					</a>
 				</Button>
 			</CardFooter>

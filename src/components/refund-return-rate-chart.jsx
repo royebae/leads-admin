@@ -1,111 +1,106 @@
-"use client";
+"use client"
 
-import { IconPlaceholder } from "@/components/ui/icon-placeholder";
-import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
-import { Button } from "@/components/ui/button";
+import { IconPlaceholder } from "@/components/ui/icon-placeholder"
+import { CartesianGrid, Line, LineChart, XAxis } from "recharts"
+import { Button } from "@/components/ui/button"
 import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
-import { Delta, DeltaIcon, DeltaValue } from "@/components/delta";
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart"
+import { Delta, DeltaIcon, DeltaValue } from "@/components/delta"
 
-/** Daily return rate (% of fulfilled orders returned), last 7 days (demo). */
-const returnDaily7 = [
-    { day: "Mon", returnRate: 2.2 },
-    { day: "Tue", returnRate: 1.5 },
-    { day: "Wed", returnRate: 3.1 },
-    { day: "Thu", returnRate: 4.8 },
-    { day: "Fri", returnRate: 2.4 },
-    { day: "Sat", returnRate: 3.2 },
-    { day: "Sun", returnRate: 3.9 }
-];
-
-/** Share of orders that were refunded over the same window (demo). */
-const REFUNDED_SHARE_OF_ORDERS_PCT = 2.6;
+// Mock cancellation data
+const cancellationData = [
+  { day: "Mon", rate: 12 },
+  { day: "Tue", rate: 8 },
+  { day: "Wed", rate: 15 },
+  { day: "Thu", rate: 7 },
+  { day: "Fri", rate: 10 },
+  { day: "Sat", rate: 5 },
+  { day: "Sun", rate: 3 },
+]
 
 const chartConfig = {
-    returnRate: {
-		label: "Return %",
-		color: "var(--chart-1)",
-	}
-};
+  rate: {
+    label: "Cancelaciones",
+    color: "var(--chart-4)",
+  },
+}
 
 export function RefundReturnRateChart() {
-	const first = returnDaily7[0];
-	const lastW = returnDaily7.at(-1) ?? first;
-	const returnTrendPct =
-		first.returnRate > 0
-			? ((lastW.returnRate - first.returnRate) / first.returnRate) * 100
-			: 0;
+  // Average cancellation rate
+  const avgRate = cancellationData.reduce((s, d) => s + d.rate, 0) / cancellationData.length
+  const weekAvg = 8.5 // benchmark
 
-	return (
-        <Card className="md:col-span-2">
-            <CardHeader className="flex flex-col sm:flex-row sm:items-start sm:justify-between">
-				<div className="space-y-1">
-					<CardTitle>Return rate</CardTitle>
-					<CardDescription>Last 7 days</CardDescription>
-				</div>
-				<div className="space-y-1">
-					<CardTitle className="text-right">
-						{REFUNDED_SHARE_OF_ORDERS_PCT}%
-					</CardTitle>
-					<CardDescription>of orders refunded</CardDescription>
-				</div>
-			</CardHeader>
-            <CardContent className="mt-auto">
-				<ChartContainer className="aspect-auto h-56 w-full" config={chartConfig}>
-					<LineChart
-                        accessibilityLayer
-                        data={returnDaily7}
-                        margin={{ left: 12, right: 12, top: 12, bottom: 0 }}>
-						<CartesianGrid horizontal={false} strokeDasharray="3 3" />
-						<XAxis
-                            axisLine={false}
-                            dataKey="day"
-                            interval={1}
-                            minTickGap={8}
-                            tickLine={false}
-                            tickMargin={8} />
-						<ChartTooltip content={<ChartTooltipContent indicator="line" />} />
-						<Line
-                            dataKey="returnRate"
-                            dot={false}
-                            stroke="var(--color-returnRate)"
-                            strokeWidth={2.5}
-                            type="monotone" />
-					</LineChart>
-				</ChartContainer>
-			</CardContent>
-            <CardFooter>
-				<div
-                    className="flex min-w-0 flex-1 flex-wrap items-center gap-1 text-muted-foreground text-xs">
-					<Delta value={returnTrendPct}>
-						<DeltaIcon />
-						<DeltaValue />
-					</Delta>
-					<span className="inline-flex min-w-0 text-pretty">
-						vs first day (last 7 days)
-					</span>
-				</div>
-				<Button asChild className="text-muted-foreground" size="xs" variant="ghost">
-					<a href="#/orders/returns">
-						Returns desk
-						<IconPlaceholder
-                            aria-hidden="true"
-                            data-icon="inline-end"
-                            hugeicons="ArrowRight02Icon"
-                            lucide="ArrowRightIcon"
-                            phosphor="ArrowRightIcon"
-                            remixicon="RiArrowRightLine"
-                            tabler="IconArrowRight" />
-					</a>
-				</Button>
-			</CardFooter>
-        </Card>
-    );
+  return (
+    <Card>
+      <CardHeader className="flex flex-row items-center justify-between gap-4">
+        <div>
+          <CardTitle>Tasa de cancelación</CardTitle>
+          <CardDescription>Últimos 7 días</CardDescription>
+        </div>
+        <div className="text-right">
+          <p className="font-semibold text-2xl tabular-nums">{avgRate.toFixed(1)}%</p>
+          <p className="text-xs text-muted-foreground">de citas canceladas</p>
+        </div>
+      </CardHeader>
+      <CardContent>
+        <ChartContainer className="aspect-auto h-40 w-full p-0" config={chartConfig}>
+          <LineChart
+            accessibilityLayer
+            data={cancellationData}
+            margin={{ left: 8, right: 8, top: 4, bottom: 0 }}>
+            <CartesianGrid horizontal={false} strokeDasharray="2 2" />
+            <XAxis
+              axisLine={false}
+              dataKey="day"
+              tickLine={false}
+              tickMargin={6}
+              fontSize={11}
+            />
+            <ChartTooltip
+              content={
+                <ChartTooltipContent
+                  className="min-w-28"
+                  indicator="line"
+                  labelFormatter={(label) => `${label}`}
+                />
+              }
+            />
+            <Line
+              dataKey="rate"
+              dot={false}
+              stroke="var(--color-rate)"
+              strokeWidth={2}
+              type="monotone"
+            />
+          </LineChart>
+        </ChartContainer>
+      </CardContent>
+      <CardFooter className="flex items-center justify-between">
+        <div className="flex items-center gap-1 text-muted-foreground text-xs">
+          <Delta value={((avgRate - weekAvg) / weekAvg) * 100}>
+            <DeltaIcon />
+            <DeltaValue />
+          </Delta>
+          <p>vs promedio semanal</p>
+        </div>
+        <Button asChild className="text-muted-foreground" size="xs" variant="ghost">
+          <a href="#">
+            Ver detalle
+            <IconPlaceholder lucide="ArrowRight" className="ml-1" />
+          </a>
+        </Button>
+      </CardFooter>
+    </Card>
+  )
 }

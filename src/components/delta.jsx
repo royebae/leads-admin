@@ -87,86 +87,30 @@ function DeltaIcon({
 	const slotProps = filled ? {} : { "data-slot": "delta-icon" };
 
 	if (!resolvedValue || resolvedValue === 0) {
-		return shell(<IconPlaceholder
-            {...slotProps}
-            className={mergedClassName}
-            hugeicons="MinusSignIcon"
-            lucide="MinusIcon"
-            phosphor="MinusIcon"
-            remixicon="RiSubtractLine"
-            tabler="IconMinus"
-            {...props} />);
+	return shell(<IconPlaceholder lucide="Minus" {...slotProps} className={mergedClassName} {...props} />);
 	}
 
 	if (resolvedValue > 0) {
-		if (variant === "trend") {
-			return shell(<IconPlaceholder
-                {...slotProps}
-                className={mergedClassName}
-                hugeicons="TradeUpIcon"
-                lucide="TrendingUpIcon"
-                phosphor="TrendUpIcon"
-                remixicon="RiArrowRightUpLine"
-                tabler="IconTrendingUp"
-                {...props} />);
-		}
-
-		if (variant === "arrow") {
-			return shell(<IconPlaceholder
-                {...slotProps}
-                className={mergedClassName}
-                hugeicons="ArrowUp02Icon"
-                lucide="ArrowUpIcon"
-                phosphor="ArrowUpIcon"
-                remixicon="RiArrowUpLine"
-                tabler="IconArrowUp"
-                {...props} />);
-		}
-
-		return shell(<IconPlaceholder
-            {...slotProps}
-            className={mergedClassName}
-            hugeicons="ArrowUp01Icon"
-            lucide="ChevronUpIcon"
-            phosphor="CaretUpIcon"
-            remixicon="RiArrowUpSLine"
-            tabler="IconChevronUp"
-            {...props} />);
-	}
-
 	if (variant === "trend") {
-		return shell(<IconPlaceholder
-            {...slotProps}
-            className={mergedClassName}
-            hugeicons="TradeDownIcon"
-            lucide="TrendingDownIcon"
-            phosphor="TrendDownIcon"
-            remixicon="RiArrowRightDownLine"
-            tabler="IconTrendingDown"
-            {...props} />);
+		return shell(<IconPlaceholder lucide="TrendingUp" {...slotProps} className={mergedClassName} {...props} />);
 	}
 
 	if (variant === "arrow") {
-		return shell(<IconPlaceholder
-            {...slotProps}
-            className={mergedClassName}
-            hugeicons="ArrowDown02Icon"
-            lucide="ArrowDownIcon"
-            phosphor="ArrowDownIcon"
-            remixicon="RiArrowDownLine"
-            tabler="IconArrowDown"
-            {...props} />);
+		return shell(<IconPlaceholder lucide="ArrowUp" {...slotProps} className={mergedClassName} {...props} />);
 	}
 
-	return shell(<IconPlaceholder
-        {...slotProps}
-        className={mergedClassName}
-        hugeicons="ArrowDown01Icon"
-        lucide="ChevronDownIcon"
-        phosphor="CaretDownIcon"
-        remixicon="RiArrowDownSLine"
-        tabler="IconChevronDown"
-        {...props} />);
+	return shell(<IconPlaceholder lucide="ChevronUp" {...slotProps} className={mergedClassName} {...props} />);
+	}
+
+	if (variant === "trend") {
+	return shell(<IconPlaceholder lucide="TrendingDown" {...slotProps} className={mergedClassName} {...props} />);
+	}
+
+	if (variant === "arrow") {
+		return shell(<IconPlaceholder lucide="ArrowDown" {...slotProps} className={mergedClassName} {...props} />);
+	}
+
+	return shell(<IconPlaceholder lucide="ChevronDown" {...slotProps} className={mergedClassName} {...props} />);
 }
 
 function DeltaValue({

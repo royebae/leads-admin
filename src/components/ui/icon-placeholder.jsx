@@ -1,23 +1,18 @@
-export function IconPlaceholder({ className, ...props }) {
-  // Multi-library icon placeholder — renders a simple generic SVG
-  // Accepts: hugeicons, lucide, phosphor, remixicon, tabler icon names as props
+import * as LucideIcons from "lucide-react"
+import { cn } from "@/lib/utils"
+
+const FALLBACK = "Square"
+
+export function IconPlaceholder({ lucide, className, ...props }) {
+  const name = lucide || FALLBACK
+  const Icon = LucideIcons[name]
+  if (Icon) {
+    return <Icon className={cn("size-4 shrink-0", className)} {...props} />
+  }
+  // fallback: small diamond
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-      <circle cx="8.5" cy="8.5" r="1.5" />
-      <polyline points="21,15 16,10 5,21" />
+    <svg className={cn("size-4 shrink-0 text-muted-foreground", className)} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" {...props}>
+      <rect x="2" y="2" width="12" height="12" rx="3" />
     </svg>
-  );
+  )
 }

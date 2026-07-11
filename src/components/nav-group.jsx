@@ -39,13 +39,7 @@ export function NavGroup({
 										<SidebarMenuButton isActive={item.isActive}>
 											{item.icon}
 											<span>{item.title}</span>
-											<IconPlaceholder
-                                                className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90"
-                                                hugeicons="ArrowRight01Icon"
-                                                lucide="ChevronRightIcon"
-                                                phosphor="CaretRightIcon"
-                                                remixicon="RiArrowRightSLine"
-                                                tabler="IconChevronRight" />
+											<IconPlaceholder lucide="ChevronRight" className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
 										</SidebarMenuButton>
 									</CollapsibleTrigger>
 									<CollapsibleContent>

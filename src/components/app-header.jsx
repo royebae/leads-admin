@@ -1,41 +1,19 @@
-"use client";
+"use client"
 
-import { IconPlaceholder } from "@/components/ui/icon-placeholder";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { AppBreadcrumbs } from "@/components/app-breadcrumbs";
-import { CustomSidebarTrigger } from "@/components/custom-sidebar-trigger";
-import { navLinks } from "@/components/app-shared";
-import { NavUser } from "@/components/nav-user";
-
-const activeItem = navLinks.find((item) => item.isActive);
+import { cn } from "@/lib/utils"
+import { CustomSidebarTrigger } from "@/components/custom-sidebar-trigger"
+import { NavUser } from "@/components/nav-user"
 
 export function AppHeader() {
-	return (
-        <header
-            className={cn("pxx-4 mb-6 flex items-center justify-between gap-2 md:px-2")}>
-            <div className="flex items-center gap-3">
-				<CustomSidebarTrigger />
-				<Separator
-                    className="mr-2 h-4 data-[orientation=vertical]:self-center"
-                    orientation="vertical" />
-				<AppBreadcrumbs page={activeItem} />
-			</div>
-            <div className="flex items-center gap-3">
-				<Button aria-label="Notifications" size="icon" variant="ghost">
-					<IconPlaceholder
-                        hugeicons="Notification03Icon"
-                        lucide="BellIcon"
-                        phosphor="BellIcon"
-                        remixicon="RiNotification3Line"
-                        tabler="IconBell" />
-				</Button>
-				<Separator
-                    className="h-4 data-[orientation=vertical]:self-center"
-                    orientation="vertical" />
-				<NavUser />
-			</div>
-        </header>
-    );
+  return (
+    <header className={cn("mb-6 flex items-center justify-between gap-2")}>
+      <div className="flex items-center gap-2">
+        <CustomSidebarTrigger />
+        <h1 className="text-lg font-semibold tracking-tight">Dashboard</h1>
+      </div>
+      <div className="flex items-center gap-3">
+        <NavUser />
+      </div>
+    </header>
+  )
 }
