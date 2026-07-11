@@ -1,6 +1,501 @@
 {
   "runs": [
     {
+      "synced_at": "2026-07-11T00:17:43.295Z",
+      "dry_run": false,
+      "refresh_synced": false,
+      "location_id": "RUqSenZyzBWnHTnzt0fq",
+      "count": 20,
+      "ok": 20,
+      "failed": 0,
+      "results": [
+        {
+          "dentalink_id": 349,
+          "nombre": "ANDRES LIMON",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 122,
+          "status": "updated",
+          "elevatorId": "zIVh10AfmI22dF2CPiEX",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 240,
+          "nombre": "CARLOS SAMPERIO PEREZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "updated",
+          "elevatorId": "bMfEZpON8gRmBAxVy8Bd",
+          "tags": [
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 383,
+          "nombre": "ANGELICA GOMEZ MEZA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "created",
+          "elevatorId": "ZEaOZkKuUZFYusmSDnCb",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 822,
+          "nombre": "FANNY MANCILLA CORTES",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "created",
+          "elevatorId": "u3UHRJ5L3eSsCM4jVC5p",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1072,
+          "nombre": "JOHANA LIBREROS",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "created",
+          "elevatorId": "kud2dn0tfWDlOq6Ck7Hk",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1272,
+          "nombre": "JUDITH AMON",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "created",
+          "elevatorId": "mkGMFas9LV0OCpAghNjn",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1424,
+          "nombre": "ANA LAURA SOTELO LEON",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "created",
+          "elevatorId": "kd1ujvvzqoCP9YFxUozC",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1599,
+          "nombre": "GUADALUPE  MEZA CORTES",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "created",
+          "elevatorId": "ETp9mk2UgEbf9KwvFqZq",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 218,
+          "nombre": "KARLA  ARIZA TORCAT",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "protesis",
+          "score": 112,
+          "status": "updated",
+          "elevatorId": "mRR1x4h2eF5EiDmwHISr",
+          "tags": [
+            "bonergis",
+            "lead_mkt",
+            "form-web-llamadas",
+            "answered",
+            "contact hangup",
+            "not answered",
+            "voicemail reached",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1127,
+          "nombre": "ALFONSO GARCIA MORALES",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "protesis",
+          "score": 112,
+          "status": "created",
+          "elevatorId": "JFxuI7jz5iLvh8K5FhG2",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1422,
+          "nombre": "EDUARDO HERNANDEZ PERALTA",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "protesis",
+          "score": 112,
+          "status": "created",
+          "elevatorId": "oJG8SJuVtDG2d14ojPad",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1452,
+          "nombre": "MARIA DE LOS ANGELES OCHOA AGUILAR",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "protesis",
+          "score": 112,
+          "status": "updated",
+          "elevatorId": "UTNDIqgcgmpahH13y844",
+          "tags": [
+            "nueva_cita",
+            "[device] - clinica drdiente atención",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 146,
+          "nombre": "MONICA JOSE CATALAN",
+          "segment": "inactivo-90d",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "nbh4prZafUXgtqFbqBdc",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 148,
+          "nombre": "ESTEFANIA REYES NARES",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "MvkaMJFdnuuYxPELN4nT",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 845,
+          "nombre": "MARTHA SANCHEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "implantes",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "lbEuE3kx6E1tmhbcLDPK",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1117,
+          "nombre": "VICTOR MIGUEL  LEDESMA MORENO",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "p7vCLEZ2CkpAli79lAuQ",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1316,
+          "nombre": "LUIS ANGEL  LOPEZ VALDEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "YonASw5YLx5lBG0cKGiw",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1516,
+          "nombre": "ELIZABETH CEDILLO REYES",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "OMaKRF0XFVb0zACoZhSZ",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1704,
+          "nombre": "ERICK ALEXIS DE LA LUZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "updated",
+          "elevatorId": "ix6Mz8xsfQr7CC3wmwAl",
+          "tags": [
+            "nueva_cita",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1808,
+          "nombre": "INDRA  JIMENEZ SANCHEZ",
+          "segment": "ultima-no-asistio",
+          "treatment_tag": "ortodoncia",
+          "score": 110,
+          "status": "created",
+          "elevatorId": "faxxMLXZzi2trH8Gpw5C",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-ultima-no-asistio",
+            "ortodoncia"
+          ],
+          "ok": true
+        }
+      ]
+    },
+    {
+      "synced_at": "2026-07-11T00:17:15.510Z",
+      "dry_run": false,
+      "refresh_synced": true,
+      "location_id": "RUqSenZyzBWnHTnzt0fq",
+      "count": 5,
+      "ok": 5,
+      "failed": 0,
+      "results": [
+        {
+          "dentalink_id": 395,
+          "nombre": "BRYAN RICARDO ORTEGA CADENA",
+          "segment": "anticipo-sin-cita",
+          "treatment_tag": "protesis",
+          "score": 119,
+          "status": "updated",
+          "elevatorId": "qGuE7Dx51rOAvaQ0wCNG",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-anticipo-sin-cita",
+            "reactivable-protesis"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 317,
+          "nombre": "MARITZA GOMEZ",
+          "segment": "inactivo-90d",
+          "treatment_tag": "implantes",
+          "score": 115,
+          "status": "updated",
+          "elevatorId": "Xk14LQEJChhfzO1TYpdG",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-inactivo-90d",
+            "implante_dental"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1602,
+          "nombre": "SLENDY ZAPATA",
+          "segment": "plan-sin-cita",
+          "treatment_tag": "estetica",
+          "score": 111,
+          "status": "updated",
+          "elevatorId": "aJhtdG3XZLdq8DNPxiKq",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-plan-sin-cita",
+            "diseño_de_sonrisa"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 1338,
+          "nombre": "MONIKA GOLDEN",
+          "segment": "plan-sin-cita",
+          "treatment_tag": "ortodoncia",
+          "score": 109,
+          "status": "updated",
+          "elevatorId": "IBnVc1zOksEccXrykf9r",
+          "tags": [
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-plan-sin-cita",
+            "ortodoncia"
+          ],
+          "ok": true
+        },
+        {
+          "dentalink_id": 2013,
+          "nombre": "Karla Ariza",
+          "segment": "plan-sin-cita",
+          "treatment_tag": "rehabilitacion",
+          "score": 105,
+          "status": "updated",
+          "elevatorId": "mRR1x4h2eF5EiDmwHISr",
+          "tags": [
+            "bonergis",
+            "lead_mkt",
+            "form-web-llamadas",
+            "answered",
+            "contact hangup",
+            "not answered",
+            "voicemail reached",
+            "paciente-sin-lead",
+            "reactivable",
+            "dentalink-import",
+            "dentalink",
+            "prioridad-alta",
+            "reactivable-plan-sin-cita",
+            "reactivable-rehabilitacion"
+          ],
+          "ok": true
+        }
+      ]
+    },
+    {
       "synced_at": "2026-07-10T23:55:23.627Z",
       "dry_run": false,
       "location_id": "RUqSenZyzBWnHTnzt0fq",

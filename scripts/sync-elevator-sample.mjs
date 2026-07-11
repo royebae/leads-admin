@@ -1,14 +1,16 @@
 /**
- * Sincroniza N leads prioritarios a Elevator (GoHighLevel).
+ * Sincroniza leads prioritarios a Elevator (GoHighLevel).
  * NO envía mensajes. Solo crea/actualiza contactos + tags.
  *
  * Usage:
  *   ELEVATOR_API_KEY=pit-... ELEVATOR_LOCATION_ID=xxx \
- *   node scripts/sync-elevator-sample.mjs --limit=5
+ *   node scripts/sync-elevator-sample.mjs --limit=25
  *
- * Optional:
- *   --dry-run   no escribe, solo simula
- *   --rank=1,2  ranks específicos de top_reactivables
+ * Flags:
+ *   --dry-run
+ *   --limit=N            nuevos a sincronizar (default 5)
+ *   --refresh-synced     reescribe tags de ya sincronizados
+ *   --only-unsynced      ignora ya sincronizados (default true salvo --refresh-synced)
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
@@ -26,16 +28,44 @@ const VERSION = process.env.ELEVATOR_API_VERSION || '2021-07-28'
 
 const args = process.argv.slice(2)
 const dryRun = args.includes('--dry-run')
+const refreshSynced = args.includes('--refresh-synced')
+const onlyUnsynced = args.includes('--only-unsynced') || !refreshSynced
 const limit = Number((args.find(a => a.startsWith('--limit=')) || '--limit=5').split('=')[1]) || 5
-const rankArg = args.find(a => a.startsWith('--rank='))
-const ranks = rankArg
-  ? rankArg.split('=')[1].split(',').map(n => Number(n.trim())).filter(Boolean)
-  : null
 
 if (!KEY || !LOCATION_ID) {
   console.error('Missing ELEVATOR_API_KEY or ELEVATOR_LOCATION_ID')
   process.exit(1)
 }
+
+// Prefer tags that already exist in Elevator location
+const TREATMENT_TAG_MAP = {
+  implantes: 'implante_dental',
+  ortodoncia: 'ortodoncia',
+  endodoncia: 'endodoncia',
+  limpieza: 'limpieza_dental',
+  estetica: 'diseño_de_sonrisa',
+  protesis: 'reactivable-protesis',
+  cirugia: 'reactivable-cirugia',
+  rehabilitacion: 'reactivable-rehabilitacion',
+  general: 'odontolog',
+  'sin-tratamiento': null,
+}
+
+const STALE_SEGMENT_PREFIXES = [
+  'reactivable-nunca-agendo',
+  'reactivable-plan-sin-cita',
+  'reactivable-anticipo-sin-cita',
+  'reactivable-solo-cancelaciones',
+  'reactivable-ultima-no-asistio',
+  'reactivable-inactivo-30d',
+  'reactivable-inactivo-60d',
+  'reactivable-inactivo-90d',
+  'reactivable-reciente',
+  'reactivable-tiene-cita',
+]
+
+const STALE_TX_PREFIX = /^tx-/
+const PRIORITY_TAGS = ['prioridad-alta', 'prioridad-media', 'prioridad-baja']
 
 function sleep(ms) {
   return new Promise(r => setTimeout(r, ms))
@@ -54,12 +84,49 @@ function normalizePhone(phone) {
   return digits.startsWith('52') ? `+${digits}` : digits.length === 10 ? `+52${digits}` : `+${digits}`
 }
 
+function isJunk(name) {
+  return /prueba|test|borrar|demo|asdf|xxx|hubspot|paciente hubspot/i.test(String(name || ''))
+}
+
 function segmentTag(segment) {
   return `reactivable-${String(segment || 'otro').replace(/[^a-z0-9-]/gi, '-').toLowerCase()}`
 }
 
-function treatmentTag(tag) {
-  return tag && tag !== 'sin-tratamiento' ? `tx-${tag}` : null
+function treatmentTags(lead) {
+  const tag = lead.treatment_tag || 'sin-tratamiento'
+  const mapped = TREATMENT_TAG_MAP[tag]
+  const tags = []
+  if (mapped) tags.push(mapped)
+  // keep compact tx- only if no native map
+  if (!mapped && tag && tag !== 'sin-tratamiento') tags.push(`tx-${tag}`)
+  return tags
+}
+
+function buildDesiredTags(lead) {
+  const tags = [
+    'reactivable',
+    'dentalink-import',
+    'dentalink',
+    `prioridad-${lead.priority_band || 'media'}`,
+    segmentTag(lead.segment),
+    ...treatmentTags(lead),
+  ]
+  return [...new Set(tags.filter(Boolean))]
+}
+
+function mergeTags(existingTags, desiredTags) {
+  const existing = Array.isArray(existingTags) ? existingTags.map(String) : []
+  const cleaned = existing.filter(t => {
+    const low = t.toLowerCase()
+    if (PRIORITY_TAGS.includes(low)) return false
+    if (STALE_SEGMENT_PREFIXES.includes(low)) return false
+    if (low.startsWith('reactivable-') && low !== 'reactivable') return false
+    if (STALE_TX_PREFIX.test(low)) return false
+    // remove old mapped treatment collisions we re-add cleanly
+    if (Object.values(TREATMENT_TAG_MAP).includes(t)) return false
+    return true
+  })
+  return [...new Set([...cleaned, ...desiredTags])]
 }
 
 async function request(method, path, body, query) {
@@ -123,21 +190,9 @@ async function findExisting(phone, email) {
   return null
 }
 
-function buildTags(lead) {
-  const tags = [
-    'reactivable',
-    'dentalink-import',
-    'prioridad-' + (lead.priority_band || 'media'),
-    segmentTag(lead.segment),
-    treatmentTag(lead.treatment_tag),
-  ].filter(Boolean)
-  return [...new Set(tags)]
-}
-
-function buildPayload(lead) {
+function buildPayload(lead, tags) {
   const { firstName, lastName } = splitName(lead.nombre)
   const phone = normalizePhone(lead.phone)
-  const tags = buildTags(lead)
   const payload = {
     locationId: LOCATION_ID,
     firstName,
@@ -147,29 +202,25 @@ function buildPayload(lead) {
   }
   if (phone) payload.phone = phone
   if (lead.email) payload.email = String(lead.email).trim().toLowerCase()
-
-  // Custom fields if available in account (safe optional)
-  payload.customFields = [
-    { key: 'contact.external_id', field_value: String(lead.id) },
-    { key: 'contact.servicio_de_inters', field_value: lead.tratamiento_principal || lead.treatment_tag || '' },
-  ].filter(f => f.field_value)
-
-  // Note for operator context
-  payload.tags = tags
   return payload
 }
 
 async function upsertLead(lead) {
-  const existing = await findExisting(lead.phone, lead.email)
-  const tags = buildTags(lead)
+  const desired = buildDesiredTags(lead)
+  let existing = null
+  if (lead.elevator_id) {
+    try {
+      const got = await request('GET', `/contacts/${lead.elevator_id}`)
+      existing = got?.contact || got
+    } catch {
+      existing = null
+    }
+  }
+  if (!existing) existing = await findExisting(lead.phone, lead.email)
 
   if (existing?.id) {
-    if (dryRun) {
-      return { status: 'would-update', elevatorId: existing.id, tags }
-    }
-    // Merge tags by update
-    const currentTags = Array.isArray(existing.tags) ? existing.tags : []
-    const merged = [...new Set([...currentTags, ...tags])]
+    const merged = mergeTags(existing.tags, desired)
+    if (dryRun) return { status: 'would-update', elevatorId: existing.id, tags: merged }
     await request('PUT', `/contacts/${existing.id}`, {
       tags: merged,
       source: existing.source || 'Dentalink Reactivation',
@@ -177,63 +228,61 @@ async function upsertLead(lead) {
     return { status: 'updated', elevatorId: existing.id, tags: merged }
   }
 
-  if (dryRun) {
-    return { status: 'would-create', elevatorId: null, tags }
-  }
+  if (dryRun) return { status: 'would-create', elevatorId: null, tags: desired }
 
   try {
-    const created = await request('POST', '/contacts/', buildPayload(lead))
+    const created = await request('POST', '/contacts/', buildPayload(lead, desired))
     const id = created?.contact?.id || created?.id || null
-    return { status: 'created', elevatorId: id, tags }
+    return { status: 'created', elevatorId: id, tags: desired }
   } catch (err) {
-    // Handle duplicate race
     if (err.status === 400 && err.body?.meta?.contactId) {
       const id = err.body.meta.contactId
-      await request('PUT', `/contacts/${id}`, { tags })
-      return { status: 'updated-duplicate', elevatorId: id, tags }
+      await request('PUT', `/contacts/${id}`, { tags: desired })
+      return { status: 'updated-duplicate', elevatorId: id, tags: desired }
     }
     throw err
   }
 }
 
 const data = JSON.parse(readFileSync(LEADS_PATH, 'utf-8'))
-let candidates = data.top_reactivables || []
-if (!candidates.length) {
-  console.error('No top_reactivables. Run prioritize-leads.mjs first.')
-  process.exit(1)
-}
+const byId = new Map((data.leads || []).map(l => [l.id, l]))
 
-const isJunk = (name) => /prueba|test|borrar|demo|asdf|xxx/i.test(String(name || ''))
+// Prefer full lead objects (have phone/email) ordered by score
+let pool = (data.leads || [])
+  .filter(l => l.is_reactivable)
+  .filter(l => !isJunk(l.nombre))
+  .filter(l => l.phone || l.email)
+  .sort((a, b) => (b.reactivation_score || 0) - (a.reactivation_score || 0))
 
-if (ranks) {
-  candidates = candidates.filter(c => ranks.includes(c.rank) && !isJunk(c.nombre))
+if (refreshSynced) {
+  pool = pool.filter(l => l.elevator_id).slice(0, Math.max(limit, 5))
+} else if (onlyUnsynced) {
+  pool = pool.filter(l => !l.elevator_id).slice(0, limit)
 } else {
-  candidates = candidates.filter(c => !isJunk(c.nombre)).slice(0, limit)
+  pool = pool.slice(0, limit)
 }
 
-console.log(`${dryRun ? 'DRY-RUN' : 'SYNC'} Elevator · ${candidates.length} leads`)
+console.log(`${dryRun ? 'DRY-RUN' : 'SYNC'} Elevator · ${pool.length} leads · refresh=${refreshSynced}`)
 console.log(`Location: ${LOCATION_ID}`)
 
 const results = []
-for (const lead of candidates) {
-  process.stdout.write(`→ #${lead.rank} ${lead.nombre} ... `)
+for (const lead of pool) {
+  process.stdout.write(`→ [${lead.reactivation_score}] ${lead.nombre} (${lead.segment}) ... `)
   try {
     const res = await upsertLead(lead)
     console.log(res.status, res.elevatorId || '')
     results.push({
-      rank: lead.rank,
       dentalink_id: lead.id,
       nombre: lead.nombre,
       segment: lead.segment,
-      treatment: lead.tratamiento_principal,
+      treatment_tag: lead.treatment_tag,
       score: lead.reactivation_score,
       ...res,
       ok: true,
     })
   } catch (err) {
-    console.log('ERROR', err.message.slice(0, 120))
+    console.log('ERROR', err.message.slice(0, 140))
     results.push({
-      rank: lead.rank,
       dentalink_id: lead.id,
       nombre: lead.nombre,
       ok: false,
@@ -246,6 +295,7 @@ for (const lead of candidates) {
 const log = {
   synced_at: new Date().toISOString(),
   dry_run: dryRun,
+  refresh_synced: refreshSynced,
   location_id: LOCATION_ID,
   count: results.length,
   ok: results.filter(r => r.ok).length,
@@ -253,44 +303,48 @@ const log = {
   results,
 }
 
-// Mark leads in main data if real sync
 if (!dryRun) {
-  const byId = new Map(results.filter(r => r.ok && r.elevatorId).map(r => [r.dentalink_id, r]))
+  const map = new Map(results.filter(r => r.ok && r.elevatorId).map(r => [r.dentalink_id, r]))
   for (const lead of data.leads || []) {
-    const r = byId.get(lead.id)
+    const r = map.get(lead.id)
     if (r) {
       lead.elevator_id = r.elevatorId
       lead.elevator_synced_at = log.synced_at
       lead.elevator_sync_status = r.status
+      lead.elevator_tags = r.tags
     }
   }
-  // also update top list
   for (const t of data.top_reactivables || []) {
-    const r = byId.get(t.id)
-    if (r) {
-      t.elevator_id = r.elevatorId
-      t.elevator_sync_status = r.status
+    const full = byId.get(t.id)
+    if (full?.elevator_id) {
+      t.elevator_id = full.elevator_id
+      t.elevator_sync_status = full.elevator_sync_status
     }
+  }
+  data.metadata = {
+    ...data.metadata,
+    elevator_synced_count: (data.leads || []).filter(l => l.elevator_id).length,
+    elevator_last_sync_at: log.synced_at,
   }
   writeFileSync(LEADS_PATH, JSON.stringify(data, null, 2))
   writeFileSync(
     join(ROOT, 'src', 'data', 'leads.js'),
-    `// Generated with Elevator sample sync\n// ${log.synced_at}\nexport default ${JSON.stringify(data)};\n`,
+    `// Elevator sync ${log.synced_at}\nexport default ${JSON.stringify(data)};\n`,
   )
 }
 
 const prev = existsSync(LOG_PATH) ? JSON.parse(readFileSync(LOG_PATH, 'utf-8')) : { runs: [] }
 const runs = Array.isArray(prev.runs) ? prev.runs : []
 runs.unshift(log)
-writeFileSync(LOG_PATH, JSON.stringify({ runs: runs.slice(0, 20) }, null, 2))
+writeFileSync(LOG_PATH, JSON.stringify({ runs: runs.slice(0, 30) }, null, 2))
 
 console.log('══════════════════════════════════')
 console.log(`OK: ${log.ok} · FAIL: ${log.failed} · dryRun=${dryRun}`)
 for (const r of results) {
   console.log(
     r.ok
-      ? `  ✅ #${r.rank} ${r.nombre} → ${r.status} ${r.elevatorId || ''}`
-      : `  ❌ #${r.rank} ${r.nombre} → ${r.error}`,
+      ? `  ✅ ${r.nombre} → ${r.status} ${r.elevatorId || ''} | ${ (r.tags || []).join(', ') }`
+      : `  ❌ ${r.nombre} → ${r.error}`,
   )
 }
-console.log('Log:', LOG_PATH)
+console.log('Total elevator_id in data:', (data.leads || []).filter(l => l.elevator_id).length)
