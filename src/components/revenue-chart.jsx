@@ -18,6 +18,7 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
+import { IconPlaceholder } from "@/components/ui/icon-placeholder";
 import { Delta, DeltaIcon, DeltaValue } from "@/components/delta";
 import { revenueChartData } from "@/components/revenue-chart-data";
 

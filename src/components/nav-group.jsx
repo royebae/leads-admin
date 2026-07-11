@@ -1,3 +1,4 @@
+import { IconPlaceholder } from "@/components/ui/icon-placeholder";
 import {
 	Collapsible,
 	CollapsibleContent,

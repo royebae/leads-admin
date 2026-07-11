@@ -1,5 +1,6 @@
 "use client";
 
+import { IconPlaceholder } from "@/components/ui/icon-placeholder";
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
 import { Button } from "@/components/ui/button";
 import {

@@ -1,5 +1,6 @@
 "use client";
 
+import { IconPlaceholder } from "@/components/ui/icon-placeholder";
 import {
 	Avatar,
 	AvatarFallback,

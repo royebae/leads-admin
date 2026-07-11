@@ -1,5 +1,6 @@
 "use client";
 
+import { IconPlaceholder } from "@/components/ui/icon-placeholder";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";

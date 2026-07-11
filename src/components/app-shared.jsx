@@ -1,3 +1,5 @@
+import { IconPlaceholder } from "@/components/ui/icon-placeholder";
+
 export const navGroups = [
 	{
 		label: "Overview",
