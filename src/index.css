@@ -1,6 +1,6 @@
 /* ════════════════════════════════════════
-   Craft Design System — Dr. Diente Leads Admin
-   botanical conservatory on warm parchment
+   Craft Design System — Dark Mode
+   Dr. Diente Leads Admin
    ════════════════════════════════════════ */
 
 *, *::before, *::after {
@@ -21,62 +21,62 @@
   --lime-pulse: #26d862;
   --peacock-teal: #0e634f;
 
-  /* ── Surfaces ── */
-  --surface-page: var(--bone-linen);
-  --surface-card: var(--oat-milk);
-  --surface-dark: var(--forest-depths);
-  --surface-action: var(--lime-pulse);
+  /* Dark Mode Surfaces */
+  --surface-page: #0f0f0f;
+  --surface-card: #1a1a1a;
+  --surface-elevated: #222222;
+  --surface-dark: #0a0a0a;
 
-  /* ── Text ── */
-  --text-primary: var(--obsidian-plum);
-  --text-secondary: var(--ash-mauve);
-  --text-on-dark: var(--bone-linen);
+  /* Dark Mode Text */
+  --text-primary: #f0f0f0;
+  --text-secondary: rgba(255,255,255,0.45);
+  --text-muted: rgba(255,255,255,0.25);
   --text-accent: var(--lime-pulse);
-  --text-link: var(--lime-pulse);
-  --text-stat: var(--peacock-teal);
+  --text-stat: var(--lime-pulse);
+  --text-on-dark: var(--bone-linen);
 
-  /* ── Borders ── */
-  --border-color: var(--driftwood);
-  --border-subtle: #e0dbd5;
+  /* Dark Mode Borders */
+  --border-color: rgba(255,255,255,0.08);
+  --border-subtle: rgba(255,255,255,0.04);
 
-  /* ── Typography — Font Families ── */
+  /* ── Typography ── */
   --font-display: 'ABC Arizona Flare Condensed Variable', Georgia, 'Times New Roman', serif;
   --font-body: 'ABC Arizona Flare Variable', Georgia, 'Times New Roman', serif;
 
-  /* ── Typography — Scale ── */
-  --text-xs: 12px;
-  --text-sm: 13px;
-  --text-base: 15px;
-  --text-body: 16px;
-  --text-lg: 18px;
-  --text-sub: 20px;
-  --text-heading-sm: 26px;
-  --text-heading: 32px;
-  --text-heading-lg: 48px;
+  /* ── Scale ── */
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-base: 13px;
+  --text-body: 14px;
+  --text-lg: 15px;
+  --text-sub: 16px;
+  --text-heading-sm: 20px;
+  --text-heading: 24px;
+  --text-heading-lg: 28px;
 
-  --leading-tight: 1.0;
+  --leading-tight: 0.95;
   --leading-snug: 1.08;
-  --leading-normal: 1.25;
-  --leading-relaxed: 1.5;
+  --leading-normal: 1.2;
+  --leading-relaxed: 1.4;
 
-  /* ── Spacing ── */
+  /* ── Spacing (compact) ── */
+  --space-4: 4px;
   --space-8: 8px;
   --space-12: 12px;
   --space-16: 16px;
+  --space-20: 20px;
   --space-24: 24px;
   --space-32: 32px;
   --space-40: 40px;
   --space-56: 56px;
-  --space-64: 64px;
-  --space-80: 80px;
 
   /* ── Radius ── */
   --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
 
   /* ── Layout ── */
-  --page-max-width: 1200px;
+  --page-max-width: 1400px;
 }
 
 body {
@@ -90,23 +90,10 @@ body {
 }
 
 ::selection {
-  background: rgba(38, 216, 98, 0.2);
-  color: var(--obsidian-plum);
+  background: rgba(38, 216, 98, 0.25);
+  color: #fff;
 }
 
-a {
-  color: var(--text-link);
-  text-decoration: none;
-}
-
-/* ── Utility classes ── */
-.font-display { font-family: var(--font-display); }
-.font-body { font-family: var(--font-body); }
-.text-primary { color: var(--text-primary); }
-.text-secondary { color: var(--text-secondary); }
-.text-accent { color: var(--text-accent); }
-
-/* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--driftwood); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }

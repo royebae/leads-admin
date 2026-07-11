@@ -43,7 +43,7 @@ export default function App() {
     setLoading(true)
     setError('')
     try {
-      const params = new URLSearchParams({ token: ADMIN_TOKEN, page: String(page), limit: '100' })
+      const params = new URLSearchParams({ token: ADMIN_TOKEN, page: String(page), limit: '20' })
       if (filterSegment !== 'todos') params.set('segment', filterSegment)
       if (search.trim()) params.set('search', search.trim())
       const res = await fetch(`${API_BASE}?${params}`)
@@ -82,7 +82,7 @@ export default function App() {
     return (
       <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--surface-page)', padding: '1rem' }}>
         <div style={{ background: 'var(--surface-card)', borderRadius: 'var(--radius-md)', padding: '2rem', width: '100%', maxWidth: '400px', border: '1px solid var(--border-color)' }}>
-          <h1 style={{ fontSize: 'var(--text-heading)', color: 'var(--forest-depths)', fontFamily: 'var(--font-display)', fontWeight: 300, margin: '0 0 0.25rem', letterSpacing: '-0.02em' }}>🦷 Leads Admin</h1>
+          <h1 style={{ fontSize: 'var(--text-heading)', color: 'var(--text-primary)', fontFamily: 'var(--font-display)', fontWeight: 300, margin: '0 0 0.25rem', letterSpacing: '-0.02em' }}>🦷 Leads Admin</h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', margin: '0 0 1.5rem', fontFamily: 'var(--font-body)' }}>Panel de leads reactivables — Dr. Diente</p>
           <form onSubmit={handleLogin}>
             <input
@@ -114,7 +114,7 @@ export default function App() {
   // ── LOADING ──
   if (loading && !data) {
     return (
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--surface-page)', color: 'var(--forest-depths)', fontFamily: 'var(--font-display)', fontSize: 'var(--text-heading)', letterSpacing: '-0.02em' }}>
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--surface-page)', color: 'var(--text-primary)', fontFamily: 'var(--font-display)', fontSize: 'var(--text-heading)', letterSpacing: '-0.02em' }}>
         Cargando leads...
       </div>
     )
@@ -178,11 +178,11 @@ export default function App() {
           </div>
 
           <div style={{ marginTop: 'var(--space-16)', background: 'var(--surface-card)', borderRadius: 'var(--radius-md)', padding: 'var(--space-24)', border: '1px solid var(--border-color)' }}>
-            <h3 style={{ margin: '0 0 var(--space-16)', fontSize: 'var(--text-sub)', fontFamily: 'var(--font-display)', fontWeight: 400, color: 'var(--forest-depths)', letterSpacing: '-0.01em' }}>🦷 Tratamientos</h3>
+            <h3 style={{ margin: '0 0 var(--space-16)', fontSize: 'var(--text-sub)', fontFamily: 'var(--font-display)', fontWeight: 400, color: 'var(--text-primary)', letterSpacing: '-0.01em' }}>🦷 Tratamientos</h3>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-12)', marginBottom: 'var(--space-16)' }}>
               <div>
                 <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>Principal</div>
-                <div style={{ fontSize: 'var(--text-base)', color: 'var(--forest-depths)', fontWeight: 500 }}>{l.tratamiento_principal || 'Sin plan registrado'}</div>
+                <div style={{ fontSize: 'var(--text-base)', color: 'var(--text-primary)', fontWeight: 500 }}>{l.tratamiento_principal || 'Sin plan registrado'}</div>
               </div>
               <div>
                 <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>Planes</div>
@@ -210,7 +210,7 @@ export default function App() {
                 {l.tratamientos.map((t) => (
                   <span key={t} style={{
                     padding: '0.2rem 0.55rem', borderRadius: 'var(--radius-sm)', fontSize: 'var(--text-xs)',
-                    background: 'rgba(45,48,35,0.08)', color: 'var(--forest-depths)', border: '1px solid rgba(45,48,35,0.15)',
+                    background: 'rgba(45,48,35,0.08)', color: 'var(--text-primary)', border: '1px solid rgba(45,48,35,0.15)',
                   }}>{t}</span>
                 ))}
               </div>
@@ -219,11 +219,11 @@ export default function App() {
 
           {l.pagos_count > 0 && (
             <div style={{ marginTop: 'var(--space-16)', background: 'var(--surface-card)', borderRadius: 'var(--radius-md)', padding: 'var(--space-24)', border: '1px solid var(--border-color)' }}>
-              <h3 style={{ margin: '0 0 var(--space-16)', fontSize: 'var(--text-sub)', fontFamily: 'var(--font-display)', fontWeight: 400, color: 'var(--forest-depths)', letterSpacing: '-0.01em' }}>💰 Pagos ({l.pagos_count})</h3>
+              <h3 style={{ margin: '0 0 var(--space-16)', fontSize: 'var(--text-sub)', fontFamily: 'var(--font-display)', fontWeight: 400, color: 'var(--text-primary)', letterSpacing: '-0.01em' }}>💰 Pagos ({l.pagos_count})</h3>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 'var(--space-12)', marginBottom: 'var(--space-16)' }}>
                 <div>
                   <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>Total pagado</div>
-                  <div style={{ fontSize: 'var(--text-heading)', color: 'var(--peacock-teal)', fontWeight: 500, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</div>
+                  <div style={{ fontSize: 'var(--text-heading)', color: 'var(--lime-pulse)', fontWeight: 500, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</div>
                 </div>
                 <div>
                   <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>Último pago</div>
@@ -235,7 +235,7 @@ export default function App() {
                     {Array.isArray(l.medios_pago) && l.medios_pago.map(m => (
                       <span key={m} style={{
                         padding: '0.15rem 0.5rem', borderRadius: 'var(--radius-sm)', fontSize: 'var(--text-xs)',
-                        background: 'rgba(14,99,79,0.08)', color: 'var(--peacock-teal)', border: '1px solid rgba(14,99,79,0.15)',
+                        background: 'rgba(38,216,98,0.08)', color: 'var(--lime-pulse)', border: '1px solid rgba(38,216,98,0.2)',
                       }}>{m}</span>
                     ))}
                   </div>
@@ -246,7 +246,7 @@ export default function App() {
 
           {l.citas?.length > 0 && (
             <div style={{ marginTop: 'var(--space-16)', background: 'var(--surface-card)', borderRadius: 'var(--radius-md)', padding: 'var(--space-24)', border: '1px solid var(--border-color)' }}>
-              <h3 style={{ margin: '0 0 var(--space-16)', fontSize: 'var(--text-sub)', fontFamily: 'var(--font-display)', fontWeight: 400, color: 'var(--forest-depths)', letterSpacing: '-0.01em' }}>Historial de citas ({l.citas.length})</h3>
+              <h3 style={{ margin: '0 0 var(--space-16)', fontSize: 'var(--text-sub)', fontFamily: 'var(--font-display)', fontWeight: 400, color: 'var(--text-primary)', letterSpacing: '-0.01em' }}>Historial de citas ({l.citas.length})</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-8)' }}>
                 {l.citas.slice().reverse().map(c => (
                   <div key={c.id} style={{ display: 'flex', justifyContent: 'space-between', padding: 'var(--space-8) 0', borderBottom: '1px solid var(--border-subtle)', fontSize: 'var(--text-sm)' }}>
@@ -278,7 +278,7 @@ export default function App() {
       }}>
         <div style={{ maxWidth: 'var(--page-max-width)', margin: '0 auto', padding: 'var(--space-16) var(--space-24)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-16)' }}>
-            <span style={{ fontSize: 'var(--text-heading)', color: 'var(--forest-depths)', fontFamily: 'var(--font-display)', fontWeight: 300, letterSpacing: '-0.02em' }}>🦷 Leads DrDiente</span>
+            <span style={{ fontSize: 'var(--text-heading)', color: 'var(--text-primary)', fontFamily: 'var(--font-display)', fontWeight: 300, letterSpacing: '-0.02em' }}>🦷 Leads DrDiente</span>
             <span style={{ fontSize: 'var(--text-xs)', background: 'rgba(38,216,98,0.15)', color: 'var(--lime-pulse)', padding: '0.15rem 0.5rem', borderRadius: 'var(--radius-sm)' }}>
               {totalLeads} leads
             </span>
@@ -286,7 +286,7 @@ export default function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-16)' }}>
             <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>{reactivables} reactivables</span>
             {data?.metadata?.pagos_api_total > 0 && (
-              <span style={{ fontSize: 'var(--text-xs)', color: 'var(--peacock-teal)', background: 'rgba(14,99,79,0.08)', padding: '0.15rem 0.5rem', borderRadius: 'var(--radius-sm)' }}>
+              <span style={{ fontSize: 'var(--text-xs)', color: 'var(--lime-pulse)', background: 'rgba(38,216,98,0.08)', padding: '0.15rem 0.5rem', borderRadius: 'var(--radius-sm)' }}>
                 ${Number(data.metadata.pagos_api_total).toLocaleString('es-MX')} en pagos
               </span>
             )}
@@ -299,9 +299,9 @@ export default function App() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 'var(--page-max-width)', margin: '0 auto', padding: 'var(--space-32) var(--space-24)' }}>
-        {/* Summary Cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 'var(--space-8)', marginBottom: 'var(--space-32)' }}>
+      <div style={{ maxWidth: 'var(--page-max-width)', margin: '0 auto', padding: 'var(--space-20) var(--space-24)' }}>
+      {/* Summary Cards */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))', gap: 'var(--space-8)', marginBottom: 'var(--space-20)' }}>
           {Object.entries(SEGMENTS).map(([key, cfg]) => {
             const count = segmentSummary[key]
             if (!count) return null
@@ -333,7 +333,7 @@ export default function App() {
             }}
           >
             <div style={{ fontSize: 'var(--text-heading-sm)' }}>📊</div>
-            <div style={{ fontSize: 'var(--text-heading-lg)', fontWeight: 400, color: 'var(--forest-depths)', marginTop: 'var(--space-8)', fontFamily: 'var(--font-display)', letterSpacing: '-0.01em' }}>{totalLeads}</div>
+            <div style={{ fontSize: 'var(--text-heading-lg)', fontWeight: 400, color: 'var(--text-primary)', marginTop: 'var(--space-8)', fontFamily: 'var(--font-display)', letterSpacing: '-0.01em' }}>{totalLeads}</div>
             <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)', marginTop: 'var(--space-8)' }}>Todos</div>
           </button>
         </div>
@@ -399,41 +399,41 @@ export default function App() {
                       onMouseEnter={e => e.currentTarget.style.background = 'rgba(38,216,98,0.04)'}
                       onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
                     >
-                      <td style={{ padding: 'var(--space-12) var(--space-16)' }}>
+                      <td style={{ padding: 'var(--space-8) var(--space-12)' }}>
                         <div style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}>{l.nombre}</div>
                       </td>
-                      <td style={{ padding: 'var(--space-12) var(--space-16)' }}>
-                        {l.phone && <div style={{ color: 'var(--text-primary)', fontSize: 'var(--text-sm)' }}>{l.phone}</div>}
+                      <td style={{ padding: 'var(--space-8) var(--space-12)' }}>
+                        {l.phone && <div style={{ color: 'var(--text-primary)', fontSize: 'var(--text-xs)' }}>{l.phone}</div>}
                         {l.email && <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)', maxWidth: '180px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.email}</div>}
                       </td>
-                      <td style={{ padding: 'var(--space-12) var(--space-16)' }}>
-                        <div style={{ color: 'var(--forest-depths)', fontSize: 'var(--text-sm)', fontWeight: 500, maxWidth: '180px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      <td style={{ padding: 'var(--space-8) var(--space-12)' }}>
+                        <div style={{ color: 'var(--lime-pulse)', fontSize: 'var(--text-xs)', fontWeight: 500, maxWidth: '180px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                           {l.tratamiento_principal || '—'}
                         </div>
                         {Array.isArray(l.tratamientos) && l.tratamientos.length > 1 && (
                           <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>+{l.tratamientos.length - 1} más</div>
                         )}
                       </td>
-                      <td style={{ padding: 'var(--space-12) var(--space-16)' }}>
+                      <td style={{ padding: 'var(--space-8) var(--space-12)' }}>
                         <span style={{
-                          display: 'inline-block', padding: '0.15rem 0.5rem', borderRadius: 'var(--radius-sm)',
+                          display: 'inline-block', padding: '0.1rem 0.4rem', borderRadius: 'var(--radius-sm)',
                           fontSize: 'var(--text-xs)', fontWeight: 500,
                           background: l.segment_color + '20', color: l.segment_color,
                           border: `1px solid ${l.segment_color}40`,
                         }}>{l.segment_label}</span>
                       </td>
-                      <td style={{ padding: 'var(--space-12) var(--space-16)', textAlign: 'right', color: 'var(--text-primary)', fontSize: 'var(--text-sm)' }}>
+                      <td style={{ padding: 'var(--space-8) var(--space-12)', textAlign: 'right', color: 'var(--text-primary)', fontSize: 'var(--text-xs)' }}>
                         {l.presupuesto_total ? `$${Number(l.presupuesto_total).toLocaleString('es-MX')}` : '—'}
                       </td>
-                      <td style={{ padding: 'var(--space-12) var(--space-16)', textAlign: 'right', fontSize: 'var(--text-sm)' }}>
+                      <td style={{ padding: 'var(--space-8) var(--space-12)', textAlign: 'right', fontSize: 'var(--text-xs)' }}>
                         {l.pagos_count > 0 ? (
                           <>
-                            <div style={{ color: 'var(--peacock-teal)', fontWeight: 500 }}>${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</div>
-                            <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>{l.pagos_count} pagos · {l.ultimo_pago_fecha || '—'}</div>
+                            <div style={{ color: 'var(--lime-pulse)', fontWeight: 500 }}>${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</div>
+                            <div style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>{l.pagos_count} · {l.ultimo_pago_fecha || '—'}</div>
                           </>
-                        ) : <span style={{ color: 'var(--text-secondary)' }}>—</span>}
+                        ) : <span style={{ color: 'var(--text-muted)' }}>—</span>}
                       </td>
-                      <td style={{ padding: 'var(--space-12) var(--space-16)', textAlign: 'center', color: 'var(--text-secondary)', fontSize: 'var(--text-sm)' }}>{l.total_citas}</td>
+                      <td style={{ padding: 'var(--space-8) var(--space-12)', textAlign: 'center', color: 'var(--text-secondary)', fontSize: 'var(--text-xs)' }}>{l.total_citas}</td>
                     </tr>
                   ))}
                 </tbody>
