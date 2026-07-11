@@ -1,68 +1,29 @@
-import {
-	Card,
-	CardContent,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
-import { Delta, DeltaIcon, DeltaValue } from "@/components/delta";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Delta, DeltaIcon, DeltaValue } from "@/components/delta"
 
-const stats = [{
-    label: "Total revenue",
-    value: "$284,920",
-    delta: 8.2,
-    hint: "vs prior 30 days",
-}, {
-    label: "Orders",
-    value: "1,842",
-    delta: 4.1,
-    hint: "vs prior 30 days",
-}, {
-    label: "Average order value",
-    value: "$154.60",
-    delta: -1.3,
-    hint: "vs prior 30 days",
-}, {
-    label: "Store conversion",
-    value: "3.06%",
-    delta: 0.6,
-    hint: "vs prior 30 days",
-}];
+export function DashboardStats({ totalLeads, totalPagos, reactivables, totalCitas }) {
+  const stats = [
+    { label: "Total leads", value: String(totalLeads || 0), delta: 0, hint: "en base" },
+    { label: "Reactivables", value: String(reactivables || 0), delta: 0, hint: "para campaña" },
+    { label: "En pagos", value: `$${(totalPagos || 0).toLocaleString('es-MX')}`, delta: 0, hint: "histórico" },
+    { label: "Citas totales", value: String(totalCitas || 0), delta: 0, hint: "registradas" },
+  ]
 
-export function DashboardStats() {
-	return (
-        <>
-            {stats.map((s) => (
-				<StatCard key={s.label} stat={s} />
-			))}
-        </>
-    );
-}
-
-function StatCard({
-    stat
-}) {
-	const { label, value, delta, hint } = stat;
-	return (
-        <Card>
-            <CardHeader>
-				<CardTitle className="font-normal text-muted-foreground text-xs">
-					{label}
-				</CardTitle>
-			</CardHeader>
-            <CardContent>
-				<p
-                    className="text-balance font-semibold text-2xl tabular-nums tracking-tight">
-					{value}
-				</p>
-			</CardContent>
-            <CardFooter className="gap-1.5 text-xs">
-				<Delta value={delta} variant="default">
-					<DeltaIcon />
-					<DeltaValue />
-				</Delta>
-				<span className="text-pretty text-muted-foreground">{hint}</span>
-			</CardFooter>
+  return (
+    <>
+      {stats.map((s) => (
+        <Card key={s.label}>
+          <CardHeader>
+            <CardTitle className="font-normal text-muted-foreground text-xs">{s.label}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-balance font-semibold text-2xl tabular-nums tracking-tight">{s.value}</p>
+          </CardContent>
+          <CardFooter className="gap-1.5 text-xs">
+            <span className="text-pretty text-muted-foreground">{s.hint}</span>
+          </CardFooter>
         </Card>
-    );
+      ))}
+    </>
+  )
 }

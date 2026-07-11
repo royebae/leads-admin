@@ -171,7 +171,7 @@ export default function App() {
 
   return (
     <AppShell>
-      <Dashboard />
+      <Dashboard leads={leads} data={data} />
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">

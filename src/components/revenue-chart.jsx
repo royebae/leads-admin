@@ -19,7 +19,7 @@ import {
 	SelectValue,
 } from "@/components/ui/select";
 import { Delta, DeltaIcon, DeltaValue } from "@/components/delta";
-import { revenueChartDemo } from "@/components/revenue-chart-data";
+import { revenueChartData } from "@/components/revenue-chart-data";
 
 // Recharts XAxis: `interval` is tick skip index (0 = all, 1 = every other, …).
 const xAxisIntervalByPeriod = {
@@ -42,7 +42,7 @@ export function RevenueChart() {
 	const idAreaGradient = `revenue-area-grad-${chartUid}`;
 	const [periodDays, setPeriodDays] = useState(60);
 
-	const chartRows = useMemo(() => revenueChartDemo.slice(-periodDays), [periodDays]);
+		const chartRows = useMemo(() => revenueChartData.slice(-periodDays), [periodDays]);
 
 	// Footer delta: first → last point in the active series (not calendar MoM).
 	const growthPct = useMemo(() => {
