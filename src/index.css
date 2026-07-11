@@ -1,99 +1,77 @@
-/* ════════════════════════════════════════
-   Craft Design System — Dark Mode
-   Dr. Diente Leads Admin
-   ════════════════════════════════════════ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+    --chart-1: 38 216 98;
+    --lime-pulse: #26d862;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
 }
 
-:root {
-  /* ── Colors ── */
-  --bone-linen: #f7f5f2;
-  --oat-milk: #eae6df;
-  --driftwood: #d7d2cc;
-  --ash-mauve: #645757;
-  --mahogany-hush: #504344;
-  --obsidian-plum: #2a1a1d;
-  --forest-depths: #1d3023;
-  --lime-pulse: #26d862;
-  --peacock-teal: #0e634f;
-
-  /* Dark Mode Surfaces */
-  --surface-page: #0f0f0f;
-  --surface-card: #1a1a1a;
-  --surface-elevated: #222222;
-  --surface-dark: #0a0a0a;
-
-  /* Dark Mode Text */
-  --text-primary: #f0f0f0;
-  --text-secondary: rgba(255,255,255,0.45);
-  --text-muted: rgba(255,255,255,0.25);
-  --text-accent: var(--lime-pulse);
-  --text-stat: var(--lime-pulse);
-  --text-on-dark: var(--bone-linen);
-
-  /* Dark Mode Borders */
-  --border-color: rgba(255,255,255,0.08);
-  --border-subtle: rgba(255,255,255,0.04);
-
-  /* ── Typography ── */
-  --font-display: 'ABC Arizona Flare Condensed Variable', Georgia, 'Times New Roman', serif;
-  --font-body: 'ABC Arizona Flare Variable', Georgia, 'Times New Roman', serif;
-
-  /* ── Scale ── */
-  --text-xs: 11px;
-  --text-sm: 12px;
-  --text-base: 13px;
-  --text-body: 14px;
-  --text-lg: 15px;
-  --text-sub: 16px;
-  --text-heading-sm: 20px;
-  --text-heading: 24px;
-  --text-heading-lg: 28px;
-
-  --leading-tight: 0.95;
-  --leading-snug: 1.08;
-  --leading-normal: 1.2;
-  --leading-relaxed: 1.4;
-
-  /* ── Spacing (compact) ── */
-  --space-4: 4px;
-  --space-8: 8px;
-  --space-12: 12px;
-  --space-16: 16px;
-  --space-20: 20px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-40: 40px;
-  --space-56: 56px;
-
-  /* ── Radius ── */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 10px;
-
-  /* ── Layout ── */
-  --page-max-width: 1400px;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
-
-body {
-  background: var(--surface-page);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: var(--text-body);
-  line-height: var(--leading-relaxed);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-::selection {
-  background: rgba(38, 216, 98, 0.25);
-  color: #fff;
-}
-
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
