@@ -5,6 +5,7 @@ set -euo pipefail
 
 ROOT="/home/hermes/leads-admin"
 cd "$ROOT"
+export LD_LIBRARY_PATH="${HOME}/.local/chrome-libs/usr/lib/x86_64-linux-gnu:${LD_LIBRARY_PATH:-}"
 
 # Load secrets if present (never commit these files)
 if [[ -f "$HOME/.hermes/.env" ]]; then
