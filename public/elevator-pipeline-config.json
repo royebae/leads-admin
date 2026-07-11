@@ -1,0 +1,26 @@
+{
+  "updated_at": "2026-07-11T00:47:17.644Z",
+  "location_id": "RUqSenZyzBWnHTnzt0fq",
+  "pipeline": {
+    "id": "iDsSx2heXECuWVeKXnLK",
+    "name": "Reactivacion Dentalink",
+    "stages": {
+      "nuevo": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+      "listo": "11abaf09-46d2-4b3d-83fa-ef5321c9928a",
+      "contactado": "a46d7bf6-e04f-4c14-a9dd-9d851690716e",
+      "respondio": "8e4c888f-01a5-4971-abe3-cbaf0d511f4b",
+      "cita": "a68f2613-a025-4e0e-b448-2aadf3c2ea2c",
+      "asistio": "56babff5-e4d6-4d84-90e8-ccc6052f2aaf",
+      "convertido": "7a2fcbfa-9adf-49c1-99e9-8b40851e2822",
+      "perdido": "20a53f72-f623-4239-882c-56f070b50cf9"
+    }
+  },
+  "safety": {
+    "no_messages": true,
+    "allowed_auto_stages": [
+      "nuevo",
+      "listo"
+    ],
+    "note": "No workflows should be attached to this pipeline until campaigns are approved."
+  }
+}

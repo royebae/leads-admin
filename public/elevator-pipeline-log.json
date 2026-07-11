@@ -1,0 +1,991 @@
+{
+  "runs": [
+    {
+      "at": "2026-07-11T00:49:02.573Z",
+      "dry_run": false,
+      "stage": "nuevo",
+      "pipeline_id": "iDsSx2heXECuWVeKXnLK",
+      "ok": 97,
+      "failed": 1,
+      "results": [
+        {
+          "dentalink_id": 349,
+          "nombre": "ANDRES LIMON",
+          "elevator_id": "zIVh10AfmI22dF2CPiEX",
+          "monetaryValue": 73623,
+          "status": "created",
+          "opportunityId": "LCxifvw2vYj8nhFho4uV",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 395,
+          "nombre": "BRYAN RICARDO ORTEGA CADENA",
+          "elevator_id": "qGuE7Dx51rOAvaQ0wCNG",
+          "ok": false,
+          "error": "Elevator POST /opportunities/ -> 400: {\"statusCode\":400,\"message\":\"Can not create duplicate opportunity for the contact.\",\"meta\":{\"existingId\":\"AUij46kAxu8C86BeSBAC\"},\"error\":\"Bad Request\",\"traceId\":\"7bafa468-301a-4391-9af0-76b8d58e3c68\"}"
+        },
+        {
+          "dentalink_id": 240,
+          "nombre": "CARLOS SAMPERIO PEREZ",
+          "elevator_id": "bMfEZpON8gRmBAxVy8Bd",
+          "monetaryValue": 447334,
+          "status": "created",
+          "opportunityId": "ymQtpaRCQbSZ6xpIpanD",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 317,
+          "nombre": "MARITZA GOMEZ",
+          "elevator_id": "Xk14LQEJChhfzO1TYpdG",
+          "monetaryValue": 1008773,
+          "status": "created",
+          "opportunityId": "0BoCLf2aIURgfYHCqyVa",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 383,
+          "nombre": "ANGELICA GOMEZ MEZA",
+          "elevator_id": "ZEaOZkKuUZFYusmSDnCb",
+          "monetaryValue": 128593,
+          "status": "created",
+          "opportunityId": "DNLnekmwxzpCP4ljus8e",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 822,
+          "nombre": "FANNY MANCILLA CORTES",
+          "elevator_id": "u3UHRJ5L3eSsCM4jVC5p",
+          "monetaryValue": 570216,
+          "status": "created",
+          "opportunityId": "PsborKlDp4IKRtSKOoEp",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1072,
+          "nombre": "JOHANA LIBREROS",
+          "elevator_id": "kud2dn0tfWDlOq6Ck7Hk",
+          "monetaryValue": 207113,
+          "status": "created",
+          "opportunityId": "kNmo0S2WJLmTXmvIgz0K",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1272,
+          "nombre": "JUDITH AMON",
+          "elevator_id": "mkGMFas9LV0OCpAghNjn",
+          "monetaryValue": 154974,
+          "status": "created",
+          "opportunityId": "NKnyUwAb2hUaH9Eovf0k",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1424,
+          "nombre": "ANA LAURA SOTELO LEON",
+          "elevator_id": "kd1ujvvzqoCP9YFxUozC",
+          "monetaryValue": 204896,
+          "status": "created",
+          "opportunityId": "f1RgOwdLqnMdIcGnBFQ2",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1599,
+          "nombre": "GUADALUPE  MEZA CORTES",
+          "elevator_id": "ETp9mk2UgEbf9KwvFqZq",
+          "monetaryValue": 957165,
+          "status": "created",
+          "opportunityId": "VBtm2H2gH2z2a11wWfVL",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 218,
+          "nombre": "KARLA  ARIZA TORCAT",
+          "elevator_id": "mRR1x4h2eF5EiDmwHISr",
+          "monetaryValue": 525886,
+          "status": "created",
+          "opportunityId": "YOxDuoNsLyae27YO5uMJ",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1127,
+          "nombre": "ALFONSO GARCIA MORALES",
+          "elevator_id": "JFxuI7jz5iLvh8K5FhG2",
+          "monetaryValue": 450562,
+          "status": "created",
+          "opportunityId": "52MVGdBzL7YbRKOcWX2A",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1422,
+          "nombre": "EDUARDO HERNANDEZ PERALTA",
+          "elevator_id": "oJG8SJuVtDG2d14ojPad",
+          "monetaryValue": 557761,
+          "status": "created",
+          "opportunityId": "BxftW0IJyV3ilmxkPyYh",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1452,
+          "nombre": "MARIA DE LOS ANGELES OCHOA AGUILAR",
+          "elevator_id": "UTNDIqgcgmpahH13y844",
+          "monetaryValue": 210630,
+          "status": "created",
+          "opportunityId": "0vK9QX5h03gd8W91nfsd",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1602,
+          "nombre": "SLENDY ZAPATA",
+          "elevator_id": "aJhtdG3XZLdq8DNPxiKq",
+          "monetaryValue": 278480,
+          "status": "created",
+          "opportunityId": "rzZ8ym6DBaT95ZbzMN5W",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 146,
+          "nombre": "MONICA JOSE CATALAN",
+          "elevator_id": "nbh4prZafUXgtqFbqBdc",
+          "monetaryValue": 128653,
+          "status": "created",
+          "opportunityId": "FzeXDYR7S3qmkairpzMd",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 148,
+          "nombre": "ESTEFANIA REYES NARES",
+          "elevator_id": "MvkaMJFdnuuYxPELN4nT",
+          "monetaryValue": 349612,
+          "status": "created",
+          "opportunityId": "FVEluy5aUCj8JB3rEsLy",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 845,
+          "nombre": "MARTHA SANCHEZ",
+          "elevator_id": "lbEuE3kx6E1tmhbcLDPK",
+          "monetaryValue": 299477,
+          "status": "created",
+          "opportunityId": "COWgjhQoVnNk6ZHNjqI8",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1117,
+          "nombre": "VICTOR MIGUEL  LEDESMA MORENO",
+          "elevator_id": "p7vCLEZ2CkpAli79lAuQ",
+          "monetaryValue": 187752,
+          "status": "created",
+          "opportunityId": "LIhmb8lXUDeEYIc4ETAx",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1316,
+          "nombre": "LUIS ANGEL  LOPEZ VALDEZ",
+          "elevator_id": "YonASw5YLx5lBG0cKGiw",
+          "monetaryValue": 205429,
+          "status": "created",
+          "opportunityId": "F9mif41QkzCGrVw44sc4",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1516,
+          "nombre": "ELIZABETH CEDILLO REYES",
+          "elevator_id": "OMaKRF0XFVb0zACoZhSZ",
+          "monetaryValue": 120211,
+          "status": "created",
+          "opportunityId": "i40l34I1YzQbIfNSqZfA",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1704,
+          "nombre": "ERICK ALEXIS DE LA LUZ",
+          "elevator_id": "ix6Mz8xsfQr7CC3wmwAl",
+          "monetaryValue": 113779,
+          "status": "created",
+          "opportunityId": "oVaPL8CesAjy61PldcvP",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1808,
+          "nombre": "INDRA  JIMENEZ SANCHEZ",
+          "elevator_id": "faxxMLXZzi2trH8Gpw5C",
+          "monetaryValue": 118829,
+          "status": "created",
+          "opportunityId": "J0p25AaqQqGQh4Iko68s",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1890,
+          "nombre": "EMILIANO PEREZ HERNANDEZ",
+          "elevator_id": "LwvZ497ysRcTCxx5Tce4",
+          "monetaryValue": 117979,
+          "status": "created",
+          "opportunityId": "BJ5IucNSOUd1kEKwsgvC",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1908,
+          "nombre": "MARIA FERNANDA IBARRA NUÑEZ",
+          "elevator_id": "eM2Xlg1HOeYB7c1Pi7Gf",
+          "monetaryValue": 101975,
+          "status": "created",
+          "opportunityId": "ABuKb6LXqN9pm0ym5v5H",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 210,
+          "nombre": "GABRIELA ANDREINA HERNANDEZ MESONEZ",
+          "elevator_id": "Y842i0GKw5EJO1nPdYnb",
+          "monetaryValue": 62517,
+          "status": "created",
+          "opportunityId": "dOnVyvHqa4FCryDhvJLj",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 698,
+          "nombre": "JUAN ANDRES NAVEDA LYON",
+          "elevator_id": "5BjEaxSafb24b1jG2MmJ",
+          "monetaryValue": 242500,
+          "status": "created",
+          "opportunityId": "PkGTwcbbY7I0R9iJT6tY",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1338,
+          "nombre": "MONIKA GOLDEN",
+          "elevator_id": "IBnVc1zOksEccXrykf9r",
+          "monetaryValue": 86010,
+          "status": "created",
+          "opportunityId": "tsrvcmMJadAHAHVuosRc",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1641,
+          "nombre": "CRISTINA RUBIO",
+          "elevator_id": "sw4YfOTpN7QRur4AR0ZA",
+          "monetaryValue": 65875,
+          "status": "created",
+          "opportunityId": "dxCBprLJb1kpMqEM5wjI",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2484,
+          "nombre": "MARISELA MARTINEZ VALDIVIA",
+          "elevator_id": "L0gtJmQMLkC5Xo9QlHoI",
+          "monetaryValue": 175232,
+          "status": "created",
+          "opportunityId": "48nTWbxr6sQfr2ETIJZa",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2577,
+          "nombre": "JAZMIN LASTRA LORA",
+          "elevator_id": "18UyndKVCXON5KkLShoH",
+          "monetaryValue": 133551,
+          "status": "created",
+          "opportunityId": "E1ok9GZEPbW1FmpGepKG",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2585,
+          "nombre": "LUIZ DA SILVA TAVARES",
+          "elevator_id": "8lWwgBsJZztLxbbt3K2E",
+          "monetaryValue": 134871,
+          "status": "created",
+          "opportunityId": "cUH2xNrFKU1emO8QU50h",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2596,
+          "nombre": "PAOLO BRUCATO",
+          "elevator_id": "d2mFuAoiTKw1CYO3NZjD",
+          "monetaryValue": 522586,
+          "status": "created",
+          "opportunityId": "yym6CxE0mMR76rknVaw1",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2669,
+          "nombre": "VASILY KASSAB",
+          "elevator_id": "8rVgV4HxfbB6gXZRn4kz",
+          "monetaryValue": 151351,
+          "status": "created",
+          "opportunityId": "eBWOLd1z7DROjYnhZRGA",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2682,
+          "nombre": "NATHALY HERNANDEZ MACIAS",
+          "elevator_id": "6qXUqJKfJq6K307iY8IU",
+          "monetaryValue": 106652,
+          "status": "created",
+          "opportunityId": "s6wl47KJ6l1xdcwynvZ7",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 488,
+          "nombre": "MARIA JULIETA  ABADES JIMENEZ",
+          "elevator_id": "AzuJC3VDi8577kJCMAC6",
+          "monetaryValue": 71158,
+          "status": "created",
+          "opportunityId": "8pN2gk7FPB6kdPL8jzij",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 45,
+          "nombre": "ANA PAULA FERNANDEZ BERNAL",
+          "elevator_id": "SX3dduaDkQnHgbdTryV3",
+          "monetaryValue": 401422,
+          "status": "created",
+          "opportunityId": "vgbYys5AmoLnmOObN8yU",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 126,
+          "nombre": "VANESSA ABREU",
+          "elevator_id": "Ru9OpGrI4kAd9HiqDO18",
+          "monetaryValue": 132500,
+          "status": "created",
+          "opportunityId": "Ue7jSx3Z1yltNKZYFHXJ",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 170,
+          "nombre": "JANDIBETH MOSQUERA",
+          "elevator_id": "kygM5tX2HdLENWBUZh7P",
+          "monetaryValue": 148280,
+          "status": "created",
+          "opportunityId": "Zyld9ZhzLPH5ts9H97n2",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 216,
+          "nombre": "SILVIA NAVARRO",
+          "elevator_id": "y7FUEMTN8nmQZ4020gqT",
+          "monetaryValue": 122000,
+          "status": "created",
+          "opportunityId": "BfGO9I2VwoKHBM5AWXS0",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 510,
+          "nombre": "LOURDES DEL CARMEN FRANYUTI CARLIN",
+          "elevator_id": "DoSgsHn0nfs44P0qy8b1",
+          "monetaryValue": 55370,
+          "status": "created",
+          "opportunityId": "ng7M8dMNwqIeTCmsPwJS",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 656,
+          "nombre": "YURITZIA DANAE MARQUEZ MENDEZ",
+          "elevator_id": "k6Xl2Ol0Y1ok1Rta8wfw",
+          "monetaryValue": 163780,
+          "status": "created",
+          "opportunityId": "UCjglV5nOyv6CWH7jUTG",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1421,
+          "nombre": "CARLOS ORDOÑEZ",
+          "elevator_id": "flgkbF5vwCLF6C1cXQ9q",
+          "monetaryValue": 547481,
+          "status": "created",
+          "opportunityId": "EkUNF6WhLhkJwPDLls3W",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1944,
+          "nombre": "CRISTINA JESSICA DIAZ PEREZ",
+          "elevator_id": "PDqxXDT5cA9EviGNTd5S",
+          "monetaryValue": 107693,
+          "status": "created",
+          "opportunityId": "5KO3mLpvi34obKehCxat",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2485,
+          "nombre": "EMMANUEL JAIMES FABIAN",
+          "elevator_id": "tKLWCXjilpp1yHMMbvee",
+          "monetaryValue": 126091,
+          "status": "created",
+          "opportunityId": "4UH0GOveUVoiLGhzYWsj",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2618,
+          "nombre": "ELSY ZAIRICK",
+          "elevator_id": "ZKwgdOcUDMwiVUHnaiFQ",
+          "monetaryValue": 152791,
+          "status": "created",
+          "opportunityId": "UqdWfQl8ox0uA6T2Oili",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2663,
+          "nombre": "FERNANDA TELLEZ",
+          "elevator_id": "pxiK9JNFx9IToFGPBbjm",
+          "monetaryValue": 70145,
+          "status": "created",
+          "opportunityId": "hanIpdpMSEusGiuwCaZi",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2631,
+          "nombre": "NADIA FERHAD MONTIEL",
+          "elevator_id": "1o5Hju3NrHL9ahoI4LHs",
+          "monetaryValue": 217964,
+          "status": "created",
+          "opportunityId": "VVkwcdvWxI1cuS3i0PhM",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 193,
+          "nombre": "PABLO GAMBOA MENDEZ",
+          "elevator_id": "59vTQ2EShgatYEMUWy6V",
+          "monetaryValue": 61978,
+          "status": "created",
+          "opportunityId": "bgSFFHhmP0FGllQo3mvR",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 355,
+          "nombre": "OSCAR CRUZ",
+          "elevator_id": "w4tjUOdUR82rNhQnoTzj",
+          "monetaryValue": 71515,
+          "status": "created",
+          "opportunityId": "yYCe4xPMAfTpOIEtXhjH",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1307,
+          "nombre": "NELSON  MORENO SAAVEDRA",
+          "elevator_id": "vPlliNNt3Z4X74GN2nok",
+          "monetaryValue": 76497,
+          "status": "created",
+          "opportunityId": "LL5eRAvRBbgRTuHSODm7",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1324,
+          "nombre": "ORIUSKA FLORES",
+          "elevator_id": "TSfTlDQLo3JMCp9h3T4O",
+          "monetaryValue": 68286,
+          "status": "created",
+          "opportunityId": "z7tFaghcEjVQwY51e3Jq",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2329,
+          "nombre": "JHON JAIRO  BOCANEGRA GUEVARA",
+          "elevator_id": "s2YiKmEx4HzEPcEcHX7N",
+          "monetaryValue": 98480,
+          "status": "created",
+          "opportunityId": "SX8XllGaB9BFFkLEPnF7",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2465,
+          "nombre": "SURY FIGUEREO",
+          "elevator_id": "wQfakhpofCtxuxjfg3Na",
+          "monetaryValue": 455678,
+          "status": "created",
+          "opportunityId": "w0CfdApnpryG3uMCZTjd",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2487,
+          "nombre": "ELIEN RAMIREZ BARRIENTOS",
+          "elevator_id": "IVYDMxsSUH6G2E2WQQ5g",
+          "monetaryValue": 683755,
+          "status": "created",
+          "opportunityId": "HOFXrZTKxat2cZVfMley",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2528,
+          "nombre": "(89) SUMIR SARTI ARORA 2",
+          "elevator_id": "ArOoReqfgUkUwfBUsoHI",
+          "monetaryValue": 461877,
+          "status": "created",
+          "opportunityId": "N542uECRgWemMJL3mDc6",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2593,
+          "nombre": "OMAR GOMEZ",
+          "elevator_id": "3ZPcyKF3KyylLYXTyzQY",
+          "monetaryValue": 116876,
+          "status": "created",
+          "opportunityId": "be5uT5S8ctD2jxcOlu3O",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2601,
+          "nombre": "ANGELICA ZIEBE LUBCKE",
+          "elevator_id": "kMJpTp2YpTUKSaHtj3ra",
+          "monetaryValue": 171700,
+          "status": "created",
+          "opportunityId": "zTy2fIepBGn3WsXcmGa9",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2614,
+          "nombre": "TONIA YONATZIN MORALES FIGUEROA",
+          "elevator_id": "BSVaW83VH5C2EG4zVJ92",
+          "monetaryValue": 198713,
+          "status": "created",
+          "opportunityId": "4w1vCwJvCb4uq9HuuawR",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2626,
+          "nombre": "ERIC CHEN",
+          "elevator_id": "nlLwoAcasxUNwJNY5gQI",
+          "monetaryValue": 180143,
+          "status": "created",
+          "opportunityId": "bn8AZAFrM1dRrLTy3WWR",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2632,
+          "nombre": "ERIKA NAYELI GONZALEZ MORENO",
+          "elevator_id": "XolR4ZXF6KnOeJMBOlHw",
+          "monetaryValue": 148400,
+          "status": "created",
+          "opportunityId": "kggE7N8w7nmb8mNvW2Mm",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2659,
+          "nombre": "SANDRA MARTINEZ FLORES",
+          "elevator_id": "sKPeQfqCrGUxaLG98XQP",
+          "monetaryValue": 123752,
+          "status": "created",
+          "opportunityId": "s1NVkUfAhxcpE2lhOrdv",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2683,
+          "nombre": "YUSNIER CASTELLANOS LUIS",
+          "elevator_id": "JUteKjFnTTMXaHb3LP57",
+          "monetaryValue": 126235,
+          "status": "created",
+          "opportunityId": "MpVaCcT0xOix5uldSNod",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2687,
+          "nombre": "MARIA ALICIA    GUIZAC DE LANG",
+          "elevator_id": "s64HeZHEzyWhjrVksus3",
+          "monetaryValue": 127490,
+          "status": "created",
+          "opportunityId": "ah5zqosK8CpizEnnQUEd",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 253,
+          "nombre": "ROMAR MELENDEZ",
+          "elevator_id": "DR7zfo1SIZ4KROaBWogp",
+          "monetaryValue": 205883,
+          "status": "created",
+          "opportunityId": "TICPCwwdOFaQPW2637dj",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1297,
+          "nombre": "JULIO SALAZAR TORO",
+          "elevator_id": "cg6gaTJ57xQqn0GeGqJU",
+          "monetaryValue": 273599,
+          "status": "created",
+          "opportunityId": "RRG3QIrOmpEX5Y8kEKA5",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1398,
+          "nombre": "BLANCA BRISEÑO TEPEPA",
+          "elevator_id": "QWyaNcR8LCnRLJs12Xvf",
+          "monetaryValue": 111440,
+          "status": "created",
+          "opportunityId": "2aON1Gqt3fK1IHCCDuUK",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1550,
+          "nombre": "MARTHA ALEJANDRA PALMA  ALVAREZ",
+          "elevator_id": "Qu3jdsvYAAW14V0EnLnE",
+          "monetaryValue": 182780,
+          "status": "created",
+          "opportunityId": "fHGlhYJbhkuLb8suTswa",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2162,
+          "nombre": "EDNA ANDREA TORRES MARIN",
+          "elevator_id": "tkSmA5FKQ3m2sdU1ufpR",
+          "monetaryValue": 176125,
+          "status": "created",
+          "opportunityId": "pJCufFHongt3dEhOeSUJ",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2716,
+          "nombre": "(2035)RICARDO LOUTAUNAU HERRERA",
+          "elevator_id": "75a7TgPzDjmE4I7UtU7y",
+          "monetaryValue": 190834,
+          "status": "created",
+          "opportunityId": "47wWBf1NzJQlYaGA8i14",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2437,
+          "nombre": "AIDA CAMPUZANO MAGAÑA",
+          "elevator_id": "XrCNfFG007FWZ7VLD8tZ",
+          "monetaryValue": 678352,
+          "status": "created",
+          "opportunityId": "zYS6ZJeTHIqVPXaJ3i2t",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2456,
+          "nombre": "MARCO ANTONIO PEREZ SILVA",
+          "elevator_id": "Eb2gu8Jj1cbWZrTVVYuQ",
+          "monetaryValue": 1535135,
+          "status": "created",
+          "opportunityId": "VnFFfZLDKp6olYqervOJ",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2562,
+          "nombre": "JUAN SEBASTIAN VEGA",
+          "elevator_id": "W0AqisV72hADqBl4qJNh",
+          "monetaryValue": 1047013,
+          "status": "created",
+          "opportunityId": "FB7oGyH6LgYSB3R5fyXX",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 107,
+          "nombre": "VIVIANE DI DOMENICO",
+          "elevator_id": "UdSpt99v00P3TyYlfP2D",
+          "monetaryValue": 51217,
+          "status": "created",
+          "opportunityId": "MiPiavfF9V6CYyPO4H6j",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 402,
+          "nombre": "MARIO HERNANDEZ PEREIRA",
+          "elevator_id": "RxHLFDTTa94h9jRKkOD4",
+          "monetaryValue": 77350,
+          "status": "created",
+          "opportunityId": "xzE8xl99lnz5Y0wyQPNx",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 971,
+          "nombre": "PAULINA  GOMEZ DEL CAMPO",
+          "elevator_id": "2CtbxAPBDTqN965xbSCt",
+          "monetaryValue": 52810,
+          "status": "created",
+          "opportunityId": "3WsbHRUPblpCiJZVWpXS",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1770,
+          "nombre": "ARACELI CASO BARRERA",
+          "elevator_id": "sqT8YeGnBVP0rUscyZUs",
+          "monetaryValue": 206227,
+          "status": "created",
+          "opportunityId": "1Hc0pzqBndx42MkomYf9",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 1926,
+          "nombre": "CLAUDIA  ESQUIVEL",
+          "elevator_id": "UB5TmwTWPBIz78TKvBDJ",
+          "monetaryValue": 467204,
+          "status": "created",
+          "opportunityId": "WwnTgFqvnmVrFkMx9NDx",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2443,
+          "nombre": "SERGIO CHAVEZ",
+          "elevator_id": "ckIOmKopQxnTRYQHmoMR",
+          "monetaryValue": 60073,
+          "status": "created",
+          "opportunityId": "terWUTE7kWQwQsK68k75",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 100,
+          "nombre": "CAROLINA MIRANDA OLVERA",
+          "elevator_id": "ubvGaZ2bqmx4cZyJoEps",
+          "monetaryValue": 136816,
+          "status": "created",
+          "opportunityId": "xV6TXeX1kprHgTqwa9e1",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2457,
+          "nombre": "BEGOÑA MARTINEZ",
+          "elevator_id": "8Ak5aX1CHAQTdiarx7QL",
+          "monetaryValue": 120040,
+          "status": "created",
+          "opportunityId": "emASDpSrVoTnX9rYgLMi",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2517,
+          "nombre": "EULALIA RUIZ ROQUE",
+          "elevator_id": "NoQZ5ADj3PQQXKorU78h",
+          "monetaryValue": 376518,
+          "status": "created",
+          "opportunityId": "UzwoDyeyhLL3hFjPWxSM",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2526,
+          "nombre": "FABIANA OMAÑA GUTIERREZ",
+          "elevator_id": "OVZApQYiwdma8xCmR3Qz",
+          "monetaryValue": 104350,
+          "status": "created",
+          "opportunityId": "puTocb4V2Ww1YZOsQ541",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2542,
+          "nombre": "SANTIAGO UGALDE",
+          "elevator_id": "OkRxHO9oa8EREimRwVjl",
+          "monetaryValue": 205839,
+          "status": "created",
+          "opportunityId": "FHkv1GRjWDrU1qNi35V7",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2544,
+          "nombre": "ISRAEL GUÍZAR CUELLAR",
+          "elevator_id": "q9NVRZ2sZVK8bzUWkdn6",
+          "monetaryValue": 188168,
+          "status": "created",
+          "opportunityId": "s7zBucwS5lPsZu3EmnMi",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2552,
+          "nombre": "IVAN ADRIAN ESPINOSA TREJO",
+          "elevator_id": "DXmfgdtZqgACmmabZJ0X",
+          "monetaryValue": 335120,
+          "status": "created",
+          "opportunityId": "qgyd5hXQGVl9Opyk6M3Z",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2553,
+          "nombre": "JUAN CARLOS SAID FIGUEROA CONTRERAS",
+          "elevator_id": "d8X1NDdfuugzbKLUhOpZ",
+          "monetaryValue": 167220,
+          "status": "created",
+          "opportunityId": "kdFDvrS0ek1zqwziEZ7W",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2578,
+          "nombre": "MARTHA GEBHARDT",
+          "elevator_id": "nCo5QPaSJPj6iKjgfcrk",
+          "monetaryValue": 207378,
+          "status": "created",
+          "opportunityId": "DzzkWyI7lfxd530Eqkwf",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2588,
+          "nombre": "VENY GARCIA MARTINEZ",
+          "elevator_id": "GyI1uxHH5IRWijPZWi0U",
+          "monetaryValue": 332946,
+          "status": "created",
+          "opportunityId": "3Vk208ZDIGRfKChstt29",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2679,
+          "nombre": "CARLOS VILLASEÑOR FERNANDEZ",
+          "elevator_id": "IJQ1dAgYdfJykfioWaLG",
+          "monetaryValue": 119159,
+          "status": "created",
+          "opportunityId": "r3dU4WvvXCrCQQJywtNS",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 2695,
+          "nombre": "NICHOLAS ROMERO ARTEAGA",
+          "elevator_id": "iBcdCA8etzFPyZnlLELg",
+          "monetaryValue": 482445,
+          "status": "created",
+          "opportunityId": "TQxhD3PPn4rmLK60Nu9c",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 161,
+          "nombre": "JENNIFER  DURAN",
+          "elevator_id": "WgPcNk2dTyEKF0XozUK7",
+          "monetaryValue": 108914,
+          "status": "created",
+          "opportunityId": "FGeDtjyfiE1tIaH7Gq7J",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 171,
+          "nombre": "TANIA TOSCANO BARRERA",
+          "elevator_id": "TiM8iA4ng8VMZ9YRyZIV",
+          "monetaryValue": 168778,
+          "status": "created",
+          "opportunityId": "96GXn38TWUJTeV55kX73",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 198,
+          "nombre": "JOHANNA  FRANZKE",
+          "elevator_id": "2tUgwTGGh25JgSHbtqHY",
+          "monetaryValue": 104587,
+          "status": "created",
+          "opportunityId": "IobnCMyUp4GAek1dDUJK",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 275,
+          "nombre": "IRIS TORRES ALVAREZ",
+          "elevator_id": "91dSVbz67gswgNknvDlZ",
+          "monetaryValue": 261891,
+          "status": "created",
+          "opportunityId": "v5uMRUmZtxomROEKJV7J",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 276,
+          "nombre": "ROSIRIS ROSENDO",
+          "elevator_id": "uuGdwgV5oViNIVQKeKAh",
+          "monetaryValue": 169581,
+          "status": "created",
+          "opportunityId": "Y8sAzDba7J6ibyYnmoWV",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 277,
+          "nombre": "ALEJANDRA  AVILA MORALES",
+          "elevator_id": "CSySCT3gi2jfadTBKUnj",
+          "monetaryValue": 152908,
+          "status": "created",
+          "opportunityId": "9T8w3XHGjsjzq6nMvXY9",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        },
+        {
+          "dentalink_id": 458,
+          "nombre": "JOSH STEIN",
+          "elevator_id": "b7TccUCdQwgRXMnCQdsx",
+          "monetaryValue": 120670,
+          "status": "created",
+          "opportunityId": "287w7u50ugoEpJjPpojr",
+          "stageId": "eeb17e40-958b-417a-b0eb-70f9a644f9bf",
+          "ok": true
+        }
+      ]
+    }
+  ]
+}
