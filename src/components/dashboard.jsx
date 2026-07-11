@@ -5,7 +5,7 @@ import { DashboardStats } from "@/components/stats"
 
 export function Dashboard({ leads, data }) {
   const totalLeads = data?.metadata?.total_leads || leads?.length || 0
-  const totalPagos = data?.metadata?.pagos_api_total || 0
+  const totalPagos = leads?.reduce((s, l) => s + (l.pagado_total_api || 0), 0) || 0
   const reactivables = data?.segment_summary ?
     ['anticipo-sin-cita','plan-sin-cita','nunca-agendo','solo-cancelaciones','ultima-no-asistio','inactivo-90d','inactivo-60d']
       .reduce((s, k) => s + (data.segment_summary[k] || 0), 0) : 0
