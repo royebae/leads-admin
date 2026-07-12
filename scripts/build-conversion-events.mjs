@@ -15,10 +15,10 @@ import { createHash } from 'crypto'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
-const LEADS_PATH = join(ROOT, 'public', 'leads-data.json')
-const PAGOS_API = join(ROOT, 'public', 'pagos-data.json')
-const PAGOS_MERGED = join(ROOT, 'public', 'pagos-merged.json')
-const PAGOS_EXCEL = join(ROOT, 'public', 'pagos-excel-data.json')
+const LEADS_PATH = join(ROOT, 'data', 'leads-data.json')
+const PAGOS_API = join(ROOT, 'data', 'pagos-data.json')
+const PAGOS_MERGED = join(ROOT, 'data', 'pagos-merged.json')
+const PAGOS_EXCEL = join(ROOT, 'data', 'pagos-excel-data.json')
 const OUT = join(ROOT, 'public', 'conversion-events.json')
 
 const API = process.env.ELEVATOR_BASE_URL || 'https://services.leadconnectorhq.com'
@@ -58,7 +58,10 @@ async function request(method, path) {
     headers: {
       Authorization: `Bearer ${KEY}`,
       Version: VERSION,
-      Accept: 'application/json',
+      Accept: 'application/json,text/plain,*/*',
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+      Origin: 'https://app.gohighlevel.com',
+      Referer: 'https://app.gohighlevel.com/',
     },
   })
   const text = await res.text()
