@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { AppShell } from "@/components/app-shell"
 import { Dashboard } from "@/components/dashboard"
-import { ReactivationView } from "@/components/reactivation-view"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -91,7 +90,6 @@ export default function App() {
       <div className="min-h-screen bg-background p-6">
         <div className="max-w-3xl mx-auto space-y-6">
           <Button variant="outline" onClick={() => setLeadDetail(null)}>← Volver</Button>
-
           <Card>
             <CardHeader>
               <CardTitle className="font-display text-2xl">{l.nombre}</CardTitle>
@@ -107,7 +105,6 @@ export default function App() {
               <Badge variant="outline" className="mt-4" style={{ borderColor: l.segment_color + '40', color: l.segment_color }}>{l.segment_label}</Badge>
             </CardContent>
           </Card>
-
           <Card>
             <CardHeader>
               <CardTitle className="font-display text-lg">🦷 Tratamientos</CardTitle>
@@ -119,14 +116,8 @@ export default function App() {
                 <div><span className="text-muted-foreground">Presupuesto</span><p>${Number(l.presupuesto_total || 0).toLocaleString('es-MX')}</p></div>
                 <div><span className="text-muted-foreground">Abonado / Deuda</span><p>${Number(l.abonado_total || 0).toLocaleString('es-MX')} / <span className={l.deuda_total > 0 ? 'text-destructive' : ''}>${Number(l.deuda_total || 0).toLocaleString('es-MX')}</span></p></div>
               </div>
-              {l.tratamientos?.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {l.tratamientos.map(t => <Badge key={t} variant="secondary">{t}</Badge>)}
-                </div>
-              )}
             </CardContent>
           </Card>
-
           {l.pagos_count > 0 && (
             <Card>
               <CardHeader><CardTitle className="font-display text-lg">💰 Pagos ({l.pagos_count})</CardTitle></CardHeader>
@@ -134,27 +125,6 @@ export default function App() {
                 <div className="grid grid-cols-3 gap-4">
                   <div><span className="text-muted-foreground text-xs">Total</span><p className="text-2xl font-semibold text-[--lime-pulse]">${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</p></div>
                   <div><span className="text-muted-foreground text-xs">Último</span><p>{l.ultimo_pago_fecha || '—'}</p></div>
-                  <div><span className="text-muted-foreground text-xs">Medios</span>
-                    <div className="flex flex-wrap gap-1 mt-1">
-                      {l.medios_pago?.map(m => <Badge key={m} variant="outline" className="text-xs">{m}</Badge>)}
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          )}
-
-          {l.citas?.length > 0 && (
-            <Card>
-              <CardHeader><CardTitle className="font-display text-lg">Historial de citas ({l.citas.length})</CardTitle></CardHeader>
-              <CardContent>
-                <div className="space-y-1">
-                  {l.citas.slice().reverse().map(c => (
-                    <div key={c.id} className="flex justify-between py-2 border-b border-border text-sm">
-                      <span>{c.fecha} {c.hora}</span>
-                      <span className={c.estado === 'Cancelada' || c.estado === 'No Asistió' ? 'text-destructive' : c.estado === 'Atendida' ? 'text-[--lime-pulse]' : 'text-muted-foreground'}>{c.estado}</span>
-                    </div>
-                  ))}
                 </div>
               </CardContent>
             </Card>
@@ -164,22 +134,15 @@ export default function App() {
     )
   }
 
-  // ── DASHBOARD ──
   const leads = data?.leads || []
   const segSummary = data?.segment_summary || {}
   const totalLeads = data?.metadata?.total_leads || 0
   const totalPages = data?.metadata?.total_pages || 1
-  const currentView = (typeof window !== 'undefined' ? window.location.hash : '#dashboard') || '#dashboard'
 
   return (
     <AppShell>
-      {currentView === '#reactivation' ? (
-        <ReactivationView leads={[]} data={data} />
-      ) : (
       <Dashboard leads={leads} data={data} />
-      )}
 
-      {/* Summary cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
         {Object.entries(SEGMENTS).map(([key, cfg]) => {
           const count = segSummary[key]
@@ -201,7 +164,6 @@ export default function App() {
         </button>
       </div>
 
-      {/* Search & filters */}
       <div className="flex gap-2">
         <Input value={search} onChange={e => { setSearch(e.target.value); setPage(1) }} placeholder="Buscar nombre, email, teléfono..." className="flex-1" />
         <Select value={filterSegment} onValueChange={v => { setFilterSegment(v); setPage(1) }}>
@@ -215,7 +177,6 @@ export default function App() {
 
       {error && <div className="text-sm text-destructive bg-destructive/10 p-3 rounded-lg">{error}</div>}
 
-      {/* Table */}
       <Card>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
@@ -260,7 +221,6 @@ export default function App() {
         </div>
       </Card>
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div className="flex justify-center items-center gap-2">
           <Button variant="outline" size="sm" onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page <= 1}>← Anterior</Button>
