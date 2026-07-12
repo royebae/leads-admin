@@ -170,7 +170,14 @@ export default function App() {
   const segSummary = data?.segment_summary || {}
   const totalLeads = data?.metadata?.total_leads || 0
   const totalPages = data?.metadata?.total_pages || 1
-  const currentView = (typeof window !== 'undefined' ? window.location.hash : '#dashboard') || '#dashboard'
+  const [currentView, setCurrentView] = useState('#dashboard')
+
+  useEffect(() => {
+    const onHash = () => setCurrentView(window.location.hash || '#dashboard')
+    onHash()
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
 
   return (
     <AppShell>
