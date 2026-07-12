@@ -16,12 +16,6 @@ export const navGroups = [
         icon: <IconPlaceholder lucide="Target" />,
         isActive: false,
       },
-      {
-        title: "Atribución",
-        path: "#attribution",
-        icon: <IconPlaceholder lucide="BarChart3" />,
-        isActive: false,
-      },
     ],
   },
 ]

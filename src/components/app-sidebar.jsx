@@ -14,12 +14,12 @@ import { NavGroup } from "@/components/nav-group"
 import { navGroups } from "@/components/app-shared"
 import { LatestChange } from "@/components/latest-change"
 
-export function AppSidebar({ onNavigate }) {
+export function AppSidebar() {
   return (
     <Sidebar collapsible="icon" variant="floating">
       <SidebarHeader className="h-14 justify-center">
         <SidebarMenuButton asChild>
-          <a href="#" onClick={(e) => { e.preventDefault(); onNavigate?.('dashboard') }}>
+          <a href="#">
             <LogoIcon />
             <span className="font-semibold tracking-tight">ELEVATOR</span>
           </a>
@@ -27,7 +27,7 @@ export function AppSidebar({ onNavigate }) {
       </SidebarHeader>
       <SidebarContent>
         {navGroups.map((group, index) => (
-          <NavGroup key={`sidebar-group-${index}`} {...group} onNavigate={onNavigate} />
+          <NavGroup key={`sidebar-group-${index}`} {...group} />
         ))}
         <SidebarMenu className="mt-4 px-3">
           <SidebarMenuItem>
