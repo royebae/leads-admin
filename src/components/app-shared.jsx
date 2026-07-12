@@ -6,9 +6,15 @@ export const navGroups = [
     items: [
       {
         title: "Dashboard",
-        path: "#",
+        path: "#dashboard",
         icon: <IconPlaceholder lucide="LayoutGrid" />,
-        isActive: true,
+        isActive: false,
+      },
+      {
+        title: "Reactivación",
+        path: "#reactivation",
+        icon: <IconPlaceholder lucide="Target" />,
+        isActive: false,
       },
     ],
   },

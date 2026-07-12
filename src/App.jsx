@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { AppShell } from "@/components/app-shell"
 import { Dashboard } from "@/components/dashboard"
+import { ReactivationView } from "@/components/reactivation-view"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -168,10 +169,15 @@ export default function App() {
   const segSummary = data?.segment_summary || {}
   const totalLeads = data?.metadata?.total_leads || 0
   const totalPages = data?.metadata?.total_pages || 1
+  const currentView = (typeof window !== 'undefined' ? window.location.hash : '#dashboard') || '#dashboard'
 
   return (
     <AppShell>
+      {currentView === '#reactivation' ? (
+        <ReactivationView leads={[]} data={data} />
+      ) : (
       <Dashboard leads={leads} data={data} />
+      )}
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">

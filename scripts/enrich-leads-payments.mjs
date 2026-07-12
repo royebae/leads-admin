@@ -8,12 +8,12 @@
  * 
  * Matches by: lead.nombre_social (Dentalink patient ID) ↔ pago.id_paciente
  * 
- * Output: public/leads-data.json (enriched)
+ * Output: data/leads-data.json (enriched)
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 
-const LEADS_FILE = 'public/leads-data.json';
+const LEADS_FILE = 'data/leads-data.json';
 const SRC_FILE = 'src/data/leads.js';
 const PAGOS_API_FILE = 'public/pagos-data.json';
 const PAGOS_MERGED_FILE = 'public/pagos-merged.json';

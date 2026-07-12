@@ -1,6 +1,6 @@
 /**
  * Calcula score de reactivación y ranking Top N.
- * Lee public/leads-data.json y escribe priority fields + top_reactivables.
+ * Lee data/leads-data.json y escribe priority fields + top_reactivables.
  *
  * Usage: node scripts/prioritize-leads.mjs
  */
@@ -10,7 +10,7 @@ import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
-const LEADS_PATH = join(ROOT, 'public', 'leads-data.json')
+const LEADS_PATH = join(ROOT, 'data', 'leads-data.json')
 const SRC_PATH = join(ROOT, 'src', 'data', 'leads.js')
 
 const REACTIVABLE = new Set([
@@ -209,4 +209,4 @@ for (const t of top.slice(0, 10)) {
     `${String(t.rank).padStart(2)}. [${t.reactivation_score}] ${t.nombre} | ${t.segment} | ${t.treatment_tag} | $${t.presupuesto_total}`,
   )
 }
-console.log('✅ Guardado public/leads-data.json + top-reactivables.json')
+console.log('✅ Guardado data/leads-data.json + top-reactivables.json')

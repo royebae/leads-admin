@@ -17,7 +17,7 @@ import https from 'https'
 const KEY = process.env.ELEVATOR_API_KEY || ''
 const LOC = process.env.ELEVATOR_LOCATION_ID || ''
 const BASE = 'https://services.leadconnectorhq.com'
-const DATA_PATH = 'public/leads-data.json'
+const DATA_PATH = 'data/leads-data.json'
 const PIPELINE_ID = 'iDsSx2heXECuWVeKXnLK'
 const STAGE_NUEVO = 'eeb17e40-958b-417a-b0eb-70f9a644f9bf'
 
@@ -99,6 +99,7 @@ for (let i = 0; i < candidates.length; i++) {
   const phoneDig = normalizePhone(l.phone)
   const emailKey = (l.email || '').toLowerCase().trim()
 
+  let wasCreated = false
   let contactId = phoneMap[phoneDig] || phoneMap[emailKey] || null
 
     if (!contactId) {
@@ -118,6 +119,7 @@ for (let i = 0; i < candidates.length; i++) {
         contactId = res.data?.contact?.id || res.data?.id
         if (contactId) {
           created++
+          wasCreated = true
           if (phoneDig) phoneMap[phoneDig] = contactId
           if (emailKey) phoneMap[emailKey] = contactId
         }
@@ -139,7 +141,7 @@ for (let i = 0; i < candidates.length; i++) {
 
   if (contactId && contactId.length > 5) {
     l.elevator_id = contactId
-    l.elevator_sync_status = contactId === phoneMap[phoneDig] ? 'matched' : 'created'
+    l.elevator_sync_status = wasCreated ? 'created' : 'matched'
 
     // Create opportunity
     const value = l.presupuesto_total || l.abonado_total || 0
@@ -154,7 +156,7 @@ for (let i = 0; i < candidates.length; i++) {
       source: 'Dentalink Reactivation',
     }))
     if (oppRes.status === 201 || oppRes.status === 200) {
-      l.elevator_opportunity_id = 'done'
+      l.elevator_opportunity_id = oppRes.data?.opportunity?.id || 'done'
       opps++
     }
   }

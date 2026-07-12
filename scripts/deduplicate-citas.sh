@@ -7,7 +7,7 @@ import json
 from collections import Counter
 
 print("Cargando leads-data.json...")
-d = json.load(open('public/leads-data.json'))
+d = json.load(open('data/leads-data.json'))
 leads = d['leads']
 
 antes = Counter()
@@ -62,6 +62,6 @@ for k in sorted(despues):
 
 d['leads'] = leads
 d['_meta']['citas_deduplicadas_at'] = None  # just trigger change
-open('public/leads-data.json', 'w').write(json.dumps(d))
+open('data/leads-data.json', 'w').write(json.dumps(d))
 print(f"\n✅ leads-data.json actualizado")
 PY

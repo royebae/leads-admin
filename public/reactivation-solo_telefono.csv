@@ -1,0 +1,28 @@
+id,nombre,priority_band,segment,channel,tratamiento_principal,abonado_total,presupuesto_total,phone,email,ultimo_pago_fecha,elevator_id,elevator_opportunity_id
+205,EDGAR  RAMIREZ ARELLAN,alta,inactivo-90d,solo_telefono,ESTRATIFICACION DE CARILLAS,0,474980,+19174747616,,,hAa6yqOTt2Clzwu1pMn4,done
+1613,MARIA GARCIA CEREZO,alta,plan-sin-cita,solo_telefono,CIRUGIA,0,55463,+34661741170,,,9PG6OJzTixPp1lkmdVdk,done
+1552,JOSE CARABANO,alta,ultima-no-asistio,solo_telefono,ENDODONCIA,53500,53473,+17876622032,,2025-09-06,6bTKkw3ipNeiEz3q1MUv,done
+62,SCARLET CLAYNEA AIZA,alta,ultima-no-asistio,solo_telefono,ODONTOLOGIA GENERAL,1170,7470,+18583156102,,2024-12-09,yB45MJSQLlNQp0N8PKtX,done
+551,RAUL OSIO,baja,inactivo-90d,solo_telefono,ODONTOLOGIA GENERAL,42160,42160,+17134449926,,2024-10-04,8CWQ8tWK5nwXvzi8o7jz,done
+84,ISABELLA RENDON,baja,inactivo-90d,solo_telefono,ODONTOLOGIA GENERAL,17204,17204,+17862386664,,2025-03-27,,
+2279,GRETTEL LILIANA CALVO SOLANO,baja,inactivo-90d,solo_telefono,CONSULTA,2000,8600,+50686013464,,2026-01-29,JZ9n9ry1gTehlt0kH878,done
+1423,MARIA FERNANDA YEPES,baja,inactivo-90d,solo_telefono,ODONTOLOGIA GENERAL,4050,7750,+573125571069,,2025-07-23,,
+524,NATALYA  EELIKOVA,baja,inactivo-90d,solo_telefono,CIRUGÍA,5500,5500,+17708234242,,2024-08-17,,
+1547,ANASTASIA  MOSKOVCHENKO,baja,inactivo-90d,solo_telefono,LIMPIEZA,5380,5380,+79680226073,,2025-07-25,,
+582,ASTRID OBERHOFER,baja,inactivo-90d,solo_telefono,ODONTOLOGIA GENERAL,5000,5000,+66611505093,,2024-09-09,,
+1982,ELAINE CORDERO,baja,inactivo-90d,solo_telefono,CONSULTA,2280,2280,+14374282134,,2026-02-13,tLwXQ7s257W3w0H0NFdi,
+1478,SONIA VIEIRA MATIAS,baja,inactivo-90d,solo_telefono,CEMENTACION,2000,2000,+491717630890,,2025-06-26,,
+2225,SERGIO VICENTE CAVALLIN,baja,inactivo-90d,solo_telefono,ODONTOLOGIA GENERAL,1650,1650,+542994687282,,2026-01-14,,
+678,MARIA LUCIA NEUMAN,baja,inactivo-90d,solo_telefono,Nuevo plan de tratamiento,1500,1500,+14034730437,no indica,2024-10-13,,
+1603,TABATHA MURRAY LLAMAS,baja,inactivo-90d,solo_telefono,ODONTOLOGIA GENERAL,1480,1480,+15125388695,,2025-07-30,BV16Lj6d0Vi5tTFUeutm,
+1250,PACIENTE HUBSPOT,baja,anticipo-sin-cita,solo_telefono,CONSULTA,1137.41,1137.41,,.,2025-04-30,,
+27,KEVIN DAVID D CAPRETTO,nula,inactivo-90d,solo_telefono,Nuevo plan de tratamiento,0,0,+17169081250,,,,
+64,VICTOR GLZ,baja,nunca-agendo,solo_telefono,,0,0,+17865870027,,,,
+75,ELIECER GALI,baja,nunca-agendo,solo_telefono,,0,0,+14243910785,,,XoYRkclJcsUs6IKmdXfI,done
+80,VANESSA RODRIGUEZ,baja,nunca-agendo,solo_telefono,,0,0,+17869250775,,,,
+718,JULIAN  CASTRO,baja,solo-cancelaciones,solo_telefono,Nuevo plan de tratamiento,0,0,+18328487100,,,,
+994,NORIEL SANTOS ROMAN,nula,inactivo-90d,solo_telefono,Nuevo plan de tratamiento,0,0,+117874466022,,,,
+1234,JOSE ANTONIO MANDUJANO MENDOZA,baja,nunca-agendo,solo_telefono,,0,0,+16143273177,,,,
+1984,Rosa  Álvarez,baja,solo-cancelaciones,solo_telefono,Nuevo plan de tratamiento,0,0,,.,,,
+2027,WILMO BELISARIO,nula,inactivo-90d,solo_telefono,Nuevo plan de tratamiento,0,0,+17863800589,,,,
+2088,jnjs jaj,baja,solo-cancelaciones,solo_telefono,,0,0,,hhjjjjh,,,

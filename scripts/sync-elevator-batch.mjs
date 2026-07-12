@@ -12,7 +12,7 @@ import http from 'http'
 const KEY = process.env.ELEVATOR_API_KEY || ''
 const LOC = process.env.ELEVATOR_LOCATION_ID || ''
 const BASE = 'https://services.leadconnectorhq.com'
-const DATA_PATH = 'public/leads-data.json'
+const DATA_PATH = 'data/leads-data.json'
 const max = parseInt(process.argv.find(a => a.startsWith('--max='))?.split('=')[1] || '500', 10)
 const dry = process.argv.includes('--dry-run')
 

@@ -10,7 +10,7 @@
  *   DENTALINK_TOKEN="token" node scripts/scan-dentalink-leads.mjs
  *
  * Modos:
- *   --output=<path>    Ruta del JSON de salida (default: ./public/leads-data.json)
+ *   --output=<path>    Ruta del JSON de salida (default: ./data/leads-data.json)
  *   --max-id=<n>       ID máximo a escanear (default: 3000)
  *   --delay=<ms>       Pausa entre requests (default: 1100ms)
  *   --resume=<id>      Reanudar desde un ID específico
@@ -154,7 +154,7 @@ async function main() {
 
   // Parse args
   const args = process.argv.slice(2)
-  const outputPath = args.find(a => a.startsWith('--output='))?.split('=')[1] || './public/leads-data.json'
+  const outputPath = args.find(a => a.startsWith('--output='))?.split('=')[1] || './data/leads-data.json'
   const maxId = parseInt(args.find(a => a.startsWith('--max-id='))?.split('=')[1] || '3000', 10)
   const delayMs = parseInt(args.find(a => a.startsWith('--delay='))?.split('=')[1] || '1200', 10)
   const resumeId = parseInt(args.find(a => a.startsWith('--resume='))?.split('=')[1] || '1', 10)

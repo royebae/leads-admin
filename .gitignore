@@ -24,6 +24,8 @@ dist-ssr
 *.sw?
 data/imports/pagos/*
 public/pagos-checkpoint.json
+data/imports/pagos/*.json
+data/leads-data.json
 .env.dentalink-web
 data/imports/.browser-state/
 data/imports/runs/
