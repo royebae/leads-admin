@@ -22,7 +22,7 @@ const data = JSON.parse(readFileSync(DATA_PATH, 'utf-8'))
 const leads = data.leads
 
 // Only unsynced alta
-const candidates = leads.filter(l => l.is_reactivable && !l.elevator_id && l.priority_band === 'alta')
+const candidates = leads.filter(l => l.is_reactivable && !l.elevator_id && l.priority_band === 'alta' && !l.elevator_exclude)
 console.log(`Candidates: ${candidates.length}, max: ${max}`)
 
 let ok = 0, exists = 0, err = 0
@@ -38,6 +38,10 @@ function api(method, path, body) {
         'Authorization': `Bearer ${KEY}`,
         'Content-Type': 'application/json',
         'Version': '2021-07-28',
+        'Accept': 'application/json,text/plain,*/*',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+        'Origin': 'https://app.gohighlevel.com',
+        'Referer': 'https://app.gohighlevel.com/',
       },
     }
     const req = https.request(opts, res => {

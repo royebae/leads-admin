@@ -23,7 +23,15 @@ const STAGE_NUEVO = 'eeb17e40-958b-417a-b0eb-70f9a644f9bf'
 
 if (!KEY || !LOC) { process.exit(1) }
 
-const H = { 'Authorization': `Bearer ${KEY}`, 'Content-Type': 'application/json', 'Version': '2021-07-28' }
+const H = {
+  'Authorization': `Bearer ${KEY}`,
+  'Content-Type': 'application/json',
+  'Version': '2021-07-28',
+  'Accept': 'application/json,text/plain,*/*',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  'Origin': 'https://app.gohighlevel.com',
+  'Referer': 'https://app.gohighlevel.com/',
+}
 
 async function api(method, path, body) {
   return new Promise((resolve, reject) => {
@@ -44,15 +52,15 @@ async function api(method, path, body) {
 
 async function exportAllContacts() {
   const all = []
-  let offset = 0
+  let page = 1
   const limit = 100
   while (true) {
-    const res = await api('GET', `/contacts/?locationId=${LOC}&limit=${limit}&offset=${offset}`)
+    const res = await api('GET', `/contacts/?locationId=${LOC}&limit=${limit}&page=${page}`)
     if (res.status !== 200) break
     const contacts = res.data?.contacts || []
     all.push(...contacts)
     if (contacts.length < limit) break
-    offset += limit
+    page += 1
     process.stdout.write(`\r📦 Exportando contactos Elevator: ${all.length}...`)
     await new Promise(r => setTimeout(r, 300))
   }
@@ -68,7 +76,7 @@ function normalizePhone(p) {
 const data = JSON.parse(readFileSync(DATA_PATH, 'utf-8'))
 const leads = data.leads
 
-const eligible = leads.filter(l => l.is_reactivable && !l.elevator_id)
+const eligible = leads.filter(l => l.is_reactivable && !l.elevator_id && !l.elevator_exclude)
 const candidates = eligible.filter(l => ['alta', 'media', 'baja'].includes(l.priority_band))
 console.log(`Candidatos a sincronizar: ${candidates.length}`)
 
@@ -93,37 +101,41 @@ for (let i = 0; i < candidates.length; i++) {
 
   let contactId = phoneMap[phoneDig] || phoneMap[emailKey] || null
 
-  if (!contactId) {
-    // Create new contact
-    const firstName = (name || '').split(' ')[0] || 'Paciente'
-    const lastName = (name || '').split(' ').slice(1).join(' ') || ''
-    const phone = phoneDig ? '+52' + phoneDig : ''
-    const email = l.email && l.email.includes('@') && !l.email.includes('..') ? l.email : ''
-    const tags = ['reactivable', 'dentalink-import', `prioridad-${l.priority_band}`, `reactivable-${l.segment || ''}`]
-    if (l.tratamiento_principal) tags.push(l.tratamiento_principal.replace(/[^a-z0-9]/gi, '_').slice(0, 40).toLowerCase())
+    if (!contactId) {
+      // Create new contact
+      const firstName = (name || '').split(' ')[0] || 'Paciente'
+      const lastName = (name || '').split(' ').slice(1).join(' ') || ''
+      const phone = phoneDig ? '+52' + phoneDig : ''
+      const email = l.email && l.email.includes('@') && !l.email.includes('..') ? l.email : ''
+      const tags = ['reactivable', 'dentalink-import', `prioridad-${l.priority_band}`, `reactivable-${l.segment || ''}`]
+      if (l.tratamiento_principal) tags.push(l.tratamiento_principal.replace(/[^a-z0-9]/gi, '_').slice(0, 40).toLowerCase())
 
-    const res = await api('POST', `/contacts/?locationId=${LOC}`, JSON.stringify({
-      locationId: LOC, firstName, lastName, email, phone, tags,
-    }))
+      const res = await api('POST', `/contacts/?locationId=${LOC}`, JSON.stringify({
+        locationId: LOC, firstName, lastName, email, phone, tags,
+      }))
 
-    if (res.status === 201 || res.status === 200) {
-      contactId = res.data?.contact?.id || res.data?.id
-      if (contactId) {
-        created++
-        // Add to phone map for future matches
+      if (res.status === 201 || res.status === 200) {
+        contactId = res.data?.contact?.id || res.data?.id
+        if (contactId) {
+          created++
+          if (phoneDig) phoneMap[phoneDig] = contactId
+          if (emailKey) phoneMap[emailKey] = contactId
+        }
+      } else if (res.status === 400 && res.data?.meta?.contactId) {
+        contactId = res.data.meta.contactId
+        found++
         if (phoneDig) phoneMap[phoneDig] = contactId
+        if (emailKey) phoneMap[emailKey] = contactId
+      } else {
+        errors++
+        if (errors <= 3) console.log(`  ✗ ${name}: HTTP ${res.status}`)
+        skipped++
+        await new Promise(r => setTimeout(r, 400))
+        continue
       }
     } else {
-      // 400 = duplicate, 422 = bad email
-      errors++
-      if (errors <= 3) console.log(`  ✗ ${name}: HTTP ${res.status}`)
-      skipped++
-      await new Promise(r => setTimeout(r, 400))
-      continue
+      found++
     }
-  } else {
-    found++
-  }
 
   if (contactId && contactId.length > 5) {
     l.elevator_id = contactId
@@ -131,9 +143,11 @@ for (let i = 0; i < candidates.length; i++) {
 
     // Create opportunity
     const value = l.presupuesto_total || l.abonado_total || 0
-    const oppRes = await api('POST', `/pipelines/${PIPELINE_ID}/opportunities/`, JSON.stringify({
-      pipelineId: PIPELINE_ID, pipelineStageId: STAGE_NUEVO,
-      locationId: LOC, contactId,
+    const oppRes = await api('POST', `/opportunities/`, JSON.stringify({
+      pipelineId: PIPELINE_ID,
+      pipelineStageId: STAGE_NUEVO,
+      locationId: LOC,
+      contactId,
       name: (name || '').slice(0, 100),
       monetaryValue: value,
       status: 'open',
