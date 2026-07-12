@@ -17,9 +17,10 @@ import {
 
 export function NavGroup({
     label,
-    items
+    items,
+    onNavigate
 }) {
-	return (
+    return (
         <SidebarGroup>
             {label && <SidebarGroupLabel>{label}</SidebarGroupLabel>}
             <SidebarMenu>
@@ -47,7 +48,7 @@ export function NavGroup({
 											{item.subItems?.map((subItem) => (
 												<SidebarMenuSubItem key={subItem.title}>
 													<SidebarMenuSubButton asChild isActive={subItem.isActive}>
-														<a href={subItem.path}>
+														<a href={subItem.path} onClick={(e) => { e.preventDefault(); onNavigate?.(subItem.path?.replace('#','') || 'dashboard') }}>
 															{subItem.icon}
 															<span>{subItem.title}</span>
 														</a>
@@ -59,7 +60,7 @@ export function NavGroup({
 								</>
 							) : (
 								<SidebarMenuButton asChild isActive={item.isActive}>
-									<a href={item.path}>
+									<a href={item.path} onClick={(e) => { e.preventDefault(); onNavigate?.(item.path?.replace('#','') || 'dashboard') }}>
 										{item.icon}
 										<span>{item.title}</span>
 									</a>

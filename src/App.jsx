@@ -170,20 +170,17 @@ export default function App() {
   const segSummary = data?.segment_summary || {}
   const totalLeads = data?.metadata?.total_leads || 0
   const totalPages = data?.metadata?.total_pages || 1
-  const [currentView, setCurrentView] = useState('#dashboard')
+  const [currentView, setCurrentView] = useState('dashboard')
 
-  useEffect(() => {
-    const onHash = () => setCurrentView(window.location.hash || '#dashboard')
-    onHash()
-    window.addEventListener('hashchange', onHash)
-    return () => window.removeEventListener('hashchange', onHash)
-  }, [])
+  function navigateTo(view) {
+    setCurrentView(view)
+  }
 
   return (
-    <AppShell>
-      {currentView === '#reactivation' ? (
+    <AppShell onNavigate={navigateTo}>
+      {currentView === 'reactivation' ? (
         <ReactivationView leads={[]} data={data} />
-      ) : currentView === '#attribution' ? (
+      ) : currentView === 'attribution' ? (
         <AttributionView />
       ) : (
       <Dashboard leads={leads} data={data} />
