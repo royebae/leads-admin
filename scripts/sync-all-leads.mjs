@@ -33,7 +33,32 @@ const H = {
   'Referer': 'https://app.gohighlevel.com/',
 }
 
-async function api(method, path, body) {
+async function api(method, path, body, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const result = await apiCall(method, path, body)
+      // Rate limit (429) — retry with backoff
+      if (result.status === 429 && attempt < retries) {
+        const wait = Math.min(1000 * Math.pow(2, attempt), 30000)
+        console.log(`  ⏳ Rate limited (429), reintentando en ${wait}ms (intento ${attempt}/${retries})`)
+        await new Promise(r => setTimeout(r, wait))
+        continue
+      }
+      return result
+    } catch (e) {
+      if (attempt < retries) {
+        const wait = Math.min(1000 * Math.pow(2, attempt), 30000)
+        console.log(`  ⏳ Error: ${e.message}, reintentando en ${wait}ms (intento ${attempt}/${retries})`)
+        await new Promise(r => setTimeout(r, wait))
+        continue
+      }
+      throw e
+    }
+  }
+  return { status: 0, data: { error: 'Max retries' } }
+}
+
+async function apiCall(method, path, body) {
   return new Promise((resolve, reject) => {
     const url = new URL(path, BASE)
     const req = https.request({ method, hostname: url.hostname, path: url.pathname + url.search, headers: H }, res => {
@@ -53,16 +78,27 @@ async function api(method, path, body) {
 async function exportAllContacts() {
   const all = []
   let page = 1
+  let failedPages = 0
   const limit = 100
   while (true) {
     const res = await api('GET', `/contacts/?locationId=${LOC}&limit=${limit}&page=${page}`)
-    if (res.status !== 200) break
+    if (res.status !== 200) {
+      failedPages++
+      if (failedPages >= 3) {
+        console.log(`\n⚠️  Exportación detenida: 3 páginas fallidas seguidas (último error HTTP ${res.status})`)
+        break
+      }
+      console.log(`\n⚠️  Error HTTP ${res.status} en página ${page}, reintentando...`)
+      await new Promise(r => setTimeout(r, 5000))
+      continue
+    }
+    failedPages = 0
     const contacts = res.data?.contacts || []
     all.push(...contacts)
+    process.stdout.write(`\r📦 Exportando contactos Elevator: ${all.length}...`)
     if (contacts.length < limit) break
     page += 1
-    process.stdout.write(`\r📦 Exportando contactos Elevator: ${all.length}...`)
-    await new Promise(r => setTimeout(r, 300))
+    await new Promise(r => setTimeout(r, 500))
   }
   console.log(`\n📦 Total contactos en Elevator: ${all.length}`)
   return all
