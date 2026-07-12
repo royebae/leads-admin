@@ -37,6 +37,7 @@ export default function App() {
   const [search, setSearch] = useState('')
   const [page, setPage] = useState(1)
   const [leadDetail, setLeadDetail] = useState(null)
+  const [currentView, setCurrentView] = useState(() => window.location.hash || '#dashboard')
 
   useEffect(() => {
     if (sessionStorage.getItem('leads-admin-auth') === ADMIN_TOKEN) setAuthenticated(true)
@@ -57,6 +58,12 @@ export default function App() {
   }, [filterSegment, search, page])
 
   useEffect(() => { if (authenticated) fetchLeads() }, [authenticated, fetchLeads])
+
+  useEffect(() => {
+    const handleHashChange = () => setCurrentView(window.location.hash || '#dashboard')
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
 
   function handleLogin(e) {
     e.preventDefault()
@@ -140,7 +147,6 @@ export default function App() {
   const segSummary = data?.segment_summary || {}
   const totalLeads = data?.metadata?.total_leads || 0
   const totalPages = data?.metadata?.total_pages || 1
-  const currentView = (typeof window !== 'undefined' ? window.location.hash : '#dashboard') || '#dashboard'
 
   return (
     <AppShell>
@@ -154,6 +160,7 @@ export default function App() {
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+        {Object.entries(SEGMENTS).map(([key, cfg]) => {
           const count = segSummary[key]
           if (!count) return null
           return (
