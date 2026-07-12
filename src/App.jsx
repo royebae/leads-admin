@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { AppShell } from "@/components/app-shell"
 import { Dashboard } from "@/components/dashboard"
+import { ReactivationView } from "@/components/reactivation-view"
+import { AttributionView } from "@/components/attribution-view"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -138,13 +140,20 @@ export default function App() {
   const segSummary = data?.segment_summary || {}
   const totalLeads = data?.metadata?.total_leads || 0
   const totalPages = data?.metadata?.total_pages || 1
+  const currentView = (typeof window !== 'undefined' ? window.location.hash : '#dashboard') || '#dashboard'
 
   return (
     <AppShell>
+      {currentView === '#reactivation' ? (
+        <ReactivationView leads={[]} data={data} />
+      ) : currentView === '#attribution' ? (
+        <AttributionView />
+      ) : (
+      <>
       <Dashboard leads={leads} data={data} />
 
+      {/* Summary cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
-        {Object.entries(SEGMENTS).map(([key, cfg]) => {
           const count = segSummary[key]
           if (!count) return null
           return (
@@ -227,6 +236,8 @@ export default function App() {
           <span className="text-sm text-muted-foreground">Pág {page} de {totalPages}</span>
           <Button variant="outline" size="sm" onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page >= totalPages}>Siguiente →</Button>
         </div>
+      )}
+      </>
       )}
     </AppShell>
   )
