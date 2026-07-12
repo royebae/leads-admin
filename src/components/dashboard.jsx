@@ -10,12 +10,14 @@ export function Dashboard({ leads, data }) {
     ['anticipo-sin-cita','plan-sin-cita','nunca-agendo','solo-cancelaciones','ultima-no-asistio','inactivo-90d','inactivo-60d']
       .reduce((s, k) => s + (data.segment_summary[k] || 0), 0) : 0
   const totalCitas = leads?.reduce((s, l) => s + (l.total_citas || 0), 0) || 0
+  const deudaTotal = data?.metadata?.deuda_total || 0
+  const pagosOficiales = data?.metadata?.pagos_excel_full_total || 0
 
   return (
     <div className="flex flex-col gap-6">
       {/* Row 1: Summary stats cards */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <DashboardStats totalLeads={totalLeads} totalPagos={totalPagos} reactivables={reactivables} totalCitas={totalCitas} />
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        <DashboardStats totalLeads={totalLeads} totalPagos={totalPagos} pagosOficiales={pagosOficiales} deudaTotal={deudaTotal} reactivables={reactivables} totalCitas={totalCitas} />
       </div>
 
       {/* Row 2: Revenue chart (wide) */}

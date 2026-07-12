@@ -12,12 +12,36 @@
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { createRequire } from 'module';
 
 const LEADS_FILE = 'data/leads-data.json';
 const SRC_FILE = 'src/data/leads.js';
 const PAGOS_API_FILE = 'data/pagos-data.json';
 const PAGOS_MERGED_FILE = 'data/pagos-merged.json';
 const PAGOS_EXCEL_FILE = 'data/pagos-excel-data.json';
+const PAGOS_FULL_XLSX = 'data/imports/pagos/pagos-globales-full.xlsx';
+const require = createRequire(import.meta.url);
+const XLSX = require('xlsx');
+
+function readOfficialPayments() {
+  if (!existsSync(PAGOS_FULL_XLSX)) return [];
+  const workbook = XLSX.readFile(PAGOS_FULL_XLSX, { cellDates: true });
+  return workbook.SheetNames.flatMap(sheetName =>
+    XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { defval: null, raw: false })
+  ).map(row => ({
+    id_paciente: Number(row['# Paciente']) || null,
+    id_tratamiento: Number(row['# Tratamiento']) || null,
+    sucursal: row['Nombre Sucursal'] || null,
+    odontologo: [row['Nombre Profesional Tratamiento'], row['Apellidos Profesional Tratamiento']].filter(Boolean).join(' ').trim() || null,
+    especialidad: row['Especialidad Profesional Tratamiento'] || null,
+    fecha: row['Fecha de recepción del pago'] || null,
+    total_pago: Number(row['Total Pago']) || 0,
+    asociado_tratamiento: Number(row['Total asociado a tratamiento']) || 0,
+    medio_pago: row['Medio de pago'] || null,
+    receptor_pago: row['Receptor del pago'] || null,
+    convenio_tratamiento: row['Convenio Tratamiento'] === '-' ? null : row['Convenio Tratamiento'],
+  })).filter(row => row.id_paciente);
+}
 
 console.log('=== Enriching leads with hybrid payment data ===\n');
 
@@ -40,6 +64,12 @@ if (existsSync(PAGOS_MERGED_FILE)) {
 
 console.log(`Leads: ${leads.leads.length}`);
 console.log(`Payment rows: ${pagosData.length} (${pagosSource})`);
+const officialPayments = readOfficialPayments();
+const officialByPatient = officialPayments.reduce((byPatient, payment) => {
+  (byPatient[payment.id_paciente] ||= []).push(payment);
+  return byPatient;
+}, {});
+console.log(`Official Excel rows: ${officialPayments.length} (${PAGOS_FULL_XLSX})`);
 
 const paymentsByPatient = {};
 let unmatchedPayments = 0;
@@ -57,6 +87,32 @@ let totalMonto = 0;
 for (const lead of leads.leads) {
   const pid = Number(lead.id || lead.id_paciente || lead.id_paciente_int || lead.nombre_social || 0);
   const patientPayments = pid ? paymentsByPatient[pid] : null;
+  const patientOfficial = pid ? officialByPatient[pid] : null;
+
+  if (patientOfficial?.length) {
+    const sortedOfficial = [...patientOfficial].sort((a, b) => String(a.fecha).localeCompare(String(b.fecha)));
+    const latest = sortedOfficial.at(-1);
+    const unique = key => [...new Set(patientOfficial.map(payment => payment[key]).filter(Boolean))];
+    const paid = patientOfficial.reduce((sum, payment) => sum + payment.total_pago, 0);
+    const associated = patientOfficial.reduce((sum, payment) => sum + payment.asociado_tratamiento, 0);
+    lead.pagos_excel_oficial = {
+      total: paid, asociado_tratamientos: associated, no_asociado: paid - associated,
+      transactions: patientOfficial.length, last_payment: latest?.fecha || null,
+      last_treatment_id: latest?.id_tratamiento || null, last_odontologo: latest?.odontologo || null,
+      last_especialidad: latest?.especialidad || null, last_receptor: latest?.receptor_pago || null,
+      sucursales: unique('sucursal'), odontologos: unique('odontologo'), especialidades: unique('especialidad'),
+      tratamientos_ids: unique('id_tratamiento'), medios_pago: unique('medio_pago'), convenios: unique('convenio_tratamiento'),
+      source: 'pagos-globales-full.xlsx',
+    };
+    lead.sucursal_pago_oficial = latest?.sucursal || null;
+    lead.odontologo_ultimo_pago = latest?.odontologo || null;
+    lead.especialidad_ultimo_pago = latest?.especialidad || null;
+  } else {
+    lead.pagos_excel_oficial = null;
+    lead.sucursal_pago_oficial = null;
+    lead.odontologo_ultimo_pago = null;
+    lead.especialidad_ultimo_pago = null;
+  }
 
   if (!patientPayments || patientPayments.length === 0) {
     lead.pagos_count = 0;
@@ -107,6 +163,10 @@ leads.metadata.pagos_api_source = pagosSource;
 leads.metadata.pagos_api_total = totalMonto;
 leads.metadata.pagos_api_patients = matchedPayments;
 leads.metadata.pagos_api_transactions = pagosData.length;
+leads.metadata.pagos_excel_full_rows = officialPayments.length;
+leads.metadata.pagos_excel_full_patients = Object.keys(officialByPatient).length;
+leads.metadata.pagos_excel_full_total = officialPayments.reduce((sum, payment) => sum + payment.total_pago, 0);
+leads.metadata.deuda_total = leads.leads.reduce((sum, lead) => sum + (Number(lead.deuda_total) || 0), 0);
 leads.metadata.elevator_synced_count = elevatorSyncedCount;
 leads.metadata.elevator_opportunities_count = elevatorOpportunitiesCount;
 

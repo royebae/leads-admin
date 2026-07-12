@@ -1,12 +1,14 @@
 /**
  * Cruza pagos Dentalink + leads (elevator_id) + click IDs Elevator.
- * Genera payloads de conversión. Por defecto DRY (no envía a ads).
+ * Genera payloads de conversión locales. Por defecto genera el archivo final
+ * (dry_run=false), pero nunca envía a redes sociales.
  *
  * Usage:
  *   ELEVATOR_API_KEY=... ELEVATOR_LOCATION_ID=... \
- *   node scripts/build-conversion-events.mjs --dry-run
+ *   node scripts/build-conversion-events.mjs
  *
- * NEVER dispatches unless --dispatch is passed AND CONFIRM_DISPATCH=YES
+ * --dry-run solo etiqueta la salida como prueba. NEVER dispatches unless
+ * --dispatch is passed AND CONFIRM_DISPATCH=YES
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
@@ -27,7 +29,7 @@ const LOCATION_ID = process.env.ELEVATOR_LOCATION_ID || ''
 const VERSION = process.env.ELEVATOR_API_VERSION || '2021-07-28'
 
 const args = process.argv.slice(2)
-const dryRun = args.includes('--dry-run') || !args.includes('--dispatch')
+const dryRun = args.includes('--dry-run')
 const dispatch = args.includes('--dispatch') && process.env.CONFIRM_DISPATCH === 'YES'
 const limit = Number((args.find(a => a.startsWith('--limit=')) || '--limit=50').split('=')[1]) || 50
 const minAmount = Number((args.find(a => a.startsWith('--min-amount=')) || '--min-amount=1').split('=')[1]) || 1

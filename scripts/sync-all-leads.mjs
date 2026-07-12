@@ -181,7 +181,7 @@ for (let i = 0; i < candidates.length; i++) {
 
     // Create opportunity
     const value = l.presupuesto_total || l.abonado_total || 0
-    const oppRes = await api('POST', `/opportunities/`, JSON.stringify({
+    const oppBody = JSON.stringify({
       pipelineId: PIPELINE_ID,
       pipelineStageId: STAGE_NUEVO,
       locationId: LOC,
@@ -190,11 +190,22 @@ for (let i = 0; i < candidates.length; i++) {
       monetaryValue: value,
       status: 'open',
       source: 'Dentalink Reactivation',
-    }))
+    })
+    const oppRes = await api('POST', `/opportunities/`, oppBody)
     if (oppRes.status === 201 || oppRes.status === 200) {
       l.elevator_opportunity_id = oppRes.data?.opportunity?.id || 'done'
       opps++
-    }
+    } else if (oppRes.status === 409 || (oppRes.status === 400 && oppRes.data?.meta?.existingId)) {
+      // Already has opportunity — mark as done
+      if (oppRes.data?.meta?.existingId) {
+        l.elevator_opportunity_id = oppRes.data.meta.existingId
+      } else {
+        l.elevator_opportunity_id = 'done'
+      }
+      opps++
+    } else if (errors < 3) {
+      console.log(`  ℹ️  opp debug #${errors+1}: HTTP ${oppRes.status} →`, JSON.stringify(oppRes.data || '').slice(0, 200))
+      errors++
   }
 
   if ((i + 1) % 30 === 0 || i === candidates.length - 1) {
@@ -215,3 +226,58 @@ console.log(`Oportunidades: ${opps}`)
 console.log(`Saltados (duplicados/error): ${skipped}`)
 console.log(`Total en Elevator: ${total}`)
 console.log(`Quedan sin sync: ${candidates.length - found - created}`)
+
+// ─── FASE 2: Oportunidades faltantes ──────────────────────────────────
+const missingOpps = leads.filter(l =>
+  l.is_reactivable &&
+  !l.elevator_exclude &&
+  l.elevator_id &&
+  !l.elevator_opportunity_id
+)
+console.log(`\n═══ FASE 2: Crear oportunidades faltantes ═══`)
+console.log(`Leads con contacto pero sin oportunidad: ${missingOpps.length}`)
+
+let opps2 = 0, err2 = 0
+for (let i = 0; i < missingOpps.length; i++) {
+  const l = missingOpps[i]
+  const name = l.nombre || '?'
+  const value = l.presupuesto_total || l.abonado_total || 0
+
+  const oppRes = await api('POST', `/opportunities/`, JSON.stringify({
+    pipelineId: PIPELINE_ID,
+    pipelineStageId: STAGE_NUEVO,
+    locationId: LOC,
+    contactId: l.elevator_id,
+    name: (name || '').slice(0, 100),
+    monetaryValue: value,
+    status: 'open',
+    source: 'Dentalink Reactivation',
+  }))
+
+  if (oppRes.status === 201 || oppRes.status === 200) {
+    l.elevator_opportunity_id = oppRes.data?.opportunity?.id || 'done'
+    opps2++
+  } else if (oppRes.status === 409 || (oppRes.status === 400 && oppRes.data?.meta?.existingId)) {
+    // Already has opportunity — mark as done with the real ID
+    l.elevator_opportunity_id = oppRes.data?.meta?.existingId || 'done'
+    opps2++
+  } else {
+    err2++
+    if (err2 <= 5) console.log(`  ✗ ${name}: HTTP ${oppRes.status}`)
+  }
+
+  if ((i + 1) % 30 === 0 || i === missingOpps.length - 1) {
+    writeFileSync(DATA_PATH, JSON.stringify(data))
+    process.stdout.write(`\r📊 Oportunidades: ${opps2}/${missingOpps.length} · err:${err2}`)
+  }
+
+  await new Promise(r => setTimeout(r, 400))
+}
+
+writeFileSync(DATA_PATH, JSON.stringify(data))
+const totalOpps = data.leads.filter(x => x.elevator_opportunity_id).length
+console.log(`\n\n═══ RESUMEN FINAL ═══`)
+console.log(`Oportunidades nuevas: ${opps2}`)
+console.log(`Errores: ${err2}`)
+console.log(`Total con oportunidad: ${totalOpps}`)
+}

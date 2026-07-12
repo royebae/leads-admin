@@ -1,12 +1,14 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Delta, DeltaIcon, DeltaValue } from "@/components/delta"
 
-export function DashboardStats({ totalLeads, totalPagos, reactivables, totalCitas }) {
+export function DashboardStats({ totalLeads, totalPagos, pagosOficiales, deudaTotal, reactivables, totalCitas }) {
   const stats = [
     { label: "Total leads", value: String(totalLeads || 0), delta: 0, hint: "en base" },
     { label: "Reactivables", value: String(reactivables || 0), delta: 0, hint: "para campaña" },
     { label: "En pagos", value: `$${(totalPagos || 0).toLocaleString('es-MX')}`, delta: 0, hint: "histórico" },
     { label: "Citas totales", value: String(totalCitas || 0), delta: 0, hint: "registradas" },
+    { label: "Pagos oficiales", value: `$${(pagosOficiales || 0).toLocaleString('es-MX')}`, delta: 0, hint: "Excel full" },
+    { label: "Deuda real", value: `$${(deudaTotal || 0).toLocaleString('es-MX')}`, delta: 0, hint: "planes registrados" },
   ]
 
   return (

@@ -134,7 +134,14 @@ export default function App() {
                 <div className="grid grid-cols-3 gap-4">
                   <div><span className="text-muted-foreground text-xs">Total</span><p className="text-2xl font-semibold text-[--lime-pulse]">${Number(l.pagado_total_api || 0).toLocaleString('es-MX')}</p></div>
                   <div><span className="text-muted-foreground text-xs">Último</span><p>{l.ultimo_pago_fecha || '—'}</p></div>
+                  <div><span className="text-muted-foreground text-xs">Odontólogo</span><p>{l.odontologo_ultimo_pago || '—'}</p><p className="text-xs text-muted-foreground">{l.especialidad_ultimo_pago || ''}</p></div>
                 </div>
+                {l.pagos_excel_oficial && <div className="mt-4 border-t pt-4 grid grid-cols-2 gap-4 text-sm">
+                  <div><span className="text-muted-foreground">Pago oficial / asociado</span><p>${Number(l.pagos_excel_oficial.total).toLocaleString('es-MX')} / ${Number(l.pagos_excel_oficial.asociado_tratamientos).toLocaleString('es-MX')}</p></div>
+                  <div><span className="text-muted-foreground">Tratamiento Dentalink</span><p>#{l.pagos_excel_oficial.last_treatment_id || '—'} · {l.sucursal_pago_oficial || '—'}</p></div>
+                  <div><span className="text-muted-foreground">Receptor último pago</span><p>{l.pagos_excel_oficial.last_receptor || '—'}</p></div>
+                  <div><span className="text-muted-foreground">Medios</span><p>{l.pagos_excel_oficial.medios_pago.join(', ') || '—'}</p></div>
+                </div>}
               </CardContent>
             </Card>
           )}
