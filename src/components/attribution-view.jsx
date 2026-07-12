@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 function formatCurrency(n) {
   return new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', minimumFractionDigits: 0 }).format(n || 0)
@@ -11,7 +11,7 @@ export function AttributionView() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
-  useState(() => {
+  useEffect(() => {
     fetch('/conversion-events.json')
       .then(r => r.ok ? r.json() : null)
       .then(d => {
