@@ -23,6 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 data/imports/pagos/*
+data/pagos-data.json
+data/pagos-merged.json
+data/pagos-excel-data.json
 public/pagos-checkpoint.json
 data/imports/pagos/*.json
 data/leads-data.json

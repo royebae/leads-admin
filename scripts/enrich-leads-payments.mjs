@@ -15,9 +15,9 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 
 const LEADS_FILE = 'data/leads-data.json';
 const SRC_FILE = 'src/data/leads.js';
-const PAGOS_API_FILE = 'public/pagos-data.json';
-const PAGOS_MERGED_FILE = 'public/pagos-merged.json';
-const PAGOS_EXCEL_FILE = 'public/pagos-excel-data.json';
+const PAGOS_API_FILE = 'data/pagos-data.json';
+const PAGOS_MERGED_FILE = 'data/pagos-merged.json';
+const PAGOS_EXCEL_FILE = 'data/pagos-excel-data.json';
 
 console.log('=== Enriching leads with hybrid payment data ===\n');
 
