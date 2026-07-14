@@ -23,6 +23,37 @@ const PAGOS_FULL_XLSX = 'data/imports/pagos/pagos-globales-full.xlsx';
 const require = createRequire(import.meta.url);
 const XLSX = require('xlsx');
 
+const COMMERCIAL_INTEREST_RULES = [
+  { tag: 'implante_dental', label: 'Implante dental', keywords: ['IMPLANTE', 'IMPLANTOLOGIA', 'IMPLANTOLOGÍA', 'PROTESIS SOBRE IMPLANTE', 'CORONA SOBRE IMPLANTE', 'DESTAPE DE IMPLANTES'] },
+  { tag: 'invisalign_ortodoncia', label: 'Invisalign / Ortodoncia', keywords: ['INVISALIGN', 'ORTODONCIA', 'ORTOPEDIA', 'BRACKETS'] },
+  { tag: 'endodoncia', label: 'Endodoncia', keywords: ['ENDODONCIA'] },
+  { tag: 'protesis_rehabilitacion', label: 'Prótesis / Rehabilitación', keywords: ['PROTESIS', 'PRÓTESIS', 'REHABILITACION', 'REHABILITACIÓN', 'INCRUSTACION', 'INCRUSTACIÓN', 'CORONA'] },
+  { tag: 'estetica_dental', label: 'Estética dental', keywords: ['ESTETICA', 'ESTÉTICA', 'BLANQUEAMIENTO', 'BLANQUIAMIENTO', 'BOTOX', 'MEDICINA ESTETICA', 'MEDICINA ESTÉTICA'] },
+  { tag: 'cirugia_dental', label: 'Cirugía dental', keywords: ['CIRUGIA', 'CIRUGÍA', 'EXTRACCION', 'EXTRACCIÓN', 'CIRUGIA BUCAL', 'CIRUGÍA BUCAL'] },
+  { tag: 'periodoncia', label: 'Periodoncia', keywords: ['PERIODONCIA'] },
+  { tag: 'limpieza_consulta', label: 'Limpieza / Consulta', keywords: ['LIMPIEZA', 'CONSULTA', 'PRIMERA CONSULTA', 'PRIMER CONSULTA', 'DIAGNOSTICO', 'DIAGNÓSTICO'] },
+  { tag: 'odontologia_general', label: 'Odontología general', keywords: ['ODONTOLOGIA GENERAL', 'ODONTOLOGÍA GENERAL'] },
+];
+
+function normalizeText(value) {
+  return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
+}
+
+function classifyCommercialInterest(lead) {
+  const treatments = [
+    ...(Array.isArray(lead.tratamientos) ? lead.tratamientos : []),
+    lead.tratamiento_principal,
+    lead.ultima_cita_tratamiento,
+  ].filter(Boolean);
+  const haystack = normalizeText(treatments.join(' | '));
+  for (const rule of COMMERCIAL_INTEREST_RULES) {
+    if (rule.keywords.some(keyword => haystack.includes(normalizeText(keyword)))) {
+      return { tag: rule.tag, label: rule.label, source: treatments.join(' | ') };
+    }
+  }
+  return { tag: null, label: lead.tratamiento_principal || 'Sin interés detectado', source: treatments.join(' | ') };
+}
+
 function readOfficialPayments() {
   if (!existsSync(PAGOS_FULL_XLSX)) return [];
   const workbook = XLSX.readFile(PAGOS_FULL_XLSX, { cellDates: true });
@@ -85,6 +116,13 @@ console.log(`Patients with payments: ${Object.keys(paymentsByPatient).length}`);
 let matchedPayments = 0;
 let totalMonto = 0;
 for (const lead of leads.leads) {
+  const commercialInterest = classifyCommercialInterest(lead);
+  lead.interes_comercial = commercialInterest.label;
+  lead.interes_comercial_tag = commercialInterest.tag;
+  lead.interes_comercial_fuente = commercialInterest.source;
+  // Keep legacy field aligned for scripts/Elevator/backward compatibility.
+  lead.treatment_tag = commercialInterest.tag;
+
   const pid = Number(lead.id || lead.id_paciente || lead.id_paciente_int || lead.nombre_social || 0);
   const patientPayments = pid ? paymentsByPatient[pid] : null;
   const patientOfficial = pid ? officialByPatient[pid] : null;

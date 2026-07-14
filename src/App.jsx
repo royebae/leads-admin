@@ -120,10 +120,12 @@ export default function App() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4 text-sm">
-                <div><span className="text-muted-foreground">Principal</span><p className="font-medium">{l.tratamiento_principal || 'Sin plan'}</p></div>
+                <div><span className="text-muted-foreground">Principal administrativo</span><p className="font-medium">{l.tratamiento_principal || 'Sin plan'}</p></div>
+                <div><span className="text-muted-foreground">Interés comercial</span><p className="font-medium text-[--lime-pulse]">{l.interes_comercial || l.tratamiento_principal || '—'}</p></div>
                 <div><span className="text-muted-foreground">Planes</span><p>{l.tratamientos_count || 0} · {l.tratamientos_abiertos || 0} abiertos</p></div>
                 <div><span className="text-muted-foreground">Presupuesto</span><p>${Number(l.presupuesto_total || 0).toLocaleString('es-MX')}</p></div>
                 <div><span className="text-muted-foreground">Abonado / Deuda</span><p>${Number(l.abonado_total || 0).toLocaleString('es-MX')} / <span className={l.deuda_total > 0 ? 'text-destructive' : ''}>${Number(l.deuda_total || 0).toLocaleString('es-MX')}</span></p></div>
+                <div><span className="text-muted-foreground">Historial detectado</span><p className="text-xs text-muted-foreground">{(l.tratamientos || []).slice(0, 4).join(', ') || '—'}{(l.tratamientos || []).length > 4 ? '…' : ''}</p></div>
               </div>
             </CardContent>
           </Card>
@@ -224,7 +226,8 @@ export default function App() {
                     {l.email && <div className="text-xs text-muted-foreground truncate max-w-[180px]">{l.email}</div>}
                   </td>
                   <td className="p-3">
-                    <div className="text-[--lime-pulse] text-xs font-medium truncate max-w-[160px]">{l.tratamiento_principal || '—'}</div>
+                    <div className="text-[--lime-pulse] text-xs font-medium truncate max-w-[160px]">{l.interes_comercial || l.tratamiento_principal || '—'}</div>
+                    {l.tratamiento_principal && l.interes_comercial && l.tratamiento_principal !== l.interes_comercial && <div className="text-xs text-muted-foreground truncate max-w-[160px]">Principal: {l.tratamiento_principal}</div>}
                     {l.tratamientos?.length > 1 && <div className="text-xs text-muted-foreground">+{l.tratamientos.length - 1} más</div>}
                   </td>
                   <td className="p-3">
