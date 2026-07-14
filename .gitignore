@@ -29,6 +29,11 @@ data/pagos-excel-data.json
 public/pagos-checkpoint.json
 data/imports/pagos/*.json
 data/leads-data.json
+data/elevator-tags-backup-*.json
+data/elevator-tags-sync-progress.json
+public/pagos-data.json
+public/pagos-merged.json
+public/pagos-excel-data.json
 .env.dentalink-web
 data/imports/.browser-state/
 data/imports/runs/
