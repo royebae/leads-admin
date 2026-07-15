@@ -3,6 +3,7 @@ import { AppShell } from "@/components/app-shell"
 import { Dashboard } from "@/components/dashboard"
 import { ReactivationView } from "@/components/reactivation-view"
 import { AttributionView } from "@/components/attribution-view"
+import { InboundMarketingView } from "@/components/inbound-marketing-view"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -161,6 +162,8 @@ export default function App() {
     <AppShell>
       {currentView === '#reactivation' ? (
         <ReactivationView leads={[]} data={data} />
+      ) : currentView === '#inbound' ? (
+        <InboundMarketingView />
       ) : currentView === '#attribution' ? (
         <AttributionView />
       ) : (

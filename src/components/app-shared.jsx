@@ -17,6 +17,12 @@ export const navGroups = [
         isActive: false,
       },
       {
+        title: "Inbound Marketing",
+        path: "#inbound",
+        icon: <IconPlaceholder lucide="MessageCircle" />,
+        isActive: false,
+      },
+      {
         title: "Atribución",
         path: "#attribution",
         icon: <IconPlaceholder lucide="BarChart3" />,
