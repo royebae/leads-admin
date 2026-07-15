@@ -31,7 +31,7 @@ const VERSION = process.env.ELEVATOR_API_VERSION || '2021-07-28'
 const args = process.argv.slice(2)
 const dryRun = args.includes('--dry-run')
 const dispatch = args.includes('--dispatch') && process.env.CONFIRM_DISPATCH === 'YES'
-const limit = Number((args.find(a => a.startsWith('--limit=')) || '--limit=50').split('=')[1]) || 50
+const limit = Number((args.find(a => a.startsWith('--limit=')) || '--limit=999999').split('=')[1]) || 999999
 const minAmount = Number((args.find(a => a.startsWith('--min-amount=')) || '--min-amount=1').split('=')[1]) || 1
 
 if (args.includes('--dispatch') && !dispatch) {
@@ -105,6 +105,38 @@ function extractClickIds(contact) {
     utm_medium: pick(byId[CF_IDS.utm_medium], attr.utmMedium),
     session_source: attr.sessionSource || null,
   }
+}
+
+function normText(v) {
+  return String(v || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+}
+
+function inferAttribution(lead, click) {
+  const tags = (lead?.elevator_tags || []).map(normText)
+  const obs = normText(lead?.observaciones)
+  const utmSource = normText(click?.utm_source)
+  const utmMedium = normText(click?.utm_medium)
+  const sessionSource = normText(click?.session_source)
+  const hay = (...needles) => needles.some(n =>
+    tags.some(t => t.includes(n)) || obs.includes(n) || utmSource.includes(n) || utmMedium.includes(n) || sessionSource.includes(n)
+  )
+
+  if (click?.gclid || hay('google', 'gads', 'adwords')) {
+    return { channel: 'google', label: 'Google Ads', confidence: click?.gclid ? 'alta' : 'media', basis: click?.gclid ? 'gclid' : 'utm/tag google' }
+  }
+  if (click?.fbclid || click?.fbc || hay('facebook', 'fb', 'meta', 'instagram', 'ig')) {
+    return { channel: 'meta', label: 'Meta / Facebook', confidence: (click?.fbclid || click?.fbc) ? 'alta' : 'media', basis: (click?.fbclid || click?.fbc) ? 'fbclid/fbc' : 'utm/tag meta/instagram' }
+  }
+  if (click?.ttclid || hay('tiktok', 'tt')) {
+    return { channel: 'tiktok', label: 'TikTok', confidence: click?.ttclid ? 'alta' : 'media', basis: click?.ttclid ? 'ttclid' : 'utm/tag tiktok' }
+  }
+  if (hay('[whatsapp] - lead capture', 'lead_entrante_tochat', 'escribio_whatsapptochat', 'lead_mkt', 'paciente-de-mkt', 'form-web-llamadas', 'tracking-core')) {
+    return { channel: 'marketing_whatsapp', label: 'Marketing / WhatsApp', confidence: 'media', basis: 'tags Elevator de lead entrante/marketing' }
+  }
+  if (hay('[device] - clinica drdiente atencion', 'paciente-sin-lead', 'recomendacion', 'pasando por la clinica')) {
+    return { channel: 'organic_direct', label: 'Orgánico / Directo', confidence: 'media', basis: 'tags/observaciones de paciente directo' }
+  }
+  return { channel: 'unknown', label: 'Sin atribuir', confidence: 'baja', basis: 'sin click ID, UTM o tag confiable' }
 }
 
 // Load payments
@@ -186,7 +218,9 @@ for (const c of pool) {
   }
 
   const hasClick = !!(click.fbclid || click.fbc || click.gclid || click.ttclid)
-  const status = hasClick ? 'ready' : 'manual_review_no_click_id'
+  const lead = leadByPatient.get(Number(c.id_paciente))
+  const inferred = inferAttribution(lead, click)
+  const status = hasClick ? 'ready' : (inferred.channel !== 'unknown' ? 'attributed_by_crm_signal' : 'manual_review_no_click_id')
 
   // One event per payment_id when available; else aggregate
   const units = c.payment_ids.length
@@ -223,6 +257,11 @@ for (const c of pool) {
         utm_source: click.utm_source || null,
         utm_campaign: click.utm_campaign || null,
         utm_medium: click.utm_medium || null,
+        channel: inferred.channel,
+        label: inferred.label,
+        confidence: inferred.confidence,
+        basis: inferred.basis,
+        elevator_tags: lead?.elevator_tags || [],
       },
       dispatch: {
         allowed: false,
@@ -236,7 +275,8 @@ for (const c of pool) {
 
 console.log('\n')
 const ready = events.filter(e => e.status === 'ready').length
-const review = events.filter(e => e.status !== 'ready').length
+const review = events.filter(e => e.attribution?.channel === 'unknown').length
+const crmAttributed = events.filter(e => e.status === 'attributed_by_crm_signal').length
 
 const out = {
   metadata: {
@@ -245,6 +285,7 @@ const out = {
     dispatch_attempted: dispatch,
     total_events: events.length,
     ready_with_click_id: ready,
+    attributed_by_crm_signal: crmAttributed,
     manual_review: review,
     note: 'NO se envió nada a Meta/Google/TikTok. Solo payloads locales.',
   },

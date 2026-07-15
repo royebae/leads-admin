@@ -38,26 +38,36 @@ export function AttributionView() {
   const totalValue = events.reduce((s, e) => s + (e.custom_data?.value || 0), 0)
   const attributedValue = events.filter(e => e.status === 'ready').reduce((s, e) => s + (e.custom_data?.value || 0), 0)
 
-  // By channel
-  const byChannel = { google: 0, meta: 0, tiktok: 0, organic: 0, unknown: 0 }
-  let byChannelValue = { google: 0, meta: 0, tiktok: 0, organic: 0, unknown: 0 }
+  // By channel: prefer explicit/inferred attribution generated server-side.
+  const byChannel = { google: 0, meta: 0, tiktok: 0, marketing_whatsapp: 0, organic_direct: 0, unknown: 0 }
+  let byChannelValue = { google: 0, meta: 0, tiktok: 0, marketing_whatsapp: 0, organic_direct: 0, unknown: 0 }
+  const confidenceCount = { alta: 0, media: 0, baja: 0 }
   for (const e of events) {
     const ud = e.user_data || {}
-    let ch = 'unknown'
-    if (ud.gclid) ch = 'google'
-    else if (ud.fbclid || ud.fbc) ch = 'meta'
-    else if (ud.ttclid) ch = 'tiktok'
-    else ch = 'organic'
+    let ch = e.attribution?.channel
+    if (!ch) {
+      if (ud.gclid) ch = 'google'
+      else if (ud.fbclid || ud.fbc) ch = 'meta'
+      else if (ud.ttclid) ch = 'tiktok'
+      else ch = 'unknown'
+    }
+    if (!byChannel.hasOwnProperty(ch)) ch = 'unknown'
     byChannel[ch]++
     byChannelValue[ch] += (e.custom_data?.value || 0)
+    const conf = e.attribution?.confidence || (e.status === 'ready' ? 'alta' : 'baja')
+    confidenceCount[conf] = (confidenceCount[conf] || 0) + 1
   }
+
+  const attributedSignalCount = events.filter(e => (e.attribution?.channel || 'unknown') !== 'unknown').length
+  const attributedSignalValue = events.filter(e => (e.attribution?.channel || 'unknown') !== 'unknown').reduce((s, e) => s + (e.custom_data?.value || 0), 0)
 
   const channels = [
     { key: 'google', label: 'Google Ads', color: '#4ade80', icon: '🔍' },
     { key: 'meta', label: 'Meta / Facebook', color: '#a855f7', icon: '📘' },
     { key: 'tiktok', label: 'TikTok', color: '#f43f5e', icon: '🎵' },
-    { key: 'organic', label: 'Orgánico / Directo', color: '#6b7280', icon: '🌐' },
-    { key: 'unknown', label: 'Sin atribuir', color: '#9ca3af', icon: '❓' },
+    { key: 'marketing_whatsapp', label: 'Marketing / WhatsApp', color: '#22c55e', icon: '💬' },
+    { key: 'organic_direct', label: 'Orgánico / Directo', color: '#6b7280', icon: '🌐' },
+    { key: 'unknown', label: 'Sin atribuir', color: '#f59e0b', icon: '❓' },
   ]
 
   return (
@@ -91,15 +101,15 @@ export function AttributionView() {
         <Card className="border-l-4 border-amber-500">
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">Sin atribuir</div>
-            <div className="text-2xl font-bold mt-1 text-amber-500">{review}</div>
-            <div className="text-[10px] text-muted-foreground mt-0.5">revisión manual</div>
+            <div className="text-2xl font-bold mt-1 text-amber-500">{byChannel.unknown || 0}</div>
+            <div className="text-[10px] text-muted-foreground mt-0.5">sin señal confiable</div>
           </CardContent>
         </Card>
         <Card className="border-l-4 border-purple-500">
           <CardContent className="p-4">
             <div className="text-xs text-muted-foreground">Valor atribuido</div>
-            <div className="text-xl font-bold mt-1 text-purple-500">{formatCurrency(attributedValue)}</div>
-            <div className="text-[10px] text-muted-foreground mt-0.5">con click ID</div>
+            <div className="text-xl font-bold mt-1 text-purple-500">{formatCurrency(attributedSignalValue)}</div>
+            <div className="text-[10px] text-muted-foreground mt-0.5">{attributedSignalCount} con señal CRM/click</div>
           </CardContent>
         </Card>
       </div>
@@ -158,13 +168,17 @@ export function AttributionView() {
                 {[...events].reverse().slice(0, 30).map((e, i) => {
                   const ud = e.user_data || {}
                   const clickId = ud.fbclid || ud.gclid || ud.ttclid || null
-                  const channel = ud.gclid ? '🔍' : ud.fbclid ? '📘' : ud.ttclid ? '🎵' : ud.fbc ? '📘' : '🌐'
+                  const attr = e.attribution || {}
+                  const channel = attr.channel === 'google' ? '🔍' : attr.channel === 'meta' ? '📘' : attr.channel === 'tiktok' ? '🎵' : attr.channel === 'marketing_whatsapp' ? '💬' : attr.channel === 'organic_direct' ? '🌐' : '❓'
                   return (
                     <tr key={e.event_id || i} className="border-b border-border hover:bg-accent/50 text-xs">
                       <td className="p-2 text-muted-foreground">{(e.occurred_at || '').slice(0, 10)}</td>
                       <td className="p-2 font-medium">{e.custom_data?.patient_name || '—'}</td>
                       <td className="p-2 text-right font-medium">{formatCurrency(e.custom_data?.value || 0)}</td>
-                      <td className="p-2">{channel} {clickId ? clickId.slice(0, 16) + '…' : '—'}</td>
+                      <td className="p-2">
+                        <div>{channel} {clickId ? clickId.slice(0, 16) + '…' : (attr.label || '—')}</div>
+                        <div className="text-[10px] text-muted-foreground">{attr.confidence || 'baja'} · {attr.basis || 'sin señal'}</div>
+                      </td>
                       <td className="p-2 text-center">
                         {e.status === 'ready' ? (
                           <Badge variant="outline" className="text-[10px] bg-green-500/10 text-green-500 border-green-500/20">✅</Badge>
