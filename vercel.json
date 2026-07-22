@@ -3,7 +3,8 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/fatima/(.*)", "destination": "/fatima/index.html" },
+    { "source": "/((?!api/|fatima/).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
